@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E08_blackwell_tuning",
+  "title": "Blackwell Tuning",
+  "status": "BLOCKED_GATES",
+  "hypothesis": "Tune split/tile/warps/stages, then consider TMA/warp specialization only after architecture gates pass.",
+  "depends_on": [
+    "E03_split_scaling",
+    "E04b_end_to_end",
+    "E07_long_context"
+  ],
+  "pass_fail": "No TMA/warp-specialization claim before baseline profiler evidence.",
+  "results_root": "kernel/results/E08_blackwell_tuning",
+  "gate_type": "pass_fail",
+  "claim_eligible": true,
+  "requires_clean_git": true
+}

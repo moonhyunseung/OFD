@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E06_gqa",
+  "title": "GQA KV-Reuse",
+  "status": "BLOCKED_GQA_REUSE",
+  "hypothesis": "Compare current q-head programs against grouped Q-head KV reuse for Q/KV = 1,4,8.",
+  "depends_on": [
+    "E02_correctness"
+  ],
+  "pass_fail": "Requires grouped-GQA Triton kernel implementation.",
+  "results_root": "kernel/results/E06_gqa",
+  "gate_type": "pass_fail",
+  "claim_eligible": true,
+  "requires_clean_git": true
+}

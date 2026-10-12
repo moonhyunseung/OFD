@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E04b_end_to_end",
+  "title": "End-to-End OFD Cost",
+  "status": "BLOCKED_TRITON_FWHT",
+  "hypothesis": "Measure total OFD cost only after production GPU FWHT replaces the PyTorch reference transforms.",
+  "depends_on": [
+    "E04a_core_attention"
+  ],
+  "pass_fail": "Blocked until GPU FWHT exists; then target Full-OFD/Plain end-to-end latency ratio <= 1.05.",
+  "gate_type": "pass_fail",
+  "claim_eligible": true,
+  "requires_clean_git": true,
+  "results_root": "kernel/results/E04b_end_to_end"
+}

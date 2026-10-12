@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E04a_core_attention",
+  "title": "Core Attention Parity",
+  "status": "READY_AFTER_E02",
+  "hypothesis": "Measure branch-free packed-INT4 attention cost with Q/output transforms outside the timed region.",
+  "depends_on": [
+    "E02_correctness"
+  ],
+  "pass_fail": "PASS when worst Full-OFD/Plain core-attention latency ratio <= 1.05 on the frozen smoke matrix.",
+  "gate_type": "pass_fail",
+  "claim_eligible": true,
+  "requires_clean_git": true,
+  "results_root": "kernel/results/E04a_core_attention",
+  "automated_gate": {
+    "metric": "worst_KV_over_P_core_latency_ratio",
+    "max": 1.05,
+    "matrix": "smoke_matrix",
+    "timing_scope": "core_attention_only"
+  }
+}

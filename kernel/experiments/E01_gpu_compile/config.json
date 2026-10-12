@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E01_gpu_compile",
+  "title": "GPU Compile Smoke",
+  "status": "READY_GPU",
+  "hypothesis": "Verify Triton Stage 1/2 compile and execute one tiny Blackwell case.",
+  "depends_on": [
+    "E00_cpu_reference"
+  ],
+  "pass_fail": "Kernel compiles; no illegal memory access; finite output. No performance claim.",
+  "results_root": "kernel/results/E01_gpu_compile",
+  "gate_type": "pass_fail",
+  "claim_eligible": false,
+  "requires_clean_git": false
+}
