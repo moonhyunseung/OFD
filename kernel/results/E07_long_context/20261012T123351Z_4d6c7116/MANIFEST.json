@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "experiment_id": "E07_long_context",
+  "run_id": "20261012T123351Z_4d6c7116",
+  "timestamp_utc": "2026-10-12T12:33:51.107759+00:00",
+  "protocol_status": "READY_AFTER_E04",
+  "gate_type": "observational",
+  "claim_eligible_protocol": true,
+  "requires_clean_git": true,
+  "git_commit": "a621fc4613a731f9171b64ef7739b94392f16b23",
+  "git_branch": "master",
+  "git_available": true,
+  "git_dirty": false,
+  "git_status_porcelain": "",
+  "claim_eligible_run": true,
+  "environment": {
+    "claim_eligible": true,
+    "cuda_visible_devices": null,
+    "git_available": true,
+    "git_branch": "master",
+    "git_commit": "a621fc4613a731f9171b64ef7739b94392f16b23",
+    "git_dirty": false,
+    "git_status_porcelain": "",
+    "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+    "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "timestamp_utc": "2026-10-12T12:33:48.770717+00:00",
+    "torch": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0"
+  },
+  "config": {
+    "schema_version": 2,
+    "frozen_contract": {
+      "group_size": 32,
+      "page_size": 16,
+      "int4_encoding": "signed q+8 low-nibble-first",
+      "scale_dtype": "fp16",
+      "scale_rule": "absmax/7",
+      "accumulation": "fp32"
+    },
+    "id": "E07_long_context",
+    "title": "Long-Context Scaling",
+    "status": "READY_AFTER_E04",
+    "hypothesis": "Measure core packed-INT4 attention latency/throughput slope from 8K to 128K+ with Q/output transforms outside timing.",
+    "depends_on": [
+      "E04a_core_attention"
+    ],
+    "pass_fail": "Observational core-attention curve only; report measured latency/slope with gate_status=NOT_APPLICABLE and no end-to-end OFD claim.",
+    "results_root": "kernel/results/E07_long_context",
+    "gate_type": "observational",
+    "claim_eligible": true,
+    "requires_clean_git": true
+  },
+  "commands": [
+    [
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/bin/python",
+      "kernel/tools/bench_gpu.py",
+      "--mode",
+      "long-core",
+      "--out",
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/results/E07_long_context/20261012T123351Z_4d6c7116/long_context_core.csv",
+      "--seed",
+      "1337"
+    ]
+  ],
+  "artifacts": [
+    "long_context_core.csv",
+    "run.log"
+  ],
+  "notes": [],
+  "execution_status": "COMPLETED",
+  "gate_status": "NOT_APPLICABLE",
+  "return_code": 0
+}
