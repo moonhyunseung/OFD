@@ -1,6 +1,6 @@
 # E03_split_scaling — Split-KV Scaling
 
-**Status:** `BLOCKED_COMPARATOR`
+**Status:** `READY_AFTER_E02`
 
 ## Hypothesis
 
@@ -23,7 +23,9 @@ E02_correctness
 
 ## Primary pass/fail gate
 
-Requires a frozen serial-v1 comparator in the same harness before execution.
+The archived v1 kernel is `kernel/src/ofd_kernel/historical_v1/benchmark_paged_ofd_triton.py`, copied verbatim from the user's historical `benchmark_paged_ofd_triton.py` (SHA256 `d453145048471ea2026b6370ef545ee9fc3a5c7fea947c60bf34c4e27b627303`). The original v1 kernel traverses physical pages serially in one program per request/head. E03 converts the same packed bytes and FP16 scales into its historical memory layout outside timing, uses shared BF16 query/output dtype, and compares against v2 split-KV core. Both read identical randomized page tables and packed values. No FWHT is timed. Shared-cache output relative error must be <= 0.01 before performance timing. This is a cross-implementation comparison, not a claim that the original v1 harness used the same dtype and geometry in every historical run.
+
+Frozen matrix: context 8K/32K/64K/128K, batch 1/4/8/16/32, Q/KV=1, Hkv=8, D=128, page=16, group=32. Ratios are observational; do not change the matrix because of measured performance.
 
 ## Outputs
 

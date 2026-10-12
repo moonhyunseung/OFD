@@ -96,6 +96,11 @@ def commands_for(eid, outdir):
         return [[py, "kernel/tools/bench_gpu.py", "--mode", "compile", "--seed", "1337"]]
     if eid == "E02_correctness":
         return [[py, "kernel/tools/bench_gpu.py", "--mode", "correctness", "--correctness-threshold", "0.002", "--seed", "1337"]]
+    if eid == "E03_split_scaling":
+        cmd = [py, "kernel/tools/bench_e03.py", "--out", str(outdir / "split_scaling.csv")]
+        if os.environ.get("OFD_SMOKE") == "1":
+            cmd.append("--smoke")
+        return [cmd]
     if eid == "E04a_core_attention":
         return [[py, "kernel/tools/bench_gpu.py", "--mode", "core-variants", "--out", str(outdir / "core_variants.csv"), "--kv-plain-max-ratio", "1.05", "--seed", "1337"]]
     if eid == "E07_long_context":

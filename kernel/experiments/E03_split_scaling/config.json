@@ -10,12 +10,12 @@
   },
   "id": "E03_split_scaling",
   "title": "Split-KV Scaling",
-  "status": "BLOCKED_COMPARATOR",
+  "status": "READY_AFTER_E02",
   "hypothesis": "Test whether split-KV removes v1 high-concurrency collapse.",
   "depends_on": [
     "E02_correctness"
   ],
-  "pass_fail": "Requires a frozen serial-v1 comparator in the same harness before execution.",
+  "pass_fail": "Historical v1 comparator is archived verbatim; shared-cache v1/v2 relative error <= 0.01 before timing. Performance ratios are observational and reported even when v2 is slower.",
   "results_root": "kernel/results/E03_split_scaling",
   "gate_type": "pass_fail",
   "claim_eligible": true,
