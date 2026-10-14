@@ -38,3 +38,7 @@ Every actual run writes to `kernel/results/E03_split_scaling/<run_id>/` and must
 ## Change control
 
 Do not edit the hypothesis or pass/fail gate after seeing this experiment's results. If the protocol changes, create a new experiment revision or commit and record it in the manifest.
+
+## Quantizer conformance repair before final claims
+
+The first archived smoke/full sweep used the pre-existing arbitrary packed-code generator from bench_gpu. Those results are retained as synthetic screening, not quantizer-conformant claims. The corrected runner constructs both paths from the same absmax/7 packed cache using quantize_int4_packed_groupwise. Matrix, timing definition, historical comparator, thresholds and launch configuration are unchanged. The repair is committed before rerunning.

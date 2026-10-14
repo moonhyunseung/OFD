@@ -16,12 +16,38 @@ import torch
 
 from ofd_kernel.bench import BenchmarkCase
 from ofd_kernel.runtime.launcher import TritonDecodeConfig, allocate_workspace, triton_paged_decode_core
-from bench_gpu import cuda_ms, make_random_paged_case
+from bench_gpu import cuda_ms
+from ofd_kernel.reference.quant import quantize_int4_packed_groupwise
 
 HISTORICAL = Path(__file__).resolve().parents[1] / 'src/ofd_kernel/historical_v1/benchmark_paged_ofd_triton.py'
 spec = importlib.util.spec_from_file_location('ofd_historical_v1', HISTORICAL)
 v1 = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(v1)
+
+
+def make_random_paged_case(case, *, num_kv_heads, device, seed):
+    # Protocol repair: generate bytes with the actual frozen quantizer rather
+    # than arbitrary nibble codes. Preserve the original measurement matrix.
+    torch.manual_seed(seed)
+    b,t,d=case.batch,case.context,case.head_dim
+    h=num_kv_heads; page=case.page_size; g=case.group_size
+    n=b*(t//page)
+    q=torch.randn(b,h,d,device=device,dtype=torch.float16)
+    kp=torch.empty(n,h,page,d//g,g//2,device=device,dtype=torch.uint8)
+    vp=torch.empty_like(kp)
+    ks=torch.empty(n,h,page,d//g,device=device,dtype=torch.float16)
+    vs=torch.empty_like(ks)
+    for start in range(0,n,128):
+        end=min(start+128,n)
+        for packed,scales in [(kp,ks),(vp,vs)]:
+            x=torch.randn(end-start,h,page,d,device=device,dtype=torch.float16)
+            obj=quantize_int4_packed_groupwise(x,g)
+            packed[start:end].copy_(obj.packed.reshape(end-start,h,page,d//g,g//2))
+            scales[start:end].copy_(obj.scale.reshape(end-start,h,page,d//g))
+            del obj,x
+    bt=torch.randperm(n,device=device).reshape(b,t//page).int().contiguous()
+    lens=torch.full((b,),t,device=device,dtype=torch.int32)
+    return q,kp,ks,vp,vs,bt,lens
 
 
 def run(out: Path, smoke: bool, warmup: int, repeat: int) -> None:
