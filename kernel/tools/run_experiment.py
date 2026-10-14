@@ -101,6 +101,11 @@ def commands_for(eid, outdir):
         if os.environ.get("OFD_SMOKE") == "1":
             cmd.append("--smoke")
         return [cmd]
+    if eid == "E05_same_memory_budget":
+        cmd = [py, "kernel/tools/bench_e05.py", "--out", str(outdir / "matched_budget.csv")]
+        if os.environ.get("OFD_SMOKE") == "1":
+            cmd.append("--smoke")
+        return [cmd]
     if eid == "E04a_core_attention":
         return [[py, "kernel/tools/bench_gpu.py", "--mode", "core-variants", "--out", str(outdir / "core_variants.csv"), "--kv-plain-max-ratio", "1.05", "--seed", "1337"]]
     if eid == "E07_long_context":
