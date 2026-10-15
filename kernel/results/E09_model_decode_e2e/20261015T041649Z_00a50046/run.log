@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/tools/validate_online_kv.py", line 42, in <module>
+    if __name__=='__main__':check()
+                            ^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/tools/validate_online_kv.py", line 33, in check
+    ak=unpack_check(kk,store.kp,store.ks);av=unpack_check(vv,store.vp,store.vs)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/tools/validate_online_kv.py", line 29, in unpack_check
+    assert torch.equal(ap,expected.packed.reshape_as(ap)),f'{variant} packed codes mismatch'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: P packed codes mismatch

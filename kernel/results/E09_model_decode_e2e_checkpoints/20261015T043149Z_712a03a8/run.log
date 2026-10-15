@@ -1,0 +1,468 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/851 [00:00<06:11,  2.29it/s]
+Loading weights:   0%|          | 2/851 [00:00<06:01,  2.35it/s]
+Loading weights:   3%|▎         | 23/851 [00:01<00:24, 33.18it/s]
+Loading weights:   4%|▍         | 37/851 [00:01<00:17, 46.04it/s]
+Loading weights:   5%|▌         | 46/851 [00:01<00:16, 49.98it/s]
+Loading weights:   7%|▋         | 62/851 [00:01<00:11, 69.08it/s]
+Loading weights:   8%|▊         | 72/851 [00:01<00:11, 69.74it/s]
+Loading weights:  10%|▉         | 81/851 [00:01<00:11, 67.20it/s]
+Loading weights:  11%|█         | 90/851 [00:01<00:11, 68.39it/s]
+Loading weights:  12%|█▏        | 99/851 [00:01<00:10, 68.52it/s]
+Loading weights:  13%|█▎        | 107/851 [00:02<00:10, 69.90it/s]
+Loading weights:  14%|█▍        | 120/851 [00:02<00:08, 82.15it/s]
+Loading weights:  15%|█▌        | 129/851 [00:02<00:08, 80.54it/s]
+Loading weights:  17%|█▋        | 143/851 [00:02<00:08, 80.80it/s]
+Loading weights:  18%|█▊        | 152/851 [00:02<00:09, 75.65it/s]
+Loading weights:  19%|█▉        | 160/851 [00:02<00:09, 72.30it/s]
+Loading weights:  20%|██        | 173/851 [00:02<00:08, 83.21it/s]
+Loading weights:  22%|██▏       | 186/851 [00:03<00:07, 91.42it/s]
+Loading weights:  23%|██▎       | 196/851 [00:03<00:07, 88.61it/s]
+Loading weights:  24%|██▍       | 205/851 [00:03<00:08, 74.47it/s]
+Loading weights:  26%|██▌       | 221/851 [00:03<00:07, 87.18it/s]
+Loading weights:  27%|██▋       | 231/851 [00:03<00:06, 89.77it/s]
+Loading weights:  28%|██▊       | 241/851 [00:03<00:07, 78.77it/s]
+Loading weights:  30%|██▉       | 253/851 [00:03<00:07, 83.30it/s]
+Loading weights:  31%|███       | 262/851 [00:03<00:07, 73.67it/s]
+Loading weights:  32%|███▏      | 274/851 [00:04<00:06, 83.75it/s]
+Loading weights:  34%|███▍      | 288/851 [00:04<00:06, 82.11it/s]
+Loading weights:  35%|███▌      | 302/851 [00:04<00:06, 80.97it/s]
+Loading weights:  37%|███▋      | 311/851 [00:04<00:07, 76.25it/s]
+Loading weights:  37%|███▋      | 319/851 [00:04<00:06, 76.80it/s]
+Loading weights:  39%|███▉      | 331/851 [00:04<00:06, 85.98it/s]
+Loading weights:  40%|████      | 341/851 [00:04<00:06, 80.64it/s]
+Loading weights:  42%|████▏     | 354/851 [00:05<00:05, 92.02it/s]
+Loading weights:  43%|████▎     | 364/851 [00:05<00:06, 71.74it/s]
+Loading weights:  44%|████▍     | 373/851 [00:05<00:06, 72.00it/s]
+Loading weights:  45%|████▌     | 384/851 [00:05<00:06, 77.15it/s]
+Loading weights:  46%|████▋     | 394/851 [00:05<00:06, 73.91it/s]
+Loading weights:  48%|████▊     | 408/851 [00:05<00:05, 78.85it/s]
+Loading weights:  49%|████▉     | 417/851 [00:05<00:06, 70.32it/s]
+Loading weights:  51%|█████     | 433/851 [00:06<00:05, 75.14it/s]
+Loading weights:  53%|█████▎    | 447/851 [00:06<00:05, 75.73it/s]
+Loading weights:  54%|█████▎    | 457/851 [00:06<00:05, 74.16it/s]
+Loading weights:  55%|█████▍    | 465/851 [00:06<00:05, 72.07it/s]
+Loading weights:  56%|█████▌    | 473/851 [00:06<00:05, 65.49it/s]
+Loading weights:  56%|█████▋    | 480/851 [00:06<00:05, 64.43it/s]
+Loading weights:  59%|█████▉    | 500/851 [00:07<00:04, 84.60it/s]
+Loading weights:  60%|██████    | 514/851 [00:07<00:04, 82.30it/s]
+Loading weights:  61%|██████▏   | 523/851 [00:07<00:04, 75.82it/s]
+Loading weights:  62%|██████▏   | 531/851 [00:07<00:04, 67.77it/s]
+Loading weights:  65%|██████▍   | 553/851 [00:07<00:03, 86.83it/s]
+Loading weights:  67%|██████▋   | 567/851 [00:07<00:03, 84.84it/s]
+Loading weights:  68%|██████▊   | 576/851 [00:08<00:03, 79.03it/s]
+Loading weights:  69%|██████▊   | 584/851 [00:08<00:03, 78.30it/s]
+Loading weights:  70%|███████   | 597/851 [00:08<00:02, 88.32it/s]
+Loading weights:  71%|███████▏  | 607/851 [00:08<00:03, 81.26it/s]
+Loading weights:  73%|███████▎  | 620/851 [00:08<00:02, 83.92it/s]
+Loading weights:  74%|███████▍  | 629/851 [00:08<00:02, 76.95it/s]
+Loading weights:  75%|███████▍  | 637/851 [00:08<00:03, 69.52it/s]
+Loading weights:  76%|███████▋  | 649/851 [00:08<00:02, 75.97it/s]
+Loading weights:  77%|███████▋  | 659/851 [00:09<00:02, 77.30it/s]
+Loading weights:  79%|███████▉  | 673/851 [00:09<00:02, 79.10it/s]
+Loading weights:  80%|████████  | 682/851 [00:09<00:02, 76.45it/s]
+Loading weights:  81%|████████  | 690/851 [00:09<00:02, 72.96it/s]
+Loading weights:  83%|████████▎ | 703/851 [00:09<00:01, 83.32it/s]
+Loading weights:  84%|████████▍ | 716/851 [00:09<00:01, 90.13it/s]
+Loading weights:  85%|████████▌ | 726/851 [00:09<00:01, 79.92it/s]
+Loading weights:  86%|████████▋ | 735/851 [00:10<00:01, 79.97it/s]
+Loading weights:  88%|████████▊ | 751/851 [00:10<00:01, 95.98it/s]
+Loading weights:  89%|████████▉ | 761/851 [00:10<00:01, 85.20it/s]
+Loading weights:  90%|█████████ | 770/851 [00:10<00:00, 82.67it/s]
+Loading weights:  92%|█████████▏| 780/851 [00:10<00:00, 78.94it/s]
+Loading weights:  93%|█████████▎| 789/851 [00:10<00:00, 72.74it/s]
+Loading weights:  94%|█████████▍| 804/851 [00:10<00:00, 89.88it/s]
+Loading weights:  96%|█████████▌| 814/851 [00:10<00:00, 87.84it/s]
+Loading weights:  97%|█████████▋| 824/851 [00:11<00:00, 79.27it/s]
+Loading weights:  98%|█████████▊| 833/851 [00:11<00:00, 81.31it/s]
+Loading weights:  99%|█████████▉| 842/851 [00:11<00:00, 67.56it/s]
+Loading weights: 100%|██████████| 851/851 [00:11<00:00, 74.45it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+E2E {'phase': 'control', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'NATIVE', 'changed_layer': -1, 'variant': '-', 'decode_ms': 76.99026105304559, 'status': 'OK'}
+E2E {'phase': 'control', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.90890251348416, 'status': 'OK'}
+E2E {'phase': 'control', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'P', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.635171450674534, 'status': 'OK'}
+E2E {'phase': 'control', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'KV', 'changed_layer': -1, 'variant': '-', 'decode_ms': 56.16000248119235, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'P', 'decode_ms': 53.38229836585621, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'K', 'decode_ms': 52.94613866135478, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'KV', 'decode_ms': 59.48425798366467, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'K', 'decode_ms': 53.02896637779971, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'KV', 'decode_ms': 52.68624362846216, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'V', 'decode_ms': 53.06275646823148, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'KV', 'decode_ms': 53.166630367437996, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'P', 'decode_ms': 52.55618955319127, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'KV', 'decode_ms': 52.83409923625489, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'P', 'decode_ms': 52.468339214101434, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'P', 'decode_ms': 53.26836253516376, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'K', 'decode_ms': 52.33022298974296, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'V', 'decode_ms': 53.54392396596571, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'P', 'decode_ms': 53.239419513071574, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'KV', 'decode_ms': 52.432612826426826, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'KV', 'decode_ms': 52.726392478992544, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'P', 'decode_ms': 52.399033990999065, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'V', 'decode_ms': 56.381588180859886, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'K', 'decode_ms': 52.943388698622584, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'K', 'decode_ms': 52.96690218771497, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'P', 'decode_ms': 52.9786030917118, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'P', 'decode_ms': 52.897041741137706, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'V', 'decode_ms': 57.12325482939681, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'V', 'decode_ms': 53.41153910073141, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'V', 'decode_ms': 53.17998017805318, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'P', 'decode_ms': 54.53531630337238, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'KV', 'decode_ms': 61.25771378477415, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'V', 'decode_ms': 56.66484000782172, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'K', 'decode_ms': 54.685699908683695, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'K', 'decode_ms': 54.58875031520923, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'V', 'decode_ms': 55.794078623875976, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'KV', 'decode_ms': 55.459362997983895, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'K', 'decode_ms': 58.77041630446911, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'KV', 'decode_ms': 57.71803157404065, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'KV', 'decode_ms': 59.20640293819209, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'K', 'decode_ms': 55.213484835500516, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'KV', 'decode_ms': 56.754863200088344, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'V', 'decode_ms': 56.867020670324564, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'KV', 'decode_ms': 55.67644854697088, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'V', 'decode_ms': 60.69165887311101, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'P', 'decode_ms': 53.164394882818065, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'P', 'decode_ms': 54.30866661481559, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'K', 'decode_ms': 56.25472504956027, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'V', 'decode_ms': 56.17654657301804, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'KV', 'decode_ms': 57.39772552624345, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'V', 'decode_ms': 57.427159820993744, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'K', 'decode_ms': 54.61856427912911, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'V', 'decode_ms': 52.70793933110932, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'K', 'decode_ms': 54.67781059754392, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'P', 'decode_ms': 57.44407302699983, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'K', 'decode_ms': 56.64962918187181, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'KV', 'decode_ms': 59.786033894245826, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'KV', 'decode_ms': 52.9861442434291, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'V', 'decode_ms': 53.003964091961585, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'P', 'decode_ms': 53.03541858059665, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'P', 'decode_ms': 52.89231442535917, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'K', 'decode_ms': 52.82688528920213, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'P', 'decode_ms': 53.851730190217495, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'K', 'decode_ms': 59.161051331708826, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'V', 'decode_ms': 55.75646824824313, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'KV', 'decode_ms': 55.5216025095433, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'K', 'decode_ms': 55.66210858523846, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'P', 'decode_ms': 55.82510734287401, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'V', 'decode_ms': 55.31261124027272, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'KV', 'decode_ms': 55.31799443997443, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'KV', 'decode_ms': 55.59592445691427, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'KV', 'decode_ms': 52.81445221044123, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'K', 'decode_ms': 53.39664500206709, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'K', 'decode_ms': 58.7568460808446, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'K', 'decode_ms': 52.886206889525056, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'P', 'decode_ms': 52.46252791645626, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'K', 'decode_ms': 52.57974875470003, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'KV', 'decode_ms': 52.6389287939916, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'V', 'decode_ms': 52.62169265188277, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'KV', 'decode_ms': 52.456822944805026, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'V', 'decode_ms': 52.36985223988692, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'P', 'decode_ms': 52.77779954485595, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'P', 'decode_ms': 53.349554616337024, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'K', 'decode_ms': 52.4310270169129, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'V', 'decode_ms': 52.349454878518976, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'P', 'decode_ms': 52.56880967256924, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'KV', 'decode_ms': 52.744679463406406, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'KV', 'decode_ms': 53.11966633113722, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'K', 'decode_ms': 52.43294321311017, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'KV', 'decode_ms': 52.37504195732375, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'V', 'decode_ms': 52.39605430203179, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'P', 'decode_ms': 53.06721214825908, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'K', 'decode_ms': 53.12076218736669, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'V', 'decode_ms': 53.57026720109085, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'V', 'decode_ms': 58.55024016151825, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'K', 'decode_ms': 54.13254497883221, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'P', 'decode_ms': 55.00662233680487, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'K', 'decode_ms': 54.094344610348344, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'V', 'decode_ms': 53.20408917032182, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'P', 'decode_ms': 52.61820942784349, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'KV', 'decode_ms': 53.33986598998308, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'KV', 'decode_ms': 52.691957990949355, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'P', 'decode_ms': 52.824756441016994, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'KV', 'decode_ms': 52.73527388150493, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'V', 'decode_ms': 52.72788329360386, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'V', 'decode_ms': 52.65159974806011, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'KV', 'decode_ms': 52.895173973714314, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'V', 'decode_ms': 52.79488411421577, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'K', 'decode_ms': 53.52217820473015, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'V', 'decode_ms': 52.821345161646605, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'K', 'decode_ms': 52.71258174131314, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'KV', 'decode_ms': 52.600848488509655, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'K', 'decode_ms': 52.60731279850006, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'V', 'decode_ms': 52.76481807231903, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'P', 'decode_ms': 53.143805746609964, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'KV', 'decode_ms': 52.786011869708695, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'P', 'decode_ms': 52.64600901864469, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'P', 'decode_ms': 52.80643841251731, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'K', 'decode_ms': 52.3824073219051, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'KV', 'decode_ms': 52.49888566322625, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'P', 'decode_ms': 52.716311222563185, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'P', 'decode_ms': 52.17426875606179, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'P', 'decode_ms': 52.21640916230778, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'K', 'decode_ms': 52.62887136389812, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'V', 'decode_ms': 52.69254224064449, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'V', 'decode_ms': 52.817947774504624, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'K', 'decode_ms': 52.63659707270563, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'P', 'decode_ms': 52.826950481782355, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'V', 'decode_ms': 52.68733839814862, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'V', 'decode_ms': 52.63562787634631, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'KV', 'decode_ms': 52.67614840219418, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'K', 'decode_ms': 52.423415860782065, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'P', 'decode_ms': 52.574998776738845, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'P', 'decode_ms': 53.438668294499315, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'K', 'decode_ms': 52.849980226407446, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'V', 'decode_ms': 52.11008836825689, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'K', 'decode_ms': 52.00456742507716, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'K', 'decode_ms': 53.18828245314459, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'P', 'decode_ms': 52.29201897357901, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'P', 'decode_ms': 53.02625770370165, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'V', 'decode_ms': 54.751549692203604, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'KV', 'decode_ms': 57.97532627669474, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'K', 'decode_ms': 53.40782521913449, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'K', 'decode_ms': 53.1336086957405, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'K', 'decode_ms': 53.26226477821668, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'V', 'decode_ms': 52.23184761901697, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'K', 'decode_ms': 54.2846794705838, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'KV', 'decode_ms': 52.44727099003891, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'V', 'decode_ms': 52.823491394519806, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'V', 'decode_ms': 52.47083593470355, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'KV', 'decode_ms': 52.33724066056311, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'KV', 'decode_ms': 52.184739227717124, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'KV', 'decode_ms': 53.11440055569013, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'V', 'decode_ms': 54.32093290922543, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'K', 'decode_ms': 52.14426596648991, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'V', 'decode_ms': 52.11454893772801, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'P', 'decode_ms': 51.892201881855726, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'V', 'decode_ms': 52.79529374092817, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'P', 'decode_ms': 53.02009413329264, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'KV', 'decode_ms': 52.05829814076424, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'KV', 'decode_ms': 52.80692774492005, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'P', 'decode_ms': 52.27860536736747, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'K', 'decode_ms': 52.35735606402159, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'K', 'decode_ms': 52.47790467304488, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'KV', 'decode_ms': 53.45421082650622, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'KV', 'decode_ms': 52.319299041604005, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'K', 'decode_ms': 53.25278469050924, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'V', 'decode_ms': 53.116696731497846, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'KV', 'decode_ms': 52.849655893320836, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'KV', 'decode_ms': 52.75265562037627, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'K', 'decode_ms': 52.50438667523364, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'P', 'decode_ms': 52.1433080236117, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'V', 'decode_ms': 52.263660434012614, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'V', 'decode_ms': 52.047679045548044, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'P', 'decode_ms': 52.27608086230854, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'P', 'decode_ms': 52.24134221983453, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'V', 'decode_ms': 52.12352960370481, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'P', 'decode_ms': 52.0457838041087, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'P', 'decode_ms': 52.879636719202004, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'P', 'decode_ms': 52.475340741996966, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'P', 'decode_ms': 52.20983208467563, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'KV', 'decode_ms': 53.13443563257655, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'P', 'decode_ms': 53.354032803326845, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'K', 'decode_ms': 53.95595209362606, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'P', 'decode_ms': 53.197575733065605, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'KV', 'decode_ms': 52.715231043597065, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'KV', 'decode_ms': 52.45343060232699, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'P', 'decode_ms': 52.38422231438259, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'K', 'decode_ms': 53.30090861146649, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'V', 'decode_ms': 52.839115572472416, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'V', 'decode_ms': 53.23760102813443, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'KV', 'decode_ms': 52.40339591788749, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'KV', 'decode_ms': 53.38479850130776, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'K', 'decode_ms': 52.22439067438245, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'V', 'decode_ms': 53.12313504206637, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'K', 'decode_ms': 53.29819745384157, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'V', 'decode_ms': 53.1042511574924, 'status': 'OK'}
+E2E {'phase': 'control', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'NATIVE', 'changed_layer': -1, 'variant': '-', 'decode_ms': 50.02994641351203, 'status': 'OK'}
+E2E {'phase': 'control', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'FP16', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.91967721718053, 'status': 'OK'}
+E2E {'phase': 'control', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'P', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.277142802874245, 'status': 'OK'}
+E2E {'phase': 'control', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'KV', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.14789076894522, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'P', 'decode_ms': 58.484339620918036, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'K', 'decode_ms': 53.15711706255873, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'KV', 'decode_ms': 53.44016361050308, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'K', 'decode_ms': 53.1083969399333, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'KV', 'decode_ms': 52.090286277234554, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'V', 'decode_ms': 52.01727547682822, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'KV', 'decode_ms': 51.83526004354159, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'P', 'decode_ms': 51.88957896704475, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'KV', 'decode_ms': 52.39448673091829, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'P', 'decode_ms': 51.98464822024107, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'P', 'decode_ms': 52.16905086611708, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'K', 'decode_ms': 52.209130953997374, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'V', 'decode_ms': 52.25551415545245, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'P', 'decode_ms': 51.98242887854576, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'KV', 'decode_ms': 52.378308571254216, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'KV', 'decode_ms': 51.899085752666, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'P', 'decode_ms': 51.938413719957076, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'V', 'decode_ms': 52.175874511400856, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'K', 'decode_ms': 52.50713927671313, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'K', 'decode_ms': 52.29199080107113, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'P', 'decode_ms': 52.529047786568604, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'P', 'decode_ms': 52.23691502275566, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'V', 'decode_ms': 53.90539509244263, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'V', 'decode_ms': 52.60728780801097, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'V', 'decode_ms': 52.30060103349388, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'P', 'decode_ms': 52.54298588261008, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'KV', 'decode_ms': 54.1859290873011, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'V', 'decode_ms': 52.195484982803464, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'K', 'decode_ms': 52.4217338146021, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'K', 'decode_ms': 52.5094885379076, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'V', 'decode_ms': 52.20636042455832, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'KV', 'decode_ms': 53.142626071348786, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'K', 'decode_ms': 53.07291611097753, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'KV', 'decode_ms': 53.79719512226681, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'KV', 'decode_ms': 52.6165470170478, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'K', 'decode_ms': 52.53157795717319, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'KV', 'decode_ms': 52.28702429061135, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'V', 'decode_ms': 52.39836475811899, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'KV', 'decode_ms': 54.072191938757896, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'V', 'decode_ms': 53.380552058418594, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'P', 'decode_ms': 53.4105165861547, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'P', 'decode_ms': 51.95646686479449, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'K', 'decode_ms': 52.32410761527717, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'V', 'decode_ms': 53.710203152149916, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'KV', 'decode_ms': 52.315038007994495, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'V', 'decode_ms': 53.485076719274126, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'K', 'decode_ms': 52.809698429579534, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'V', 'decode_ms': 53.22551370287935, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'K', 'decode_ms': 52.27500332208971, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'P', 'decode_ms': 54.5916681488355, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'K', 'decode_ms': 53.62964033459624, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'KV', 'decode_ms': 52.12718225084245, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'KV', 'decode_ms': 53.20532953677078, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'V', 'decode_ms': 52.59514165421327, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'P', 'decode_ms': 52.765041046465434, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'P', 'decode_ms': 51.927912747487426, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'K', 'decode_ms': 52.67390601026515, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'P', 'decode_ms': 52.329040598124266, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'K', 'decode_ms': 52.720144391059875, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'V', 'decode_ms': 52.86286546227833, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'KV', 'decode_ms': 52.13776665429274, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'K', 'decode_ms': 52.99346148967743, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'P', 'decode_ms': 53.281666788583, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'V', 'decode_ms': 52.63861330846945, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'KV', 'decode_ms': 52.36464932871362, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'KV', 'decode_ms': 52.699383503446974, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'KV', 'decode_ms': 52.65647196210921, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'K', 'decode_ms': 52.72174455846349, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'K', 'decode_ms': 53.13637123132745, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'K', 'decode_ms': 52.08894548316797, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'P', 'decode_ms': 51.71650989602009, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'K', 'decode_ms': 53.573594661429524, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'KV', 'decode_ms': 52.73216380737722, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'V', 'decode_ms': 53.26644377782941, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'KV', 'decode_ms': 52.47946122350792, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'V', 'decode_ms': 54.001200633744396, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'P', 'decode_ms': 53.18638659082353, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'P', 'decode_ms': 53.96969166273872, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'K', 'decode_ms': 52.307531548043094, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'V', 'decode_ms': 53.10508236289024, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'P', 'decode_ms': 53.08835115283728, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'KV', 'decode_ms': 53.063965014492474, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'KV', 'decode_ms': 53.80693714444836, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'K', 'decode_ms': 52.17066298549374, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'KV', 'decode_ms': 53.06675711957117, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'V', 'decode_ms': 52.64368327334523, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'P', 'decode_ms': 52.00162335919837, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'K', 'decode_ms': 53.368685844664775, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'V', 'decode_ms': 53.09434196290871, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'V', 'decode_ms': 53.52917934457461, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'K', 'decode_ms': 52.25981244196495, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'P', 'decode_ms': 52.43089694219331, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'K', 'decode_ms': 52.509113758181535, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'V', 'decode_ms': 52.505685249343514, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'P', 'decode_ms': 53.56193489084641, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'KV', 'decode_ms': 52.78303970893224, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'KV', 'decode_ms': 53.00332784342269, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'P', 'decode_ms': 52.02683216581742, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'KV', 'decode_ms': 52.14183536979059, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'V', 'decode_ms': 52.000700728967786, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'V', 'decode_ms': 53.59882993313173, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'KV', 'decode_ms': 52.15266952291131, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'V', 'decode_ms': 53.29811999884745, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'K', 'decode_ms': 52.71020500610272, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'V', 'decode_ms': 52.7499346062541, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'K', 'decode_ms': 52.16005886904895, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'KV', 'decode_ms': 51.99861153960228, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'K', 'decode_ms': 52.73995059542358, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'V', 'decode_ms': 52.0849721506238, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'P', 'decode_ms': 54.374183217684426, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'KV', 'decode_ms': 53.41682148476442, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'P', 'decode_ms': 52.13728469486038, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'P', 'decode_ms': 52.11740227726599, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'K', 'decode_ms': 52.08806375352045, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'KV', 'decode_ms': 52.56627965718508, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'P', 'decode_ms': 51.84791865758598, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'P', 'decode_ms': 51.84172458636264, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'P', 'decode_ms': 52.12086772856613, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'K', 'decode_ms': 53.128423634916544, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'V', 'decode_ms': 52.074954456960164, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'V', 'decode_ms': 53.978911989058055, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'K', 'decode_ms': 53.55584885304173, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'P', 'decode_ms': 51.99172363306085, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'V', 'decode_ms': 51.95168033242226, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'V', 'decode_ms': 52.60740127414465, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'KV', 'decode_ms': 52.30412073433399, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'K', 'decode_ms': 53.299787531917296, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'P', 'decode_ms': 52.41811159066856, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'P', 'decode_ms': 52.756411489099264, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'K', 'decode_ms': 52.12146695703268, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'V', 'decode_ms': 53.1129891363283, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'K', 'decode_ms': 53.66138260190686, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'K', 'decode_ms': 51.88491901693245, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'P', 'decode_ms': 51.889217691496015, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'P', 'decode_ms': 52.08928991730014, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'V', 'decode_ms': 52.00511061896881, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'KV', 'decode_ms': 51.9611252627025, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'K', 'decode_ms': 52.54152098981043, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'K', 'decode_ms': 52.648978385453425, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'K', 'decode_ms': 52.078640864541136, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'V', 'decode_ms': 52.64150747098029, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'K', 'decode_ms': 52.08092159591615, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'KV', 'decode_ms': 52.93410581847032, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'V', 'decode_ms': 57.81474725032846, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'V', 'decode_ms': 52.042461543654404, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'KV', 'decode_ms': 52.871859554822244, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'KV', 'decode_ms': 52.80972683491806, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'KV', 'decode_ms': 52.335818841432534, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'V', 'decode_ms': 52.308853482827544, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 39, 'variant': 'K', 'decode_ms': 52.08755951995651, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'V', 'decode_ms': 52.48960123086969, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'P', 'decode_ms': 52.13808625315627, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'V', 'decode_ms': 52.19561311726769, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 19, 'variant': 'P', 'decode_ms': 53.37599463139971, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'KV', 'decode_ms': 53.276505786925554, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'KV', 'decode_ms': 52.684664726257324, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'P', 'decode_ms': 54.0216623339802, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'K', 'decode_ms': 53.09528640160958, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'K', 'decode_ms': 52.40544847523173, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 23, 'variant': 'KV', 'decode_ms': 52.31785502595206, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'KV', 'decode_ms': 52.25615940677623, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'K', 'decode_ms': 52.62225602443019, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'V', 'decode_ms': 52.69067486127218, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'KV', 'decode_ms': 52.73483802254001, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'KV', 'decode_ms': 54.169019063313804, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'K', 'decode_ms': 57.65157658606768, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 3, 'variant': 'P', 'decode_ms': 52.58446396328509, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'V', 'decode_ms': 52.383229679738484, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'V', 'decode_ms': 53.69475646875799, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'P', 'decode_ms': 52.50726733356714, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 7, 'variant': 'P', 'decode_ms': 53.57836582697928, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 11, 'variant': 'V', 'decode_ms': 52.66383538643519, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'P', 'decode_ms': 52.12577215085427, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 31, 'variant': 'P', 'decode_ms': 53.46441579361757, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 51, 'variant': 'P', 'decode_ms': 81.76768167565267, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 59, 'variant': 'P', 'decode_ms': 58.235899390031896, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 27, 'variant': 'KV', 'decode_ms': 54.37215091660619, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 43, 'variant': 'P', 'decode_ms': 52.62191228878995, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 47, 'variant': 'K', 'decode_ms': 53.59710372673968, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 35, 'variant': 'P', 'decode_ms': 53.25899141219755, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 55, 'variant': 'KV', 'decode_ms': 53.638296512266, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 63, 'variant': 'KV', 'decode_ms': 60.382710226501025, 'status': 'OK'}
+E2E {'phase': 'calibration', 'domain': 'code', 'context': 8192, 'batch': 1, 'policy_label': 'ONE_LAYER', 'changed_layer': 15, 'variant': 'P', 'decode_ms': 52.708316671972476, 'status': 'OK'}

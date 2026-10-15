@@ -1,0 +1,23 @@
+{
+  "policy": {
+    "3": "P",
+    "7": "P",
+    "11": "K",
+    "15": "P",
+    "19": "P",
+    "23": "K",
+    "27": "P",
+    "31": "P",
+    "35": "KV",
+    "39": "K",
+    "43": "V",
+    "47": "V",
+    "51": "V",
+    "55": "P",
+    "59": "V",
+    "63": "P"
+  },
+  "frozen_before_evaluation": true,
+  "selection": "complete_model_decode_latency",
+  "calibration_count": 384
+}

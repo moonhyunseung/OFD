@@ -1,0 +1,32 @@
+{
+  "measurement_sha": "2b3585a6b5354c47f30b39c5d87e1d719f682eb2",
+  "analysis_sha": "ad8ccbc269e2e4b3d2241d6ae10935732159c176",
+  "sha256": {
+    "kernel/results/E09_model_decode_e2e/20261015T041649Z_00a50046/MANIFEST.json": "3ab72637c3a7189256eb110ac6a04789d5139d2ca3f1afdded3718e10f5984aa",
+    "kernel/results/E09_model_decode_e2e/20261015T041649Z_00a50046/run.log": "b7826ac7780b384da5e71f69833c8146003be1d4e129b85db5a775def233a605",
+    "kernel/results/E09_model_decode_e2e/20261015T041930Z_476cbe31/MANIFEST.json": "03cd75b0555e2a4c6b3000c6fd09952a33f44c498c5e460e2e82946837c85546",
+    "kernel/results/E09_model_decode_e2e/20261015T041930Z_476cbe31/run.log": "ff5826fb18218a2c2f1e654b1fced9a67edf002d9b0759757657f3b6117b1e5a",
+    "kernel/results/E09_model_decode_e2e/20261015T042316Z_353fa379/COMPLETED.json": "22fef2b4da8dd5643bd2749f9f1242c65a358e6b0e811f9fad0008dbbc6785a5",
+    "kernel/results/E09_model_decode_e2e/20261015T042316Z_353fa379/MANIFEST.json": "b0c6661a1571026050d5c5e8d5449e41a24281d66753a65d48e9d21cb811884b",
+    "kernel/results/E09_model_decode_e2e/20261015T042316Z_353fa379/data_manifest.json": "3d8bae3d9543d4b541e0d1f0764ab0c9b6c08229ddfa10333009a2fec11b5adb",
+    "kernel/results/E09_model_decode_e2e/20261015T042316Z_353fa379/e2e.csv": "3b5c4215ef01b5217f27b6437d62c623d7870c75de508e944047a29befbae13a",
+    "kernel/results/E09_model_decode_e2e/20261015T042316Z_353fa379/run.log": "bb15d22d1c1e520c8fe4302ce3eab39c13b1cb6e4448ed89585a0f61284ae6ed",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/COMPLETED.json": "acaf7f5dc722621d399e6eede8b45b6218102d76132ee1a43013cf82de742029",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/E2E_REPORT.md": "06c3b6559b68b66ff16556856843f7c8d3b4b197724453230e0777166fa524a8",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/MANIFEST.json": "1199ca764409f56296c0d7a45ae251bf0b324adc7f1d6fcfdbd737b0d05b5395",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/OOM_crossover_prose_131072_8.json": "100a5fbc1e52cd58dd9cb68092b6647769635946725bd2b6761aa3892c341d6d",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/data_manifest.json": "2c765bb0712c8429a94ad3a3218c4d8dc2639a827c87801603b93421d457ed16",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/e2e.csv": "35f841d6916059d34ef6eb4ebf70f6e8b742c4fb8b498f4166f7ae801e449d0a",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/e2e_analysis.json": "8908aa41d4642d332f0644b8147387d881297150ef21ceef0e56229da386166b",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/e2e_summary.csv": "7c939a700b8c41c122a2e3d7cb06ce3ba219b8d25cd576449033b51adc9929e0",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/layer_4L_e2e.csv": "04c08b6c6f084e4ca1d69c5510a91f163d70138b788d347a39a467c2d2a89872",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/run.log": "13126d0e349479e682044ed115e5add58169be9365713189539190f62ef90ccf",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/speed_policy.json": "356af0f26b1bc50342b2d03e566618dc61a2d8800f511bca9d47597590e62674",
+    "kernel/results/E09_model_decode_e2e_checkpoints/20261015T043149Z_712a03a8/MANIFEST.json": "24f0f42795dad4184ce650960964bdd331243b92c32cf9acdfb59a83c0613d64",
+    "kernel/results/E09_model_decode_e2e_checkpoints/20261015T043149Z_712a03a8/data_manifest.json": "2c765bb0712c8429a94ad3a3218c4d8dc2639a827c87801603b93421d457ed16",
+    "kernel/results/E09_model_decode_e2e_checkpoints/20261015T043149Z_712a03a8/e2e.csv": "3b1ef5303608b06444064d982305ebbfc230fad6c7265954177d9d8acd8425ce",
+    "kernel/results/E09_model_decode_e2e_checkpoints/20261015T043149Z_712a03a8/run.log": "c4b4ebf93b4be43a835a721f450e02dc232182f0c33357a700c19ed6494c295c",
+    "kernel/results/E09_model_decode_e2e_checkpoints/20261015T043149Z_712a03a8/source_MANIFEST.json": "0945278c235588e60465acaf118edfbd89c236a6fc02e8d037fb864877ebf64d",
+    "kernel/results/E09_model_decode_e2e/20261015T042351Z_15b7a15f/FINDINGS.md": "dfc0a7083b62c6df9f7e02c5379cbb99b930c3985dd695eeab3ae9ab5612f367"
+  }
+}
