@@ -12,7 +12,7 @@
 | E06 | Sweep completed, correctness PASS | Grouped reuse speedup is region-dependent |
 | E07 | Observational sweep completed | Through 128K |
 | E08 | H200 revision completed | 24 launch configurations; disjoint evaluation geometric mean 1.0405x; original Blackwell plan remains archived/unmeasured |
-| E09 | Decode layer replay smoke completed; full matrix pending data repair | H200 E08 prerequisite completed; real-model integration, pinned model and held-out policy evaluation remain |
+| E09 | Decode layer replay completed; serving integration still incomplete | Qwen3.8-27B, four domains, 3072 rows; policy evaluated on native states only |
 
 Ten of eleven logical stages have completed measurements/checks under the user-authorized H200 revision; this does not mean ten performance hypotheses passed. E09 remains unfinished. See H200_E03_E05_REPORT.md and E04b_E06_REPORT.md for observed results and limitations. All new code and raw runs are kept on ofd-v2.3-measurement-safe; main is unchanged.
 
@@ -20,4 +20,6 @@ Ten of eleven logical stages have completed measurements/checks under the user-a
 ## Correction — 2026-10-15
 The E04b PASS from source fce5b1b is retracted pending corrected rerun. gpu_ofd_decode unconditionally read q_work, including P/V paths where that buffer was not initialized from q. The original validator reconstructed transforms manually and missed this wrapper dispatch defect. Raw artifacts are retained for audit, not evidence of E04b parity. E06 uses the core directly and is unaffected. Regression now checks actual wrapper with poisoned scratch buffers.
 
-Corrected E04b evidence is documented in E04B_WRAPPER_CORRECTION.md. Qwen3.8-27B real-model layer replay smoke at source 957cb0b completed 128 rows; its first full run failed before measurements due to insufficient MBPP text. v2 data construction adds official MBPP tests without recycling samples. Original failure and smoke are retained. This is not E09 serving E2E completion.
+Corrected E04b source 877982c769f4ae8bd12e346ab31ba0cb1951e399 passes the original 1.05 gate (worst KV/P=1.0224958). The earlier source fce5b1b run remains withdrawn, see E04B_WRAPPER_CORRECTION.md.
+
+Qwen decode replay full run E09_decode_layers/20261015T034425Z_6317e2ad completed at clean source fe6c40827b0dabf0df8a217802fc6fb805b43b63. Four domains, contexts 2K/8K/32K, B1, decode steps 0/7, 16 full-attention layers, P/K/V/KV: 3072 rows. All 16 calibration policies selected KV; held-out mean error P=0.08765224, KV=0.07098421 (19.016% reduction). Matched paged FP16/KV latency ratio geometric mean 0.310576: KV is slower in this same-batch setting. No heterogeneous-policy advantage or whole-model/serving E2E benefit is established. The 48 Gated DeltaNet layers remain native. See the run REPORT.md for per-layer and domain/context results; phase B online packed-cache and policy-conditioned whole-model decode remain outstanding.

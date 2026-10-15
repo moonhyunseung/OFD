@@ -1,0 +1,8 @@
+{
+  "rows": 128,
+  "scope": "real_model_decode_attention_replay_only",
+  "e09_overall_complete": false,
+  "online_append_measured": false,
+  "model_total_latency_measured": false,
+  "smoke": true
+}

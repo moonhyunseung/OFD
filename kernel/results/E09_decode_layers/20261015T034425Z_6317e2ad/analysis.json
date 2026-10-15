@@ -1,0 +1,244 @@
+{
+  "git_commit": "fe6c40827b0dabf0df8a217802fc6fb805b43b63",
+  "run_id": "20261015T034425Z_6317e2ad",
+  "policy_counts": {
+    "KV": 16
+  },
+  "layers": [
+    {
+      "layer": 3,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.054736789471159376,
+      "selected_error_mean": 0.04401547733383874,
+      "selected_vs_plain_error_ratio": 0.8041296860684594,
+      "fp16_over_selected_latency_geomean": 0.31576809893233443
+    },
+    {
+      "layer": 7,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.07971026794984937,
+      "selected_error_mean": 0.06633971305564046,
+      "selected_vs_plain_error_ratio": 0.8322605702113416,
+      "fp16_over_selected_latency_geomean": 0.3091018934656975
+    },
+    {
+      "layer": 11,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.07874496576065819,
+      "selected_error_mean": 0.07069700288896759,
+      "selected_vs_plain_error_ratio": 0.8977971125652398,
+      "fp16_over_selected_latency_geomean": 0.31004192103177475
+    },
+    {
+      "layer": 15,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.09070907486602664,
+      "selected_error_mean": 0.08006589611371358,
+      "selected_vs_plain_error_ratio": 0.882666880154686,
+      "fp16_over_selected_latency_geomean": 0.3100817261561953
+    },
+    {
+      "layer": 19,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.08831432648003101,
+      "selected_error_mean": 0.07622239273041487,
+      "selected_vs_plain_error_ratio": 0.8630807227822738,
+      "fp16_over_selected_latency_geomean": 0.3122105515381916
+    },
+    {
+      "layer": 23,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.08385104903330405,
+      "selected_error_mean": 0.0734087536111474,
+      "selected_vs_plain_error_ratio": 0.8754661325941293,
+      "fp16_over_selected_latency_geomean": 0.30984907229965214
+    },
+    {
+      "layer": 27,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.08544819351906578,
+      "selected_error_mean": 0.07401005892703931,
+      "selected_vs_plain_error_ratio": 0.8661395388133709,
+      "fp16_over_selected_latency_geomean": 0.3113881101650196
+    },
+    {
+      "layer": 31,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.09023642058794697,
+      "selected_error_mean": 0.07318536983802915,
+      "selected_vs_plain_error_ratio": 0.8110402580375029,
+      "fp16_over_selected_latency_geomean": 0.3119729085301281
+    },
+    {
+      "layer": 35,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.09571325313299894,
+      "selected_error_mean": 0.07389013469219208,
+      "selected_vs_plain_error_ratio": 0.771994810264338,
+      "fp16_over_selected_latency_geomean": 0.3108732973140302
+    },
+    {
+      "layer": 39,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.09613551928972204,
+      "selected_error_mean": 0.07853823341429234,
+      "selected_vs_plain_error_ratio": 0.8169533383140413,
+      "fp16_over_selected_latency_geomean": 0.3121564601672084
+    },
+    {
+      "layer": 43,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.09053549403324723,
+      "selected_error_mean": 0.06847236879790823,
+      "selected_vs_plain_error_ratio": 0.7563041382727002,
+      "fp16_over_selected_latency_geomean": 0.3113965107918311
+    },
+    {
+      "layer": 47,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.1053193099796772,
+      "selected_error_mean": 0.08279577208062013,
+      "selected_vs_plain_error_ratio": 0.7861404722134687,
+      "fp16_over_selected_latency_geomean": 0.3109839444637635
+    },
+    {
+      "layer": 51,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.11471973483761151,
+      "selected_error_mean": 0.09032407542690635,
+      "selected_vs_plain_error_ratio": 0.787345573582106,
+      "fp16_over_selected_latency_geomean": 0.30787815794394546
+    },
+    {
+      "layer": 55,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.12229392025619745,
+      "selected_error_mean": 0.08949029740567009,
+      "selected_vs_plain_error_ratio": 0.7317640747650742,
+      "fp16_over_selected_latency_geomean": 0.3089205119862485
+    },
+    {
+      "layer": 59,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.06648925164093573,
+      "selected_error_mean": 0.04725147030937175,
+      "selected_vs_plain_error_ratio": 0.71066328982834,
+      "fp16_over_selected_latency_geomean": 0.30789478627043704
+    },
+    {
+      "layer": 63,
+      "policy": "KV",
+      "n_eval": 24,
+      "plain_error_mean": 0.05947826523333788,
+      "selected_error_mean": 0.047040303237736225,
+      "selected_vs_plain_error_ratio": 0.7908822332526586,
+      "fp16_over_selected_latency_geomean": 0.3087954144884563
+    }
+  ],
+  "domain_context": [
+    {
+      "domain": "code",
+      "context": 2048,
+      "n": 32,
+      "selected_error_mean": 0.07401559280697256,
+      "fp16_over_selected_latency_geomean": 0.3569266776887953
+    },
+    {
+      "domain": "code",
+      "context": 8192,
+      "n": 32,
+      "selected_error_mean": 0.07885777053888887,
+      "fp16_over_selected_latency_geomean": 0.3385684333459761
+    },
+    {
+      "domain": "code",
+      "context": 32768,
+      "n": 32,
+      "selected_error_mean": 0.05614901939406991,
+      "fp16_over_selected_latency_geomean": 0.24854064396715128
+    },
+    {
+      "domain": "long_document",
+      "context": 2048,
+      "n": 32,
+      "selected_error_mean": 0.0682015367783606,
+      "fp16_over_selected_latency_geomean": 0.357058103147085
+    },
+    {
+      "domain": "long_document",
+      "context": 8192,
+      "n": 32,
+      "selected_error_mean": 0.0784986832877621,
+      "fp16_over_selected_latency_geomean": 0.3377685275652259
+    },
+    {
+      "domain": "long_document",
+      "context": 32768,
+      "n": 32,
+      "selected_error_mean": 0.07083913160022348,
+      "fp16_over_selected_latency_geomean": 0.248250157458792
+    },
+    {
+      "domain": "math",
+      "context": 2048,
+      "n": 32,
+      "selected_error_mean": 0.07641726534347981,
+      "fp16_over_selected_latency_geomean": 0.3567404452575705
+    },
+    {
+      "domain": "math",
+      "context": 8192,
+      "n": 32,
+      "selected_error_mean": 0.06538631377043203,
+      "fp16_over_selected_latency_geomean": 0.33680589183275744
+    },
+    {
+      "domain": "math",
+      "context": 32768,
+      "n": 32,
+      "selected_error_mean": 0.0789522755658254,
+      "fp16_over_selected_latency_geomean": 0.24849482233211292
+    },
+    {
+      "domain": "prose",
+      "context": 2048,
+      "n": 32,
+      "selected_error_mean": 0.07640113570960239,
+      "fp16_over_selected_latency_geomean": 0.35684019212230783
+    },
+    {
+      "domain": "prose",
+      "context": 8192,
+      "n": 32,
+      "selected_error_mean": 0.061147119267843664,
+      "fp16_over_selected_latency_geomean": 0.337895459377351
+    },
+    {
+      "domain": "prose",
+      "context": 32768,
+      "n": 32,
+      "selected_error_mean": 0.06694464583415538,
+      "fp16_over_selected_latency_geomean": 0.2487946838159085
+    }
+  ],
+  "mean_selected_error": 0.07098420749146801,
+  "mean_plain_error": 0.08765223975448559,
+  "fp16_over_selected_latency_geomean": 0.31057614203220213,
+  "scope": "real_model_decode_layer_replay_only",
+  "e09_serving_complete": false
+}

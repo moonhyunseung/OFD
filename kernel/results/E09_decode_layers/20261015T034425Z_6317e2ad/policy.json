@@ -1,0 +1,22 @@
+{
+  "policy": {
+    "3": "KV",
+    "7": "KV",
+    "11": "KV",
+    "15": "KV",
+    "19": "KV",
+    "23": "KV",
+    "27": "KV",
+    "31": "KV",
+    "35": "KV",
+    "39": "KV",
+    "43": "KV",
+    "47": "KV",
+    "51": "KV",
+    "55": "KV",
+    "59": "KV",
+    "63": "KV"
+  },
+  "frozen_before_evaluation": true,
+  "scope": "replay_policy_only"
+}

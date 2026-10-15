@@ -1,0 +1,38 @@
+[
+  {
+    "domain": "prose",
+    "phase": "calibration",
+    "source": {
+      "id": "Salesforce/wikitext",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "subset": "wikitext-2-raw-v1",
+      "domain": "prose",
+      "calibration_split": "train",
+      "evaluation_split": "test"
+    },
+    "source_row_ids": [
+      1,
+      3,
+      4
+    ],
+    "token_sha256": "9f0ff2f7f829e33f7d0872a5710c96f39c62db8e335bc4076bebd8094aa12f61"
+  },
+  {
+    "domain": "prose",
+    "phase": "evaluation",
+    "source": {
+      "id": "Salesforce/wikitext",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "subset": "wikitext-2-raw-v1",
+      "domain": "prose",
+      "calibration_split": "train",
+      "evaluation_split": "test"
+    },
+    "source_row_ids": [
+      1,
+      3,
+      4
+    ],
+    "token_sha256": "6049b0202ae6e5c1e05b8723674bf54c94e6f25996a9c1cdbee94886138c82ea"
+  }
+]
