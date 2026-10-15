@@ -79,7 +79,7 @@ if triton is not None:
         kvh = tl.program_id(1)
         split = tl.program_id(2)
 
-        q_per_kv = NUM_Q_HEADS // NUM_KV_HEADS
+        q_per_kv: tl.constexpr = NUM_Q_HEADS // NUM_KV_HEADS
         qh = kvh * q_per_kv + tl.arange(0, q_per_kv)
 
         d = tl.arange(0, HEAD_DIM)
