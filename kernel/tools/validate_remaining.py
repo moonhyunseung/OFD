@@ -56,7 +56,12 @@ def checks(out):
                 group_err=rel(ws.out,wg.out)
                 if variant.rotate_v: fwht_into(wg.out,final)
                 else:final.copy_(wg.out)
-                oracle_err=rel(ref,final.cpu())
+                from ofd_kernel.runtime.gpu_ofd import gpu_ofd_decode
+                qw.fill_(float('nan'))
+                wrapped=gpu_ofd_decode(qg,kp,ks,vp,vs,bt,lg,variant=variant,config=cfg,workspace=ws,max_seq_len=t,q_work=qw,out_work=final)
+                wrapper_err=rel(ref,wrapped.cpu())
+                if not math.isfinite(wrapper_err) or wrapper_err>0.002:raise RuntimeError('Actual wrapper/oracle correctness failed')
+                oracle_err=wrapper_err
                 print('GQA',d,r,variant.value,group_err,oracle_err,flush=True)
                 if not math.isfinite(oracle_err) or max(group_err,oracle_err)>0.002:
                     raise RuntimeError('Grouped GPU FWHT/oracle correctness failed')

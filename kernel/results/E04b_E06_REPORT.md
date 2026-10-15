@@ -23,3 +23,7 @@ Grouped KV reuse is beneficial in some measured regimes and slower in others. Co
 - E09: implement/pin the real-model serving harness, held-out calibration/evaluation and static policy, then run after E08. Synthetic traces are insufficient.
 
 No TMA, warp specialization or CUDA rewrite was introduced. Existing E00–E07 artifacts remain. Main is unchanged.
+
+
+## Correction — 2026-10-15
+The E04b PASS from source fce5b1b is retracted pending corrected rerun. gpu_ofd_decode unconditionally read q_work, including P/V paths where that buffer was not initialized from q. The original validator reconstructed transforms manually and missed this wrapper dispatch defect. Raw artifacts are retained for audit, not evidence of E04b parity. E06 uses the core directly and is unaffected. Regression now checks actual wrapper with poisoned scratch buffers.
