@@ -1,0 +1,3 @@
+# E08 H200 revision
+
+User-authorized H200 replacement for the logical E08 tuning stage. The original E08_blackwell_tuning remains archived and blocked; no Blackwell evidence is claimed. Only existing split/tile/warps/stages are varied. Same quantizer, packed layout, D128, Hkv8, page16, group32, FP16 queries/output. Preallocated workspaces, setup and correctness outside timing. Three event-timing rounds with seeded shuffled candidates. Select one global configuration by calibration geometric mean speedup, then freeze selection before disjoint evaluation. Retain all candidates and round measurements, including regressions. This is core-only tuning, not serving E2E. No TMA/warp specialization claim; profiler counters are not collected by this sweep.

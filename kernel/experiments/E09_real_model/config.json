@@ -15,11 +15,12 @@
   "depends_on": [
     "E05_same_memory_budget",
     "E06_gqa",
-    "E08_blackwell_tuning"
+    "E08_h200_tuning"
   ],
   "pass_fail": "Requires real-model integration and held-out policy validation.",
   "results_root": "kernel/results/E09_real_model",
   "gate_type": "pass_fail",
   "claim_eligible": true,
-  "requires_clean_git": true
+  "requires_clean_git": true,
+  "dependency_revision": "User-authorized H200 tuning replaces Blackwell dependency; real-model and held-out validation requirements unchanged."
 }
