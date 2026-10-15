@@ -1,0 +1,69 @@
+{
+  "environment": {
+    "claim_eligible": true,
+    "cuda_visible_devices": null,
+    "git_available": true,
+    "git_branch": "ofd-v2.3-measurement-safe",
+    "git_commit": "957cb0b66f81a6ee8ab0b865458fc5a6d32ece72",
+    "git_dirty": false,
+    "git_status_porcelain": "",
+    "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+    "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "timestamp_utc": "2026-10-15T03:39:00.055835+00:00",
+    "torch": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0"
+  },
+  "git_commit": "957cb0b66f81a6ee8ab0b865458fc5a6d32ece72",
+  "claim_eligible_run": false,
+  "scope": "Qwen geometry implementation preflight",
+  "seed": 1337,
+  "execution_status": "COMPLETED",
+  "rows": [
+    {
+      "variant": "P",
+      "fp16_ms": 0.0813696026802063,
+      "int4_ms": 0.25102720260620115,
+      "throughput_ratio": 0.32414655398066494,
+      "relative_l2_error": 0.1361515074968338,
+      "fp16_native_error": 0.00030195899307727814,
+      "fp16_kv_bytes": 1114112,
+      "int4_kv_bytes": 313344,
+      "kv_context": 257
+    },
+    {
+      "variant": "K",
+      "fp16_ms": 0.0813696026802063,
+      "int4_ms": 0.3014336109161377,
+      "throughput_ratio": 0.2699420361017546,
+      "relative_l2_error": 0.13320207595825195,
+      "fp16_native_error": 0.00030195899307727814,
+      "fp16_kv_bytes": 1114112,
+      "int4_kv_bytes": 313344,
+      "kv_context": 257
+    },
+    {
+      "variant": "V",
+      "fp16_ms": 0.0813696026802063,
+      "int4_ms": 0.2953792095184326,
+      "throughput_ratio": 0.27547505057267263,
+      "relative_l2_error": 0.1345837414264679,
+      "fp16_native_error": 0.00030195899307727814,
+      "fp16_kv_bytes": 1114112,
+      "int4_kv_bytes": 313344,
+      "kv_context": 257
+    },
+    {
+      "variant": "KV",
+      "fp16_ms": 0.0813696026802063,
+      "int4_ms": 0.3336512088775635,
+      "throughput_ratio": 0.24387624116196638,
+      "relative_l2_error": 0.13214944303035736,
+      "fp16_native_error": 0.00030195899307727814,
+      "fp16_kv_bytes": 1114112,
+      "int4_kv_bytes": 313344,
+      "kv_context": 257
+    }
+  ]
+}

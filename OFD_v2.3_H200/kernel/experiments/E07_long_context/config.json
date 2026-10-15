@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E07_long_context",
+  "title": "Long-Context Scaling",
+  "status": "READY_AFTER_E04",
+  "hypothesis": "Measure core packed-INT4 attention latency/throughput slope from 8K to 128K+ with Q/output transforms outside timing.",
+  "depends_on": [
+    "E04a_core_attention"
+  ],
+  "pass_fail": "Observational core-attention curve only; report measured latency/slope with gate_status=NOT_APPLICABLE and no end-to-end OFD claim.",
+  "results_root": "kernel/results/E07_long_context",
+  "gate_type": "observational",
+  "claim_eligible": true,
+  "requires_clean_git": true
+}

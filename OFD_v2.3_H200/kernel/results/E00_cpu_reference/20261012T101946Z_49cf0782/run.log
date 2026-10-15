@@ -1,0 +1,40 @@
+test_core_launcher_has_no_item_sync (test_protocol.ProtocolTests.test_core_launcher_has_no_item_sync) ... ok
+test_e04_is_split_and_e2e_is_blocked (test_protocol.ProtocolTests.test_e04_is_split_and_e2e_is_blocked) ... ok
+test_e07_is_observational (test_protocol.ProtocolTests.test_e07_is_observational) ... ok
+test_manifest_schema_matches_runner_v2 (test_protocol.ProtocolTests.test_manifest_schema_matches_runner_v2) ... ok
+test_runner_uses_core_timing_for_e04a_and_e07 (test_protocol.ProtocolTests.test_runner_uses_core_timing_for_e04a_and_e07) ... ok
+test_dual_cutoff_policy (test_reference.KernelV2CPUTests.test_dual_cutoff_policy) ... ok
+test_fwht_self_inverse (test_reference.KernelV2CPUTests.test_fwht_self_inverse) ... ok
+test_pack_encoding_contract (test_reference.KernelV2CPUTests.test_pack_encoding_contract) ... ok
+test_paged_oracle_matches_dense_all_variants_ragged (test_reference.KernelV2CPUTests.test_paged_oracle_matches_dense_all_variants_ragged) ... ok
+test_quantized_split_and_direct_match (test_reference.KernelV2CPUTests.test_quantized_split_and_direct_match) ... ok
+test_ragged_split_with_empty_splits_is_finite_and_correct (test_reference.KernelV2CPUTests.test_ragged_split_with_empty_splits_is_finite_and_correct) ... ok
+test_randomized_physical_pages_roundtrip (test_reference.KernelV2CPUTests.test_randomized_physical_pages_roundtrip) ... ok
+test_runtime_shape_helpers (test_reference.KernelV2CPUTests.test_runtime_shape_helpers) ... ok
+test_split_kv_matches_direct_gqa (test_reference.KernelV2CPUTests.test_split_kv_matches_direct_gqa) ... ok
+test_storage_contract_matches_ofd (test_reference.KernelV2CPUTests.test_storage_contract_matches_ofd) ... ok
+test_unquantized_basis_invariance (test_reference.KernelV2CPUTests.test_unquantized_basis_invariance) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.506s
+
+OK
+STORAGE CONTRACT
+{
+  "head_dim": 128,
+  "group_size": 32,
+  "page_size": 16,
+  "groups_per_head": 4,
+  "packed_bytes_per_group": 16,
+  "int4_bytes_per_token_head_per_K_or_V": 72,
+  "fp16_bytes_per_token_head_per_K_or_V": 256,
+  "kv_compression_vs_fp16": 3.5555555555555554
+}
+
+RAGGED + PAGED + RANDOM-PHYSICAL-PAGE SELF-CHECK
+ P: paged/dense rel=0.000e+00 | physical_pages=25
+ K: paged/dense rel=0.000e+00 | physical_pages=25
+ V: paged/dense rel=0.000e+00 | physical_pages=25
+KV: paged/dense rel=0.000e+00 | physical_pages=25
+
+CPU_REFERENCE_OK

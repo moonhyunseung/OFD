@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E09_real_model",
+  "title": "Real-Model Serving",
+  "status": "BLOCKED_REAL_MODEL",
+  "hypothesis": "Integrate Qwen/Llama real KV, held-out layer policy, and serving metrics.",
+  "depends_on": [
+    "E05_same_memory_budget",
+    "E06_gqa",
+    "E08_h200_tuning"
+  ],
+  "pass_fail": "Requires real-model integration and held-out policy validation.",
+  "results_root": "kernel/results/E09_real_model",
+  "gate_type": "pass_fail",
+  "claim_eligible": true,
+  "requires_clean_git": true,
+  "dependency_revision": "User-authorized H200 tuning replaces Blackwell dependency; real-model and held-out validation requirements unchanged."
+}

@@ -1,0 +1,40 @@
+{
+  "gpu": "NVIDIA H200",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "mode": "compile",
+  "config": {
+    "split_size": 1024,
+    "tokens_per_block": 16,
+    "num_warps": 4,
+    "num_stages": 2
+  },
+  "blackwell_candidates": [
+    {
+      "split_size": 512,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    {
+      "split_size": 1024,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    {
+      "split_size": 1024,
+      "tokens_per_block": 32,
+      "num_warps": 4,
+      "num_stages": 3
+    },
+    {
+      "split_size": 2048,
+      "tokens_per_block": 32,
+      "num_warps": 8,
+      "num_stages": 3
+    }
+  ]
+}
+COMPILE_SMOKE (1, 2, 64) True
+E01_COMPILE_GATE_PASS

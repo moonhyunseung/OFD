@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "experiment_id": "E06_gqa",
+  "run_id": "20261015T022101Z_fd3ce4f1",
+  "timestamp_utc": "2026-10-15T02:21:01.095128+00:00",
+  "protocol_status": "READY_GROUPED_GQA",
+  "gate_type": "pass_fail",
+  "claim_eligible_protocol": true,
+  "requires_clean_git": true,
+  "git_commit": "fce5b1b71796e79a21948b92221df123994c371e",
+  "git_branch": "ofd-v2.3-measurement-safe",
+  "git_available": true,
+  "git_dirty": false,
+  "git_status_porcelain": "",
+  "claim_eligible_run": true,
+  "environment": {
+    "claim_eligible": true,
+    "cuda_visible_devices": null,
+    "git_available": true,
+    "git_branch": "ofd-v2.3-measurement-safe",
+    "git_commit": "fce5b1b71796e79a21948b92221df123994c371e",
+    "git_dirty": false,
+    "git_status_porcelain": "",
+    "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+    "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "timestamp_utc": "2026-10-15T02:20:59.236068+00:00",
+    "torch": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0"
+  },
+  "config": {
+    "schema_version": 2,
+    "frozen_contract": {
+      "group_size": 32,
+      "page_size": 16,
+      "int4_encoding": "signed q+8 low-nibble-first",
+      "scale_dtype": "fp16",
+      "scale_rule": "absmax/7",
+      "accumulation": "fp32"
+    },
+    "id": "E06_gqa",
+    "title": "GQA KV-Reuse",
+    "status": "READY_GROUPED_GQA",
+    "hypothesis": "Compare current q-head programs against grouped Q-head KV reuse for Q/KV = 1,4,8.",
+    "depends_on": [
+      "E02_correctness"
+    ],
+    "pass_fail": "Grouped-GQA implementation validated against frozen CPU oracle <= 0.002; all full-matrix grouped-vs-qhead errors <= 0.002 and no OOM. Throughput effects observational, report regressions.",
+    "results_root": "kernel/results/E06_gqa",
+    "gate_type": "pass_fail",
+    "claim_eligible": true,
+    "requires_clean_git": true,
+    "implementation_validation": {
+      "source_commit": "d1cdf1f1ebbcada2eb0d4b0d3b4c07db6506e95c",
+      "run_id": "20261015T021748Z_8c57592a",
+      "correctness_threshold": 0.002
+    },
+    "matrix": {
+      "context": [
+        8192,
+        32768,
+        131072
+      ],
+      "batch": [
+        1,
+        4,
+        8,
+        16
+      ],
+      "q_per_kv": [
+        1,
+        4,
+        8
+      ],
+      "hkv": 8,
+      "head_dim": 128,
+      "page_size": 16,
+      "group_size": 32,
+      "dtype": "fp16",
+      "split_size": 1024,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2,
+      "warmup": 3,
+      "repeat": 10
+    }
+  },
+  "commands": [
+    [
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/bin/python",
+      "kernel/tools/bench_remaining.py",
+      "--experiment",
+      "E06_gqa",
+      "--out",
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/results/E06_gqa/20261015T022101Z_fd3ce4f1/measurements.csv",
+      "--smoke"
+    ]
+  ],
+  "artifacts": [
+    "measurements.csv",
+    "run.log"
+  ],
+  "notes": [],
+  "execution_status": "COMPLETED",
+  "gate_status": "PASS",
+  "return_code": 0
+}

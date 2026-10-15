@@ -1,0 +1,3 @@
+# Corrected E04b evidence
+
+The previous E04b source fce5b1b unconditionally used q_work for P/V and its PASS is withdrawn. Fixed source 877982c769f4ae8bd12e346ab31ba0cb1951e399 initializes query dispatch correctly. Regression now poisons q_work and calls the actual wrapper against CPU quantized oracle across all variants. Validation and full E04b raw evidence accompany this commit. Corrected full run 20261015T033419Z_647b462d completed 128 rows without OOM; worst KV/P 1.0224957847029064 <= frozen 1.05. These corrected results supersede the earlier run, which remains archived. E03/E05/E06/E08 call core directly and are unaffected. This is attention-path timing, not model E2E.

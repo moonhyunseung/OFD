@@ -1,0 +1,8 @@
+calibration 8192 1 1 baseline_ms 0.15059626897176107 best_speedup 2.9820255239621254
+calibration 32768 4 4 baseline_ms 2.2576576232910157 best_speedup 1.0181712769819138
+calibration 131072 16 1 baseline_ms 10.073326619466146 best_speedup 1.0879338833895476
+FROZEN_SELECTION {'selected_config_id': 2, 'selected_config': {'split_size': 512, 'tokens_per_block': 16, 'num_warps': 8, 'num_stages': 1}, 'baseline_config_id': 9, 'calibration_geomean': 1.3731807290889253, 'selection_frozen_before_evaluation': True}
+evaluation 8192 8 4 baseline_ms 1.1956202189127605 best_speedup 1.0224737306262348
+evaluation 32768 1 1 baseline_ms 0.17666667302449543 best_speedup 1.1343867212660168
+evaluation 65536 4 1 baseline_ms 1.2551434834798176 best_speedup 1.0
+evaluation 131072 8 4 baseline_ms 18.616827392578124 best_speedup 1.0298623217684217

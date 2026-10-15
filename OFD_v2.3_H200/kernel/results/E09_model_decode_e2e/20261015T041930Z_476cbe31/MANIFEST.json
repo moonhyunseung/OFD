@@ -1,0 +1,169 @@
+{
+  "experiment_id": "E09_model_decode_e2e",
+  "run_id": "20261015T041930Z_476cbe31",
+  "environment": {
+    "claim_eligible": true,
+    "cuda_visible_devices": null,
+    "git_available": true,
+    "git_branch": "ofd-v2.3-measurement-safe",
+    "git_commit": "15e5aef2cdffed106ec55268df37c00c3ce80b19",
+    "git_dirty": false,
+    "git_status_porcelain": "",
+    "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+    "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "timestamp_utc": "2026-10-15T04:19:29.247192+00:00",
+    "torch": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0"
+  },
+  "git_commit": "15e5aef2cdffed106ec55268df37c00c3ce80b19",
+  "git_dirty": false,
+  "protocol": {
+    "revision": "qwen38_online_decode_e2e_v1",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "dtype": "float16",
+    "seed": 1337,
+    "layers": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47,
+      51,
+      55,
+      59,
+      63
+    ],
+    "variants": [
+      "P",
+      "K",
+      "V",
+      "KV"
+    ],
+    "calibration": {
+      "context": 8192,
+      "batch": 1,
+      "domains": [
+        "prose",
+        "code"
+      ],
+      "rounds": 3,
+      "policies": "4L=64 one-layer perturbations around all-P; every policy measured using the complete model; P repeated for each layer as controls"
+    },
+    "selection": "For each layer choose minimum geometric mean complete-model wall decode latency across calibration domains/rounds, independently permitting K and V bits at any layer. Freeze the combined policy before held-out evaluation. This is a main-effect selection, not an exhaustive global optimum.",
+    "evaluation": {
+      "contexts": [
+        2048,
+        8192,
+        32768
+      ],
+      "batch": 1,
+      "domains": [
+        "prose",
+        "code",
+        "math",
+        "long_document"
+      ],
+      "rounds": 3,
+      "policies": [
+        "NATIVE",
+        "FP16",
+        "P",
+        "KV",
+        "MIX"
+      ]
+    },
+    "crossover": {
+      "contexts": [
+        2048,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072
+      ],
+      "batches": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "domain": "prose",
+      "partition": "evaluation",
+      "rounds": 3,
+      "policies": [
+        "NATIVE",
+        "FP16",
+        "P",
+        "KV",
+        "MIX"
+      ],
+      "batch_content": "Identical token stream replicated into independently allocated per-request KV; no prefix sharing"
+    },
+    "steps": 16,
+    "warmup_steps": 4,
+    "prefill_chunk": 2048,
+    "prefill": "Untimed native unquantized attention. Chunked with lower-right causal SDPA for bounded activations. CPU template cache cloned independently per policy; no GPU template retained during timing.",
+    "NATIVE": "Original model FP16 SDPA attention and unchanged Gated DeltaNet/MLP/LM head, with preallocated dense KV to exclude reallocations. Native unmodified update is checked in smoke. No naive PyTorch attention performance comparator.",
+    "FP16": "Matched paged FP16 split decode plus online paged append, same page table and execution geometry as INT4",
+    "INT4": "Actual packed per-layer resident KV; prefill converted outside timing, each new decode K/V rotated and quantized online inside timing. No retained full-attention FP16 shadow KV.",
+    "timing": "Primary E2E latency and throughput use synchronized CPU wall over the full decode loop after warmup. CUDA-event intervals around each complete model forward are reported separately. Includes all 64 layers, online KV append, GPU FWHT and LM head. Input token tensors, position IDs, mask map, page tables, lengths, workspaces and initialized event objects are prepared before timing. Logit quality work and CPU transfers occur after synchronization. CPU sampling and request scheduling excluded.",
+    "metrics": [
+      "decode_ms_per_step",
+      "aggregate_tok_s",
+      "wall_ms_per_step",
+      "full_attention_KV_bytes",
+      "actual_gpu_allocated_bytes",
+      "actual_peak_gpu_allocated_bytes",
+      "native_logit_relative_L2",
+      "native_argmax_agreement",
+      "teacher_forced_next_token_NLL",
+      "OOM",
+      "exact_policy",
+      "git_SHA",
+      "environment",
+      "seed",
+      "data_hashes"
+    ],
+    "correctness": "Online append packed codes/scales checked against frozen quantizer; native dense cache replacement versus unmodified native logits and matched paged FP16 versus native logits relative tolerance 0.002 in smoke. INT4 quality observational; no automatic quality-preservation claim.",
+    "failure": "Preserve OOM or failures per case. No protocol adjustment based on performance. Stop full sweep if smoke fails. If prefill OOM at a shape, mark setup OOM for that shape, do not claim INT4 capacity there.",
+    "nonclaims": [
+      "No continuous batching or network/server measurements",
+      "No exhaustive 4^16 optimum",
+      "No untested higher resident-batch capacity",
+      "Teacher-forced decode timing excludes CPU sampling and request scheduling"
+    ],
+    "host_memory_guard": "Before each shape free prior template; estimate 2.25x CPU KV+GDN template bytes against 80% cgroup limit minus anon/kernel. Mark HOST_TEMPLATE_LIMIT separately from GPU OOM; never claim this proves INT4 resident capacity."
+  },
+  "commands": [
+    [
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/bin/python",
+      "kernel/tools/validate_online_kv.py"
+    ],
+    [
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/bin/python",
+      "kernel/tools/bench_e09_e2e.py",
+      "--out",
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/results/E09_model_decode_e2e/20261015T041930Z_476cbe31",
+      "--smoke"
+    ]
+  ],
+  "smoke": true,
+  "execution_status": "FAILED",
+  "claim_eligible_run": false,
+  "scope": "full_model_teacher_forced_online_decode",
+  "serving_claim": false,
+  "return_code": 1,
+  "artifacts": [
+    "run.log"
+  ]
+}

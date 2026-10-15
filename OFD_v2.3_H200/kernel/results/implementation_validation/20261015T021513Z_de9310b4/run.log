@@ -1,0 +1,61 @@
+FWHT 64 1 0.0 0.0001979950611712411
+FWHT 64 24 0.0 0.00018744850240182132
+FWHT 64 256 0.0 0.00019992541638202965
+FWHT 128 1 0.0 0.00019740000425372273
+FWHT 128 24 0.0 0.00020453975594136864
+FWHT 128 256 0.0 0.00019892642740160227
+FWHT 256 1 0.0 0.00020107018644921482
+FWHT 256 24 0.0 0.00020850259170401841
+FWHT 256 256 0.0 0.0001985306153073907
+Traceback (most recent call last):
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/language/core.py", line 43, in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/language/core.py", line 1984, in arange
+    return _semantic.arange(start, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/language/semantic.py", line 585, in arange
+    raise ValueError("arange's arguments must be of type tl.constexpr")
+ValueError: arange's arguments must be of type tl.constexpr
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/tools/validate_remaining.py", line 77, in main
+    m['summary']=checks(out);m['execution_status']='COMPLETED';m['gate_status']='PASS'
+                 ^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/tools/validate_remaining.py", line 55, in checks
+    triton_paged_decode_grouped_core(qw,kp,ks,vp,vs,bt,lg,config=cfg,workspace=wg,max_seq_len=t)
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/src/ofd_kernel/runtime/grouped_launcher.py", line 62, in triton_paged_decode_grouped_core
+    grouped_int4_partials_kernel[grid1](
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/runtime/jit.py", line 374, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/runtime/jit.py", line 757, in run
+    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/runtime/jit.py", line 902, in _do_compile
+    kernel = self.compile(src, target=target, options=options.__dict__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/compiler/compiler.py", line 307, in compile
+    module = src.make_ir(target, options, codegen_fns, module_map, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/lib/python3.12/site-packages/triton/compiler/compiler.py", line 80, in make_ir
+    return ast_to_ttir(self.fn, self, context=context, options=options, codegen_fns=codegen_fns,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+triton.compiler.errors.CompilationError: at 75:26:
+    partial_o          [B, Hq, NUM_SPLITS, D]
+
+    Current draft assumes Hq % Hkv == 0 and maps q-head to the
+    corresponding shared KV head. The first GPU pass should compile and
+    validate this baseline before adding Blackwell-specific scheduling.
+    """
+    b = tl.program_id(0)
+    kvh = tl.program_id(1)
+    split = tl.program_id(2)
+
+    q_per_kv = NUM_Q_HEADS // NUM_KV_HEADS
+    qh = kvh * q_per_kv + tl.arange(0, q_per_kv)
+                          ^
+arange's arguments must be of type tl.constexpr
+RESULT /home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/results/implementation_validation/20261015T021513Z_de9310b4 FAILED

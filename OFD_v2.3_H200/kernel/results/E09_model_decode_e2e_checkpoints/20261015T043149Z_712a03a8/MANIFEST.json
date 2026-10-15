@@ -1,0 +1,13 @@
+{
+  "experiment_id": "E09_model_decode_e2e_checkpoint",
+  "timestamp_utc": "2026-10-15T04:31:49.551677+00:00",
+  "source_run": "20261015T042351Z_15b7a15f",
+  "git_commit": "2b3585a6b5354c47f30b39c5d87e1d719f682eb2",
+  "execution_status": "CHECKPOINT_RUNNING",
+  "claim_eligible_run": false,
+  "rows": 383,
+  "calibration_rows": 375,
+  "notes": [
+    "Snapshot of complete CSV rows; not a completed run or final performance claim."
+  ]
+}

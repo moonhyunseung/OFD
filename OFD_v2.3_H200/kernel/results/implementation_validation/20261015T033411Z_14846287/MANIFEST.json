@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "experiment_id": "implementation_validation",
+  "environment": {
+    "claim_eligible": true,
+    "cuda_visible_devices": null,
+    "git_available": true,
+    "git_branch": "ofd-v2.3-measurement-safe",
+    "git_commit": "877982c769f4ae8bd12e346ab31ba0cb1951e399",
+    "git_dirty": false,
+    "git_status_porcelain": "",
+    "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+    "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "timestamp_utc": "2026-10-15T03:34:09.010213+00:00",
+    "torch": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0"
+  },
+  "git_commit": "877982c769f4ae8bd12e346ab31ba0cb1951e399",
+  "git_dirty": false,
+  "execution_status": "COMPLETED",
+  "claim_eligible_run": false,
+  "notes": [
+    "Implementation correctness only; E04b/E06 performance protocols remain blocked pending validation review."
+  ],
+  "seed": 1337,
+  "threshold": 0.002,
+  "summary": {
+    "fwht_cases": 9,
+    "grouped_cases": 24,
+    "worst_fwht_error": 0.0,
+    "worst_grouped_oracle_error": 8.064994472078979e-05
+  },
+  "gate_status": "PASS",
+  "artifacts": [
+    "fwht_correctness.csv",
+    "grouped_correctness.csv",
+    "run.log"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "gpu": "NVIDIA H200",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "mode": "core-variants",
+  "config": {
+    "split_size": 1024,
+    "tokens_per_block": 16,
+    "num_warps": 4,
+    "num_stages": 2
+  },
+  "blackwell_candidates": [
+    {
+      "split_size": 512,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    {
+      "split_size": 1024,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    {
+      "split_size": 1024,
+      "tokens_per_block": 32,
+      "num_warps": 4,
+      "num_stages": 3
+    },
+    {
+      "split_size": 2048,
+      "tokens_per_block": 32,
+      "num_warps": 8,
+      "num_stages": 3
+    }
+  ]
+}
+[1/4] T=8192 B=1 Q/KV=1
+    P: 0.1510 ms | 6623.0 tok/s
+    K: 0.1508 ms | 6629.3 tok/s
+    V: 0.1507 ms | 6636.9 tok/s
+   KV: 0.1508 ms | 6633.1 tok/s
+[2/4] T=8192 B=4 Q/KV=4
+    P: 0.6244 ms | 6406.2 tok/s
+    K: 0.6263 ms | 6386.7 tok/s
+    V: 0.6256 ms | 6393.8 tok/s
+   KV: 0.6256 ms | 6394.0 tok/s
+[3/4] T=32768 B=1 Q/KV=1
+    P: 0.1768 ms | 5655.9 tok/s
+    K: 0.1766 ms | 5661.0 tok/s
+    V: 0.1765 ms | 5666.4 tok/s
+   KV: 0.1767 ms | 5658.1 tok/s
+[4/4] T=32768 B=4 Q/KV=4
+    P: 2.2566 ms | 1772.6 tok/s
+    K: 2.2564 ms | 1772.7 tok/s
+    V: 2.2570 ms | 1772.3 tok/s
+   KV: 2.2568 ms | 1772.4 tok/s
+CSV: /home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/results/E04a_core_attention/20261012T123132Z_f28df490/core_variants.csv
+E04 ratio ('8192', '1', '1', '8', '128', '16', '32'): KV/P=0.9985
+E04 ratio ('8192', '4', '4', '8', '128', '16', '32'): KV/P=1.0019
+E04 ratio ('32768', '1', '1', '8', '128', '16', '32'): KV/P=0.9996
+E04 ratio ('32768', '4', '4', '8', '128', '16', '32'): KV/P=1.0001
+E04 worst KV/P=1.0019, frozen max=1.0500
+E04_CORE_ATTENTION_GATE_PASS

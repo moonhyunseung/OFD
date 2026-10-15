@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E05_same_memory_budget",
+  "title": "Same-Memory-Budget Throughput",
+  "status": "READY_MATCHED_PAGED_CORE",
+  "hypothesis": "Compare aggregate throughput under equal KV-memory budget.",
+  "depends_on": [
+    "E03_split_scaling",
+    "E04a_core_attention"
+  ],
+  "pass_fail": "Matched paged FP16 correctness <= 2e-3; exact INT4 KV-buffer bytes <= FP16 budget. Throughput is observational, core-only, no FWHT/e2e claim.",
+  "results_root": "kernel/results/E05_same_memory_budget",
+  "gate_type": "observational",
+  "claim_eligible": true,
+  "requires_clean_git": true,
+  "protocol_revision": "E05_core_paged_v1",
+  "timing_scope": "core_attention_only",
+  "batch_pairing": "B_INT4=floor(32*B_FP16/9)",
+  "matrix": {
+    "context": [
+      8192,
+      16384,
+      32768,
+      65536,
+      131072
+    ],
+    "fp16_batch": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "hkv": 8,
+    "q_per_kv": 1,
+    "head_dim": 128,
+    "page_size": 16,
+    "group_size": 32,
+    "dtype": "fp16"
+  }
+}

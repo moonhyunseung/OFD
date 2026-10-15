@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E08_h200_tuning",
+  "title": "H200 launch-parameter tuning",
+  "status": "READY_H200",
+  "hypothesis": "Frozen global launch configuration selected on calibration cases and evaluated on disjoint cases; no architectural rewrite.",
+  "depends_on": [
+    "E03_split_scaling",
+    "E04b_end_to_end",
+    "E07_long_context"
+  ],
+  "pass_fail": "Complete all candidates; correctness relative error <=0.002; performance observational, no mandatory speedup.",
+  "results_root": "kernel/results/E08_h200_tuning",
+  "gate_type": "observational",
+  "claim_eligible": true,
+  "requires_clean_git": true,
+  "protocol_revision": "h200_v1",
+  "target": "NVIDIA H200 cc9.0",
+  "candidate_grid": {
+    "split_size": [
+      512,
+      1024,
+      2048
+    ],
+    "tokens_per_block": [
+      16,
+      32
+    ],
+    "num_warps": [
+      4,
+      8
+    ],
+    "num_stages": [
+      1,
+      2
+    ]
+  },
+  "calibration": [
+    [
+      8192,
+      1,
+      1
+    ],
+    [
+      32768,
+      4,
+      4
+    ],
+    [
+      131072,
+      16,
+      1
+    ]
+  ],
+  "evaluation": [
+    [
+      8192,
+      8,
+      4
+    ],
+    [
+      32768,
+      1,
+      1
+    ],
+    [
+      65536,
+      4,
+      1
+    ],
+    [
+      131072,
+      8,
+      4
+    ]
+  ],
+  "selection": "global maximum geometric mean baseline/candidate latency on calibration; never select on evaluation",
+  "timing": {
+    "warmup": 5,
+    "repeats": 30,
+    "rounds": 3,
+    "order": "seeded per-case shuffle"
+  },
+  "seed": 1337
+}

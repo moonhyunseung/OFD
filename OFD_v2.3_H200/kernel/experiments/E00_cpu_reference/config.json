@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E00_cpu_reference",
+  "title": "CPU Reference Freeze",
+  "status": "READY_CPU",
+  "hypothesis": "Validate storage contract, FWHT, split-KV, randomized physical paging, ragged lengths, and static policy without CUDA.",
+  "depends_on": [
+    "none"
+  ],
+  "pass_fail": "CPU tests pass 100%; paged/dense relative error < 1e-5; no NaN/Inf.",
+  "results_root": "kernel/results/E00_cpu_reference",
+  "gate_type": "pass_fail",
+  "claim_eligible": false,
+  "requires_clean_git": false
+}

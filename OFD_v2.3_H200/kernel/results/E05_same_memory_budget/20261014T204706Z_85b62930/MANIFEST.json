@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "experiment_id": "E05_same_memory_budget",
+  "run_id": "20261014T204706Z_85b62930",
+  "timestamp_utc": "2026-10-14T20:47:06.980317+00:00",
+  "protocol_status": "READY_MATCHED_PAGED_CORE",
+  "gate_type": "observational",
+  "claim_eligible_protocol": true,
+  "requires_clean_git": true,
+  "git_commit": "6ad8df898c0cb62a7ebae63825ca7abf2ae66405",
+  "git_branch": "ofd-v2.3-measurement-safe",
+  "git_available": true,
+  "git_dirty": false,
+  "git_status_porcelain": "",
+  "claim_eligible_run": true,
+  "environment": {
+    "claim_eligible": true,
+    "cuda_visible_devices": null,
+    "git_available": true,
+    "git_branch": "ofd-v2.3-measurement-safe",
+    "git_commit": "6ad8df898c0cb62a7ebae63825ca7abf2ae66405",
+    "git_dirty": false,
+    "git_status_porcelain": "",
+    "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+    "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "timestamp_utc": "2026-10-14T20:47:04.790548+00:00",
+    "torch": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0"
+  },
+  "config": {
+    "schema_version": 2,
+    "frozen_contract": {
+      "group_size": 32,
+      "page_size": 16,
+      "int4_encoding": "signed q+8 low-nibble-first",
+      "scale_dtype": "fp16",
+      "scale_rule": "absmax/7",
+      "accumulation": "fp32"
+    },
+    "id": "E05_same_memory_budget",
+    "title": "Same-Memory-Budget Throughput",
+    "status": "READY_MATCHED_PAGED_CORE",
+    "hypothesis": "Compare aggregate throughput under equal KV-memory budget.",
+    "depends_on": [
+      "E03_split_scaling",
+      "E04a_core_attention"
+    ],
+    "pass_fail": "Matched paged FP16 correctness <= 2e-3; exact INT4 KV-buffer bytes <= FP16 budget. Throughput is observational, core-only, no FWHT/e2e claim.",
+    "results_root": "kernel/results/E05_same_memory_budget",
+    "gate_type": "observational",
+    "claim_eligible": true,
+    "requires_clean_git": true,
+    "protocol_revision": "E05_core_paged_v1",
+    "timing_scope": "core_attention_only",
+    "batch_pairing": "B_INT4=floor(32*B_FP16/9)",
+    "matrix": {
+      "context": [
+        8192,
+        16384,
+        32768,
+        65536,
+        131072
+      ],
+      "fp16_batch": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "hkv": 8,
+      "q_per_kv": 1,
+      "head_dim": 128,
+      "page_size": 16,
+      "group_size": 32,
+      "dtype": "fp16"
+    }
+  },
+  "commands": [
+    [
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/.venv/bin/python",
+      "kernel/tools/bench_e05.py",
+      "--out",
+      "/home/inugpu/workspace/ofd_v23_f4fvMC/ofd_triton_v2_3_measurement_safe_workspace/kernel/results/E05_same_memory_budget/20261014T204706Z_85b62930/matched_budget.csv",
+      "--smoke"
+    ]
+  ],
+  "artifacts": [
+    "matched_budget.csv",
+    "run.log"
+  ],
+  "notes": [],
+  "execution_status": "COMPLETED",
+  "gate_status": "NOT_APPLICABLE",
+  "return_code": 0
+}

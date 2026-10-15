@@ -1,0 +1,96 @@
+{
+  "revision": "qwen38_decode_layerwise_v2_data",
+  "model_id": "Qwen/Qwen3.8-27B",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "dtype": "float16",
+  "seed": 1337,
+  "contexts": [
+    2048,
+    8192,
+    32768
+  ],
+  "batch": 1,
+  "decode_steps": 8,
+  "measured_decode_steps": [
+    0,
+    7
+  ],
+  "full_attention_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    27,
+    31,
+    35,
+    39,
+    43,
+    47,
+    51,
+    55,
+    59,
+    63
+  ],
+  "linear_attention": "native Gated DeltaNet unchanged; excluded from P/K/V/KV cache comparison",
+  "geometry": {
+    "hkv": 4,
+    "hq": 24,
+    "head_dim": 256,
+    "page_size": 16,
+    "group_size": 32
+  },
+  "kernel_config": {
+    "split_size": 1024,
+    "tokens_per_block": 16,
+    "num_warps": 4,
+    "num_stages": 2
+  },
+  "datasets": [
+    {
+      "id": "Salesforce/wikitext",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "subset": "wikitext-2-raw-v1",
+      "domain": "prose",
+      "calibration_split": "train",
+      "evaluation_split": "test"
+    },
+    {
+      "id": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "subset": "full",
+      "domain": "code",
+      "calibration_split": "train",
+      "evaluation_split": "test"
+    },
+    {
+      "id": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "subset": "main",
+      "domain": "math",
+      "calibration_split": "train",
+      "evaluation_split": "test"
+    },
+    {
+      "id": "THUDM/LongBench",
+      "revision": "5e628be450b7e67fb7ae6e201bd6d8f7056f7672",
+      "subset": "qasper",
+      "domain": "long_document",
+      "calibration_split": "test",
+      "evaluation_split": "test",
+      "partition": "SHA256(row text) low bit: calibration=0 evaluation=1"
+    }
+  ],
+  "samples": "One nonoverlapping packed text stream per domain and partition, exact T+8 token prefix. No cycling if insufficient text. Store source row IDs and token SHA256, do not commit dataset text or weights.",
+  "policy_selection": "Per-layer minimum arithmetic mean attention-output relative L2 error across all calibration contexts, steps and domains; tie order P,K,V,KV. Freeze before evaluation.",
+  "timing": {
+    "warmup": 3,
+    "repeat": 10,
+    "scope": "decode attention replay with preallocated workspace and GPU q/output FWHT; untimed cache construction; matched FP16 paged split baseline"
+  },
+  "phase_A_scope": "Real-model teacher-forced decode layer replay; not total-model latency, online KV append, serving capacity or serving E2E. Per-layer FP16 fallback numerical tolerance 0.002; INT4-versus-FP16 quality is observational, not this tolerance.",
+  "phase_B": "Actual layer-policy model decode quality and model-total decode latency require online packed-cache append integration; E09 overall remains incomplete until this is implemented and measured.",
+  "code_text_format": "MBPP task text + official test_setup_code + reference code + test_list + challenge_test_list. Same format for calibration/evaluation; no sample cycling.",
+  "revision_reason": "v1 full run stopped before any matrix measurements because MBPP train text+code only provided 28,993 tokens, below 32K. Include official tests; retain v1 failure and completed smoke."
+}

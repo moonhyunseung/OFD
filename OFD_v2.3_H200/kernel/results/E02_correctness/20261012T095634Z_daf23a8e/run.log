@@ -1,0 +1,47 @@
+{
+  "gpu": "NVIDIA H200",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "mode": "correctness",
+  "config": {
+    "split_size": 1024,
+    "tokens_per_block": 16,
+    "num_warps": 4,
+    "num_stages": 2
+  },
+  "blackwell_candidates": [
+    {
+      "split_size": 512,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    {
+      "split_size": 1024,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    {
+      "split_size": 1024,
+      "tokens_per_block": 32,
+      "num_warps": 4,
+      "num_stages": 3
+    },
+    {
+      "split_size": 2048,
+      "tokens_per_block": 32,
+      "num_warps": 8,
+      "num_stages": 3
+    }
+  ]
+}
+GPU CORRECTNESS: randomized physical pages + ragged lengths
+correctness config: TritonDecodeConfig(split_size=64, tokens_per_block=16, num_warps=4, num_stages=2)
+   P: rel=0.000000e+00
+   K: rel=3.159846e-06
+   V: rel=7.362552e-06
+  KV: rel=1.776152e-06
+worst relative error: 7.362552e-06
+frozen threshold: 2.000000e-03
+E02_CORRECTNESS_GATE_PASS

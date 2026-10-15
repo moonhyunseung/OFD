@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E03_split_scaling",
+  "title": "Split-KV Scaling",
+  "status": "READY_AFTER_E02",
+  "hypothesis": "Test whether split-KV removes v1 high-concurrency collapse.",
+  "depends_on": [
+    "E02_correctness"
+  ],
+  "pass_fail": "Historical v1 comparator is archived verbatim; shared-cache v1/v2 relative error <= 0.01 before timing. Performance ratios are observational and reported even when v2 is slower.",
+  "results_root": "kernel/results/E03_split_scaling",
+  "gate_type": "pass_fail",
+  "claim_eligible": true,
+  "requires_clean_git": true
+}

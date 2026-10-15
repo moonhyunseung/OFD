@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "frozen_contract": {
+    "group_size": 32,
+    "page_size": 16,
+    "int4_encoding": "signed q+8 low-nibble-first",
+    "scale_dtype": "fp16",
+    "scale_rule": "absmax/7",
+    "accumulation": "fp32"
+  },
+  "id": "E02_correctness",
+  "title": "GPU Numerical Correctness",
+  "status": "READY_GPU",
+  "hypothesis": "Compare GPU P/K/V/KV outputs against CPU paged quantized oracle on ragged/random-page cases.",
+  "depends_on": [
+    "E01_gpu_compile"
+  ],
+  "pass_fail": "All variants finite; GPU-vs-CPU relative error <= 2e-3 for frozen cases.",
+  "results_root": "kernel/results/E02_correctness",
+  "automated_gate": {
+    "metric": "worst_gpu_vs_cpu_relative_error",
+    "max": 0.002
+  },
+  "gate_type": "pass_fail",
+  "claim_eligible": false,
+  "requires_clean_git": false
+}

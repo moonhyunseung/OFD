@@ -1,0 +1,12 @@
+{
+  "selected_config_id": 2,
+  "selected_config": {
+    "split_size": 512,
+    "tokens_per_block": 16,
+    "num_warps": 8,
+    "num_stages": 1
+  },
+  "baseline_config_id": 9,
+  "calibration_geomean": 1.3731807290889253,
+  "selection_frozen_before_evaluation": true
+}
