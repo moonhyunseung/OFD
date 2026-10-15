@@ -1,0 +1,218 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Generating train split:   0%|          | 0/374 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 374/374 [00:00<00:00, 28411.24 examples/s]
+
+Generating test split:   0%|          | 0/500 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 500/500 [00:00<00:00, 55907.65 examples/s]
+
+Generating validation split:   0%|          | 0/90 [00:00<?, ? examples/s]
+Generating validation split: 100%|██████████| 90/90 [00:00<00:00, 14986.20 examples/s]
+
+Generating prompt split:   0%|          | 0/10 [00:00<?, ? examples/s]
+Generating prompt split: 100%|██████████| 10/10 [00:00<00:00, 2296.36 examples/s]
+
+Generating train split:   0%|          | 0/7473 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 7473/7473 [00:00<00:00, 152178.40 examples/s]
+
+Generating test split:   0%|          | 0/1319 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 1319/1319 [00:00<00:00, 151673.39 examples/s]
+
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/851 [00:00<07:33,  1.88it/s]
+Loading weights:   0%|          | 2/851 [00:00<05:34,  2.54it/s]
+Loading weights:   3%|▎         | 23/851 [00:01<00:23, 34.55it/s]
+Loading weights:   4%|▍         | 37/851 [00:01<00:17, 47.10it/s]
+Loading weights:   5%|▌         | 46/851 [00:01<00:15, 51.12it/s]
+Loading weights:   6%|▋         | 54/851 [00:01<00:14, 56.52it/s]
+Loading weights:   8%|▊         | 66/851 [00:01<00:12, 63.29it/s]
+Loading weights:   9%|▉         | 80/851 [00:01<00:09, 77.90it/s]
+Loading weights:  11%|█         | 90/851 [00:01<00:09, 76.35it/s]
+Loading weights:  12%|█▏        | 99/851 [00:01<00:10, 72.05it/s]
+Loading weights:  13%|█▎        | 107/851 [00:02<00:10, 72.89it/s]
+Loading weights:  14%|█▍        | 120/851 [00:02<00:08, 81.59it/s]
+Loading weights:  15%|█▌        | 129/851 [00:02<00:08, 81.49it/s]
+Loading weights:  17%|█▋        | 143/851 [00:02<00:08, 83.22it/s]
+Loading weights:  18%|█▊        | 152/851 [00:02<00:09, 72.86it/s]
+Loading weights:  19%|█▉        | 165/851 [00:02<00:07, 85.85it/s]
+Loading weights:  21%|██        | 175/851 [00:02<00:08, 78.18it/s]
+Loading weights:  22%|██▏       | 184/851 [00:03<00:08, 80.77it/s]
+Loading weights:  23%|██▎       | 193/851 [00:03<00:08, 80.37it/s]
+Loading weights:  24%|██▎       | 202/851 [00:03<00:08, 72.87it/s]
+Loading weights:  25%|██▍       | 210/851 [00:03<00:09, 69.24it/s]
+Loading weights:  26%|██▋       | 225/851 [00:03<00:07, 84.91it/s]
+Loading weights:  28%|██▊       | 235/851 [00:03<00:07, 80.48it/s]
+Loading weights:  29%|██▉       | 249/851 [00:03<00:07, 80.16it/s]
+Loading weights:  30%|███       | 258/851 [00:03<00:07, 76.29it/s]
+Loading weights:  31%|███▏      | 266/851 [00:04<00:07, 76.05it/s]
+Loading weights:  33%|███▎      | 278/851 [00:04<00:06, 82.91it/s]
+Loading weights:  34%|███▍      | 288/851 [00:04<00:06, 81.28it/s]
+Loading weights:  35%|███▌      | 302/851 [00:04<00:07, 78.42it/s]
+Loading weights:  37%|███▋      | 311/851 [00:04<00:07, 75.22it/s]
+Loading weights:  38%|███▊      | 320/851 [00:04<00:06, 78.48it/s]
+Loading weights:  39%|███▉      | 331/851 [00:04<00:06, 81.62it/s]
+Loading weights:  40%|████      | 341/851 [00:04<00:06, 81.65it/s]
+Loading weights:  42%|████▏     | 355/851 [00:05<00:06, 81.58it/s]
+Loading weights:  43%|████▎     | 364/851 [00:05<00:06, 76.57it/s]
+Loading weights:  44%|████▎     | 372/851 [00:05<00:06, 73.44it/s]
+Loading weights:  45%|████▌     | 386/851 [00:05<00:05, 88.58it/s]
+Loading weights:  47%|████▋     | 398/851 [00:05<00:04, 92.47it/s]
+Loading weights:  48%|████▊     | 408/851 [00:05<00:05, 85.23it/s]
+Loading weights:  49%|████▉     | 417/851 [00:05<00:05, 80.04it/s]
+Loading weights:  50%|█████     | 426/851 [00:06<00:05, 76.06it/s]
+Loading weights:  52%|█████▏    | 440/851 [00:06<00:04, 91.76it/s]
+Loading weights:  53%|█████▎    | 452/851 [00:06<00:04, 92.59it/s]
+Loading weights:  54%|█████▍    | 462/851 [00:06<00:04, 93.86it/s]
+Loading weights:  55%|█████▌    | 472/851 [00:06<00:04, 78.26it/s]
+Loading weights:  58%|█████▊    | 490/851 [00:06<00:03, 98.70it/s]
+Loading weights:  59%|█████▉    | 501/851 [00:06<00:03, 89.36it/s]
+Loading weights:  60%|██████    | 514/851 [00:07<00:03, 87.03it/s]
+Loading weights:  62%|██████▏   | 524/851 [00:07<00:04, 74.86it/s]
+Loading weights:  64%|██████▍   | 543/851 [00:07<00:03, 92.18it/s]
+Loading weights:  65%|██████▍   | 553/851 [00:07<00:03, 87.59it/s]
+Loading weights:  67%|██████▋   | 567/851 [00:07<00:03, 87.79it/s]
+Loading weights:  68%|██████▊   | 576/851 [00:07<00:03, 83.05it/s]
+Loading weights:  70%|██████▉   | 592/851 [00:07<00:02, 92.65it/s]
+Loading weights:  71%|███████   | 606/851 [00:08<00:02, 88.29it/s]
+Loading weights:  73%|███████▎  | 620/851 [00:08<00:02, 86.51it/s]
+Loading weights:  74%|███████▍  | 629/851 [00:08<00:02, 79.94it/s]
+Loading weights:  76%|███████▌  | 645/851 [00:08<00:02, 81.40it/s]
+Loading weights:  77%|███████▋  | 659/851 [00:08<00:02, 82.00it/s]
+Loading weights:  79%|███████▉  | 673/851 [00:08<00:02, 83.40it/s]
+Loading weights:  80%|████████  | 682/851 [00:09<00:02, 73.86it/s]
+Loading weights:  82%|████████▏ | 698/851 [00:09<00:01, 90.20it/s]
+Loading weights:  83%|████████▎ | 708/851 [00:09<00:01, 87.93it/s]
+Loading weights:  84%|████████▍ | 718/851 [00:09<00:01, 77.80it/s]
+Loading weights:  86%|████████▌ | 730/851 [00:09<00:01, 82.63it/s]
+Loading weights:  87%|████████▋ | 739/851 [00:09<00:01, 73.36it/s]
+Loading weights:  88%|████████▊ | 751/851 [00:09<00:01, 77.89it/s]
+Loading weights:  90%|████████▉ | 765/851 [00:10<00:01, 78.73it/s]
+Loading weights:  92%|█████████▏| 779/851 [00:10<00:00, 78.37it/s]
+Loading weights:  93%|█████████▎| 788/851 [00:10<00:00, 73.85it/s]
+Loading weights:  94%|█████████▎| 796/851 [00:10<00:00, 73.65it/s]
+Loading weights:  95%|█████████▍| 808/851 [00:10<00:00, 84.19it/s]
+Loading weights:  96%|█████████▌| 818/851 [00:10<00:00, 78.15it/s]
+Loading weights:  98%|█████████▊| 832/851 [00:10<00:00, 78.51it/s]
+Loading weights:  99%|█████████▉| 841/851 [00:11<00:00, 73.38it/s]
+Loading weights: 100%|█████████▉| 849/851 [00:11<00:00, 74.43it/s]
+Loading weights: 100%|██████████| 851/851 [00:11<00:00, 76.13it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 99.83095231776436, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.61505870334804, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.82926110178232, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.77583548054099, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.523706048106156, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.42407547868788, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.88912823299567, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.0243029439201, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.931546871860824, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.00762458642324, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.98586664907634, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.74188853117327, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 56.843516727288566, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.62783698365092, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 59.83595681997637, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.680328031380974, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 56.69324674333135, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.9907750984033, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.315243382006884, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 59.87406390098234, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.477159321929015, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 56.70527407589058, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.24390827243527, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 8192, 'batch': 8, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 59.83768170699477, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.662459529936314, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.480577965577446, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.592344435552754, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.03072946642836, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.75400939273337, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 95.83810678062339, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 74.41711790549259, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.13119657896459, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.977814589316644, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.45973878664275, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.78684843890369, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.57953712902963, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.146444502597056, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 101.14188267228504, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 63.46145016141236, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 101.22493258677423, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 71.60261607108016, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 99.86360968711476, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.54899958831569, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.38094500762721, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.22884537155429, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.88490150310099, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 63.41169448569417, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 71.53460406698287, 'status': 'OK'}
+[W1015 16:41:39.644163952 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 260046848 bytes (free: 208797696, total: 150109880320).
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 69.65949083678424, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.23446060034136, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.67498264523844, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.75616968174776, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 69.63535017954807, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.14787843761345, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.19196481692294, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.01428572461009, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 70.50221196065347, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 56.09168251976371, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.21842128535112, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 2, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.89529777939121, 'status': 'OK'}
+[W1015 16:43:00.269887234 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 402653184 bytes (free: 70385664, total: 150109880320).
+[W1015 16:43:11.550048960 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 503316480 bytes (free: 441581568, total: 150109880320).
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 93.76213590924938, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.29367379595836, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.45835669524968, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 109.68643582115571, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 109.68425769048433, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.04344907340904, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 93.75174390152097, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.08435920253396, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 109.68290626381834, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.82619690398375, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.88098878413439, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 65536, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 93.75586578001578, 'status': 'OK'}
+[W1015 16:44:47.013370209 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 171966464 bytes (free: 13762560, total: 150109880320).
+[W1015 16:44:56.993068706 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 230686720 bytes (free: 5373952, total: 150109880320).
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 69.04921991129716, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.934084398051105, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 60.34970446489751, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 54.69864280894399, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.79247044523557, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 60.393990483134985, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.65064608243605, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 69.16091544553638, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 103.84254266197483, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 69.18887988043328, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 99.45897944271564, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 84.21312520901363, 'status': 'OK'}
+[W1015 16:46:27.106210992 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 402653184 bytes (free: 70385664, total: 150109880320).
+[W1015 16:46:37.394417882 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 503316480 bytes (free: 340918272, total: 150109880320).
+[W1015 16:46:46.386522970 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 570425344 bytes (free: 106037248, total: 150109880320).
+[W1015 16:46:55.481979065 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 637534208 bytes (free: 5373952, total: 150109880320).
+[W1015 16:47:02.938473213 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 687865856 bytes (free: 357695488, total: 150109880320).
+[W1015 16:47:09.749608347 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 738197504 bytes (free: 626130944, total: 150109880320).
+[W1015 16:47:15.207501694 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 788529152 bytes (free: 475136000, total: 150109880320).
+[W1015 16:47:21.395245805 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 838860800 bytes (free: 5373952, total: 150109880320).
+[W1015 16:47:27.255296774 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 872415232 bytes (free: 424804352, total: 150109880320).
+[W1015 16:47:33.954807218 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 905969664 bytes (free: 810680320, total: 150109880320).
+[W1015 16:47:39.424071349 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 939524096 bytes (free: 626130944, total: 150109880320).
+[W1015 16:47:44.664200257 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 973078528 bytes (free: 189923328, total: 150109880320).
+[W1015 16:47:49.665572664 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1006632960 bytes (free: 911343616, total: 150109880320).
+[W1015 16:47:54.576848345 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1040187392 bytes (free: 106037248, total: 150109880320).
+[W1015 16:47:58.387773700 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1073741824 bytes (free: 810680320, total: 150109880320).
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.68764286364118, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 184.24919503740966, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 154.6217780560255, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.61750045915445, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.67099834419787, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.845696065574884, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 154.68617730463544, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 184.23625725942352, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 184.23673215632638, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 154.60988623090088, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_gbest', 'changed_layer': -1, 'variant': '-', 'decode_ms': 62.01336098213991, 'status': 'OK'}
+E2E {'phase': 'confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_g1', 'changed_layer': -1, 'variant': '-', 'decode_ms': 103.86518125111859, 'status': 'OK'}
