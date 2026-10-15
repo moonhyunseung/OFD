@@ -13,8 +13,9 @@ def _append(K,V,KP,KS,VP,VS,BT,POS,NP:tl.constexpr,H:tl.constexpr,D:tl.constexpr
     v=tl.load(V+(b*H+h)*D+d).to(tl.float32)
     if INT4:
         kg=tl.reshape(k,(D//32,32));vg=tl.reshape(v,(D//32,32))
-        sk=tl.div_rn(tl.maximum(tl.max(tl.abs(kg),1),1.0e-8),7.0)
-        sv=tl.div_rn(tl.maximum(tl.max(tl.abs(vg),1),1.0e-8),7.0)
+        # torch CUDA scalar /7 is multiply by the FP32 reciprocal.
+        sk=tl.maximum(tl.max(tl.abs(kg),1),1.0e-8)*0.1428571492433548
+        sv=tl.maximum(tl.max(tl.abs(vg),1),1.0e-8)*0.1428571492433548
         ck=(libdevice.nearbyint(tl.div_rn(kg,sk[:,None])).to(tl.int32)+8).to(tl.uint8)
         cv=(libdevice.nearbyint(tl.div_rn(vg,sv[:,None])).to(tl.int32)+8).to(tl.uint8)
         pair=tl.arange(0,16)
