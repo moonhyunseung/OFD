@@ -1,0 +1,5 @@
+{
+  "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+  "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB\n",
+  "source_sha": "6ef2a73ec39f33743cc36ccc49bb93b2c373b8e8"
+}
