@@ -27,13 +27,17 @@ class ProtocolTests(unittest.TestCase):
         self.assertEqual(template["schema_version"], 2)
         self.assertTrue(required.issubset(template))
 
-    def test_e04_is_split_and_e2e_is_blocked(self):
+    def test_e04_is_split_and_gpu_fwht_is_validated(self):
         a = json.loads((KERNEL / "experiments/E04a_core_attention/config.json").read_text())
         b = json.loads((KERNEL / "experiments/E04b_end_to_end/config.json").read_text())
         self.assertEqual(a["automated_gate"]["timing_scope"], "core_attention_only")
         self.assertTrue(a["requires_clean_git"])
-        self.assertTrue(b["status"].startswith("BLOCKED"))
-        self.assertIn("FWHT", b["status"])
+        self.assertEqual(b["status"], "READY_GPU_FWHT")
+        self.assertEqual(b["implementation_validation"]["correctness_threshold"], 0.002)
+        from ofd_kernel.runtime.gpu_ofd import gpu_ofd_decode
+        source = inspect.getsource(gpu_ofd_decode)
+        self.assertNotIn("fwht_normalized", source)
+        self.assertNotIn(".item(", source)
 
     def test_e07_is_observational(self):
         cfg = json.loads((KERNEL / "experiments/E07_long_context/config.json").read_text())
