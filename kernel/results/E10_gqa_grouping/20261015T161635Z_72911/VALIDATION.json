@@ -1,0 +1,11 @@
+{
+  "lowlevel_valid": true,
+  "source_sha": "6ef2a73ec39f33743cc36ccc49bb93b2c373b8e8",
+  "complete_rows": 2160,
+  "correctness_checks": 648,
+  "max_relative_error": 1.6526204490219243e-05,
+  "g1_scalar_AST_identical_to_legacy": true,
+  "g1_review": "INT4 all 216 ratios 0.994257..1.006247. FP16 216 ratios have one isolated 1.138650 (2K/B1 process2 round0); all others 0.989181..1.010846, process medians 1.00049..1.00087. Outlier retained. No repeated material g1 drift as in original failed-parity smoke.",
+  "scope": "low-level causal comparison only; no microarchitectural attribution",
+  "raw_sha256": "55ef32beab4b8e62eded8a9125f3af9e73fdeace48dd232a54f413d1b23b653f"
+}

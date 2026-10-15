@@ -1,0 +1,48 @@
+{
+  "lowlevel_valid": true,
+  "lowlevel_source_sha": "6ef2a73ec39f33743cc36ccc49bb93b2c373b8e8",
+  "lowlevel_run": "20261015T161635Z_72911",
+  "lowlevel_csv_sha256": "55ef32beab4b8e62eded8a9125f3af9e73fdeace48dd232a54f413d1b23b653f",
+  "fixed": {
+    "INT4": 2,
+    "FP16": 1
+  },
+  "selection": "Frozen protocol: equal-weight geometric mean latency over all 24 shapes, nine process/round blocks per shape; choose best fixed g per representation; no shape-specific posthoc choice",
+  "fullmodel_shapes": [
+    [
+      8192,
+      1
+    ],
+    [
+      8192,
+      8
+    ],
+    [
+      32768,
+      1
+    ],
+    [
+      32768,
+      4
+    ],
+    [
+      65536,
+      2
+    ],
+    [
+      65536,
+      4
+    ],
+    [
+      131072,
+      1
+    ],
+    [
+      131072,
+      4
+    ]
+  ],
+  "rotation": "P only; no FWHT; no layer policy search",
+  "capacity": "T+16 for full model, Ns=ceil((T+16)/1024)",
+  "fixed_before_fullmodel": true
+}
