@@ -1,0 +1,10 @@
+{
+  "note": "SHA256 of archived UTF-8 text with LF line endings",
+  "files": {
+    "run.log": "1410e6ea7521d0d05044541167a902dd09753d6c718749ede40682fe8a1eefb4",
+    "data_manifest.json": "3d8bae3d9543d4b541e0d1f0764ab0c9b6c08229ddfa10333009a2fec11b5adb",
+    "correctness_online.csv": "99d16228478e5b474d124629e681b35b5e5977a3c6a0897fca7ff723ea294548",
+    "e2e.csv": "e8738f6e4ebf18323a2c76fcd981b00890abecf98d2386d2d3b20333136f0f8e",
+    "MANIFEST.json": "3010d57dc4d6793bf6730003f8bcd1d07ff8c306da3d2f5faf512fbc04277e1a"
+  }
+}

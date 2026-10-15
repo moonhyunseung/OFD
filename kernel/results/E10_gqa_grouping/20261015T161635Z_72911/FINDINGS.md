@@ -107,4 +107,7 @@ Rejected within these measurements: a universal grouping speedup, a systematic l
 ## 8. Remaining uncertainty
 Process variation, padding lanes (3->4,6->8), shared merge floor, cache residency, and compiler/resource changes remain. Matched FP16 controls do not remove all representation-by-scheduling interactions. No full-model confirmation until manual validity review and a committed fixed policy.
 
-Best fixed g candidates selected by the original protocol and frozen in kernel/experiments/E10_gqa_grouping/frozen_policy.json before model confirmation: {'INT4': {'group_q': 2, 'geomean_latency_ms': {1: 1.2692940051245232, 2: 1.1539214959243222, 3: 1.209522161543324, 6: 1.2665620906038537}}, 'FP16': {'group_q': 1, 'geomean_latency_ms': {1: 0.32338160147608797, 2: 0.6253975740536883, 3: 0.8823216632730213, 6: 1.0537366738079335}}}
+Best fixed g candidates selected by the original protocol and frozen before model confirmation: {'INT4': {'group_q': 2, 'geomean_latency_ms': {'1': 1.2697634863185256, '2': 1.154308963642163, '3': 1.2099174977112421, '6': 1.2668545610278332}}, 'FP16': {'group_q': 1, 'geomean_latency_ms': {'1': 0.3239383600889658, '2': 0.6255667095301797, '3': 0.8820020814404275, '6': 1.0539672073312742}}}
+
+## Completed model follow-up
+The frozen fixed policy was applied after validation. See ../README.md and ../confirmation_20261015T163740Z_7bd99095/CONFIRMATION.md for all 96 complete-model rows, paired ranges and limitations. No full-model result was used to revise the fixed policy.

@@ -1,0 +1,110 @@
+{
+  "source_sha": "27092f57dfa2e06d4aa56a0977bc431b52bc9af3",
+  "complete": true,
+  "rows": 12,
+  "expected_rows": 12,
+  "smoke": true,
+  "policy": {
+    "lowlevel_valid": true,
+    "lowlevel_source_sha": "6ef2a73ec39f33743cc36ccc49bb93b2c373b8e8",
+    "lowlevel_run": "20261015T161635Z_72911",
+    "lowlevel_csv_sha256": "55ef32beab4b8e62eded8a9125f3af9e73fdeace48dd232a54f413d1b23b653f",
+    "fixed": {
+      "INT4": 2,
+      "FP16": 1
+    },
+    "selection": "Frozen protocol: equal-weight geometric mean latency over all 24 shapes, nine process/round blocks per shape; choose best fixed g per representation; no shape-specific posthoc choice",
+    "fullmodel_shapes": [
+      [
+        8192,
+        1
+      ],
+      [
+        8192,
+        8
+      ],
+      [
+        32768,
+        1
+      ],
+      [
+        32768,
+        4
+      ],
+      [
+        65536,
+        2
+      ],
+      [
+        65536,
+        4
+      ],
+      [
+        131072,
+        1
+      ],
+      [
+        131072,
+        4
+      ]
+    ],
+    "rotation": "P only; no FWHT; no layer policy search",
+    "capacity": "T+16 for full model, Ns=ceil((T+16)/1024)",
+    "fixed_before_fullmodel": true,
+    "confirmation_source_sha": "27092f57dfa2e06d4aa56a0977bc431b52bc9af3"
+  },
+  "failures": [],
+  "groups": [
+    {
+      "context": 128,
+      "batch": 1,
+      "representation": "FP16",
+      "frozen_group_q": 1,
+      "n_pairs": 3,
+      "g1_median_ms": 91.20472831030686,
+      "gbest_median_ms": 52.59192424515883,
+      "g1_tok_s": 10.9643438287288,
+      "gbest_tok_s": 19.014326141376195,
+      "paired_speedup_median": 1.010990295886669,
+      "paired_speedup_min": 1.0017742648525936,
+      "paired_speedup_max": 1.7444840904824301,
+      "paired_gain_ms_median": 0.9969479093949047,
+      "paired_gain_ms_min": 0.09331200271844864,
+      "paired_gain_ms_max": 38.92295124630133,
+      "g1_kv_bytes": 9437184,
+      "gbest_kv_bytes": 9437184,
+      "g1_allocated_bytes_median": 54148103680,
+      "gbest_allocated_bytes_median": 54148103680,
+      "g1_gpu_event_ms_median": 91.18534342447917,
+      "gbest_gpu_event_ms_median": 52.57821909586588,
+      "num_splits": 1,
+      "git_sha": "27092f57dfa2e06d4aa56a0977bc431b52bc9af3"
+    },
+    {
+      "context": 128,
+      "batch": 1,
+      "representation": "INT4",
+      "frozen_group_q": 2,
+      "n_pairs": 3,
+      "g1_median_ms": 53.64592280238867,
+      "gbest_median_ms": 91.54499384264152,
+      "g1_tok_s": 18.640745610502826,
+      "gbest_tok_s": 10.923590226232573,
+      "paired_speedup_median": 0.9106099879244258,
+      "paired_speedup_min": 0.5860060780014,
+      "paired_speedup_max": 1.0060857202618292,
+      "paired_gain_ms_median": -8.980975796778992,
+      "paired_gain_ms_min": -37.89907104025285,
+      "paired_gain_ms_max": 0.32364949584007263,
+      "g1_kv_bytes": 2654208,
+      "gbest_kv_bytes": 2654208,
+      "g1_allocated_bytes_median": 54141320704,
+      "gbest_allocated_bytes_median": 54141320704,
+      "g1_gpu_event_ms_median": 53.63288497924805,
+      "gbest_gpu_event_ms_median": 91.52647399902344,
+      "num_splits": 1,
+      "git_sha": "27092f57dfa2e06d4aa56a0977bc431b52bc9af3"
+    }
+  ],
+  "native_gdn_reference_fallback": true
+}
