@@ -58,7 +58,7 @@ class Sweep:
         self.targets=torch.tensor([item['tokens'][t+s+1] for s in range(self.warm,self.steps)],device='cuda')[:,None].expand(-1,b)
         self.mask={'full_attention':None,'linear_attention':None}
     def run(self,policy,label,round=0,layer=-1,variant='-',phase='control',unmodified=False):
-        domain,partition,t,b=self.case;cache=move_cache(copy.deepcopy(self.base),'cuda');self.active=None if unmodified else install(cache,policy,self.steps)
+        domain,partition,t,b=self.case;cache=move_cache(copy.deepcopy(self.base),'cuda');self.active=None if unmodified else install(cache,policy,self.steps,group_q=getattr(self,"group_q",1))
         kvbytes=sum(x.kv_bytes for x in self.active.values()) if self.active else sum(cache.layers[i].keys.numel()*cache.layers[i].keys.element_size()*2 for i in C['layers'])
         events=[(torch.cuda.Event(enable_timing=True),torch.cuda.Event(enable_timing=True)) for _ in range(self.steps-self.warm)]
         for ev_start,ev_end in events:ev_start.record();ev_end.record()

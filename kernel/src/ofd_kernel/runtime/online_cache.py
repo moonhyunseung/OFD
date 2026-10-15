@@ -8,6 +8,7 @@ from ..triton.append import append_token
 from .launcher import TritonDecodeConfig,allocate_workspace
 from .gpu_ofd import gpu_ofd_decode
 from .fp16_launcher import fp16_paged_decode_core
+from .subgrouped_launcher import subgrouped_paged_decode_core
 
 CFG=TritonDecodeConfig()
 
@@ -19,7 +20,10 @@ def move_cache(cache,device):
     return cache
 
 class OnlineKV:
-    def __init__(self,k,v,variant,steps,seed=1337):
+    def __init__(self,k,v,variant,steps,seed=1337,group_q=1):
+        if group_q not in (1,2,3,6):raise ValueError("group_q must be 1,2,3,6")
+        if group_q != 1 and variant not in ("P","FP16"):raise ValueError("E10 grouping is P/FP16 only")
+        self.group_q=group_q
         self.variant=variant;self.start=k.shape[2];self.pos=self.start
         b,h,t,d=k.shape;self.capacity=t+steps;np=math.ceil(self.capacity/16)
         g=torch.Generator(device=k.device).manual_seed(seed)
@@ -56,7 +60,9 @@ class OnlineKV:
         self.pos+=1
     def attention(self,q):
         self.q.copy_(q[:,:,0,:]);lens=self.lens[self.pos-self.start-1]
-        if self.variant=='FP16':
+        if self.group_q != 1:
+            out=subgrouped_paged_decode_core(self.q,self.kp,self.ks,self.vp,self.vs,self.bt,lens,config=CFG,workspace=self.ws,max_seq_len=self.capacity,representation='FP16' if self.variant=='FP16' else 'INT4',group_q=self.group_q)
+        elif self.variant=='FP16':
             out=fp16_paged_decode_core(self.q,self.kp,self.vp,self.bt,lens,config=CFG,workspace=self.ws,max_seq_len=self.capacity)
         else:
             out=gpu_ofd_decode(self.q,self.kp,self.ks,self.vp,self.vs,self.bt,lens,variant=Variant(self.variant),config=CFG,workspace=self.ws,max_seq_len=self.capacity,q_work=self.qw,out_work=self.ow)
@@ -77,10 +83,10 @@ class NativeKV:
     @property
     def kv_bytes(self):return (self.k.numel()+self.v.numel())*self.k.element_size()
 
-def install(cache,policy,steps):
+def install(cache,policy,steps,group_q=1):
     stores={}
     for index,variant in policy.items():
-        layer=cache.layers[int(index)];store=NativeKV(layer.keys,layer.values,steps) if variant=='NATIVE' else OnlineKV(layer.keys,layer.values,variant,steps)
+        layer=cache.layers[int(index)];store=NativeKV(layer.keys,layer.values,steps) if variant=='NATIVE' else OnlineKV(layer.keys,layer.values,variant,steps,group_q=group_q)
         stores[int(index)]=store;layer.keys=None;layer.values=None
         def update(self,k,v,*args,_s=store,**kwargs):
             _s.append(k,v)
