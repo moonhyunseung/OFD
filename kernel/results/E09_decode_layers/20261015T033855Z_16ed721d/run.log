@@ -1,0 +1,127 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Generating test split:   0%|          | 0/4358 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 4358/4358 [00:00<00:00, 258605.82 examples/s]
+
+Generating train split:   0%|          | 0/36718 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 36718/36718 [00:00<00:00, 658389.21 examples/s]
+
+Generating validation split:   0%|          | 0/3760 [00:00<?, ? examples/s]
+Generating validation split: 100%|██████████| 3760/3760 [00:00<00:00, 621109.17 examples/s]
+
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/851 [00:00<06:56,  2.04it/s]
+Loading weights:   0%|          | 2/851 [00:00<06:05,  2.32it/s]
+Loading weights:   2%|▏         | 15/851 [00:01<00:39, 21.02it/s]
+Loading weights:   4%|▍         | 37/851 [00:01<00:16, 50.86it/s]
+Loading weights:   5%|▌         | 46/851 [00:01<00:14, 55.24it/s]
+Loading weights:   6%|▋         | 54/851 [00:01<00:13, 59.57it/s]
+Loading weights:   8%|▊         | 67/851 [00:01<00:10, 74.12it/s]
+Loading weights:   9%|▉         | 77/851 [00:01<00:10, 74.21it/s]
+Loading weights:  11%|█         | 90/851 [00:01<00:10, 75.60it/s]
+Loading weights:  12%|█▏        | 99/851 [00:01<00:10, 71.66it/s]
+Loading weights:  13%|█▎        | 110/851 [00:02<00:09, 80.36it/s]
+Loading weights:  14%|█▍        | 119/851 [00:02<00:08, 82.69it/s]
+Loading weights:  15%|█▌        | 129/851 [00:02<00:09, 77.16it/s]
+Loading weights:  17%|█▋        | 143/851 [00:02<00:09, 78.22it/s]
+Loading weights:  18%|█▊        | 152/851 [00:02<00:09, 75.17it/s]
+Loading weights:  19%|█▉        | 160/851 [00:02<00:09, 75.38it/s]
+Loading weights:  20%|██        | 172/851 [00:02<00:08, 81.88it/s]
+Loading weights:  21%|██▏       | 182/851 [00:03<00:08, 77.84it/s]
+Loading weights:  23%|██▎       | 196/851 [00:03<00:08, 77.27it/s]
+Loading weights:  24%|██▍       | 205/851 [00:03<00:08, 72.48it/s]
+Loading weights:  25%|██▌       | 213/851 [00:03<00:08, 71.55it/s]
+Loading weights:  27%|██▋       | 227/851 [00:03<00:07, 84.11it/s]
+Loading weights:  28%|██▊       | 239/851 [00:03<00:06, 89.12it/s]
+Loading weights:  29%|██▉       | 249/851 [00:03<00:07, 82.40it/s]
+Loading weights:  30%|███       | 258/851 [00:03<00:07, 76.18it/s]
+Loading weights:  31%|███▏      | 266/851 [00:04<00:07, 73.94it/s]
+Loading weights:  33%|███▎      | 278/851 [00:04<00:06, 84.62it/s]
+Loading weights:  34%|███▍      | 288/851 [00:04<00:07, 79.50it/s]
+Loading weights:  35%|███▌      | 302/851 [00:04<00:06, 81.57it/s]
+Loading weights:  37%|███▋      | 311/851 [00:04<00:07, 75.40it/s]
+Loading weights:  38%|███▊      | 322/851 [00:04<00:06, 83.38it/s]
+Loading weights:  39%|███▉      | 331/851 [00:04<00:06, 83.56it/s]
+Loading weights:  40%|████      | 341/851 [00:05<00:06, 77.59it/s]
+Loading weights:  42%|████▏     | 355/851 [00:05<00:06, 78.70it/s]
+Loading weights:  43%|████▎     | 364/851 [00:05<00:06, 73.48it/s]
+Loading weights:  44%|████▎     | 372/851 [00:05<00:06, 74.44it/s]
+Loading weights:  45%|████▌     | 384/851 [00:05<00:05, 81.68it/s]
+Loading weights:  46%|████▋     | 394/851 [00:05<00:05, 83.24it/s]
+Loading weights:  47%|████▋     | 403/851 [00:05<00:05, 82.16it/s]
+Loading weights:  48%|████▊     | 412/851 [00:05<00:05, 83.22it/s]
+Loading weights:  49%|████▉     | 421/851 [00:06<00:05, 74.25it/s]
+Loading weights:  51%|█████     | 433/851 [00:06<00:05, 79.21it/s]
+Loading weights:  53%|█████▎    | 447/851 [00:06<00:05, 78.65it/s]
+Loading weights:  54%|█████▍    | 461/851 [00:06<00:04, 81.16it/s]
+Loading weights:  55%|█████▌    | 470/851 [00:06<00:05, 75.02it/s]
+Loading weights:  56%|█████▌    | 478/851 [00:06<00:05, 71.95it/s]
+Loading weights:  58%|█████▊    | 492/851 [00:06<00:04, 87.13it/s]
+Loading weights:  59%|█████▉    | 502/851 [00:06<00:03, 90.09it/s]
+Loading weights:  60%|██████    | 514/851 [00:07<00:04, 74.13it/s]
+Loading weights:  62%|██████▏   | 524/851 [00:07<00:04, 77.73it/s]
+Loading weights:  63%|██████▎   | 539/851 [00:07<00:03, 83.64it/s]
+Loading weights:  65%|██████▍   | 553/851 [00:07<00:03, 81.96it/s]
+Loading weights:  67%|██████▋   | 567/851 [00:07<00:03, 83.05it/s]
+Loading weights:  68%|██████▊   | 576/851 [00:08<00:03, 73.74it/s]
+Loading weights:  69%|██████▊   | 584/851 [00:08<00:04, 65.42it/s]
+Loading weights:  71%|███████   | 606/851 [00:08<00:02, 81.92it/s]
+Loading weights:  73%|███████▎  | 620/851 [00:08<00:02, 81.75it/s]
+Loading weights:  74%|███████▍  | 629/851 [00:08<00:02, 78.78it/s]
+Loading weights:  76%|███████▌  | 645/851 [00:08<00:02, 80.83it/s]
+Loading weights:  77%|███████▋  | 659/851 [00:09<00:02, 82.98it/s]
+Loading weights:  79%|███████▉  | 673/851 [00:09<00:02, 84.61it/s]
+Loading weights:  80%|████████  | 682/851 [00:09<00:02, 81.60it/s]
+Loading weights:  82%|████████▏ | 698/851 [00:09<00:01, 91.92it/s]
+Loading weights:  83%|████████▎ | 708/851 [00:09<00:01, 92.00it/s]
+Loading weights:  84%|████████▍ | 718/851 [00:09<00:01, 80.20it/s]
+Loading weights:  85%|████████▌ | 727/851 [00:09<00:01, 77.25it/s]
+Loading weights:  86%|████████▋ | 735/851 [00:09<00:01, 76.68it/s]
+Loading weights:  87%|████████▋ | 743/851 [00:10<00:01, 71.38it/s]
+Loading weights:  89%|████████▊ | 755/851 [00:10<00:01, 78.50it/s]
+Loading weights:  90%|████████▉ | 765/851 [00:10<00:01, 73.10it/s]
+Loading weights:  92%|█████████▏| 779/851 [00:10<00:00, 73.16it/s]
+Loading weights:  93%|█████████▎| 788/851 [00:10<00:00, 72.01it/s]
+Loading weights:  94%|█████████▎| 796/851 [00:10<00:00, 72.25it/s]
+Loading weights:  95%|█████████▌| 809/851 [00:10<00:00, 83.05it/s]
+Loading weights:  96%|█████████▌| 818/851 [00:11<00:00, 81.54it/s]
+Loading weights:  97%|█████████▋| 828/851 [00:11<00:00, 73.85it/s]
+Loading weights:  98%|█████████▊| 836/851 [00:11<00:00, 72.41it/s]
+Loading weights:  99%|█████████▉| 844/851 [00:11<00:00, 65.96it/s]
+Loading weights: 100%|██████████| 851/851 [00:11<00:00, 74.03it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 3
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 7
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 11
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 15
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 19
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 23
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 27
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 31
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 35
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 39
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 43
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 47
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 51
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 55
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 59
+LAYER {'domain': 'prose', 'phase': 'calibration', 'context': 256, 'decode_step': 0} 63
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 3
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 7
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 11
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 15
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 19
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 23
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 27
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 31
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 35
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 39
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 43
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 47
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 51
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 55
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 59
+LAYER {'domain': 'prose', 'phase': 'evaluation', 'context': 256, 'decode_step': 0} 63

@@ -20,7 +20,7 @@ def rows_text(ds):
     for i,x in enumerate(ds):
         if 'context' in x: text=x['context']+'\n'+x.get('input','')
         elif 'question' in x:text=x['question']+'\n'+x.get('answer','')
-        elif 'code' in x:text=x.get('text','')+'\n'+x['code']
+        elif 'code' in x:text='\n'.join([x.get('text',''),x.get('test_setup_code',''),x['code'],*x.get('test_list',[]),*x.get('challenge_test_list',[])])
         else:text=x.get('text','')
         if text.strip():yield i,text
 
