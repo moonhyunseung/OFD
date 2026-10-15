@@ -1,0 +1,19 @@
+{
+  "id": "E10_gqa_grouping", "revision": 1,
+  "contexts": [2048,8192,16384,32768,65536,131072], "batches": [1,2,4,8],
+  "representations": ["INT4","FP16"], "group_q": [1,2,3,6],
+  "Hq":24,"Hkv":4,"head_dim":256,"page_size":16,"quant_group_size":32,
+  "split_size":1024,"tokens_per_block":16,"num_warps":4,"num_stages":2,
+  "warmup":10,"repeat":50,"processes":3,"rounds":3,"seed":1337,
+  "cache_definition":"standalone exactly T tokens, Ns=ceil(T/1024); no decode capacity added",
+  "timing":"existing cuda_ms; Stage 1 + unchanged Stage 2; compile/allocation/validation/metadata excluded; warm same-cache steady-state; no cache flush",
+  "data":"existing frozen quantizer on seeded synthetic physical FP16 pages, randomized block table shared by both representations and every g; no new model or dataset",
+  "correctness":"relative L2 versus own representation legacy g1 <=0.002 and finite; INT4 g6 versus existing grouped (non-power-of-two padding repair) <=0.002; smoke additionally checked against chunked FP32 softmax oracle",
+  "primary":"paired process/round GI=I1-Ig, GF=F1-Fg, D=GI-GF in ms; report raw effects/ranges without significance threshold",
+  "g1_sanity":"raw generalized/legacy ratio by shape/process/round; before full model manual source review if repeatable material drift; no posthoc numeric gate",
+  "equal_work":[[[32768,4],[65536,2],[131072,1]],[[32768,8],[65536,4],[131072,2]]],
+  "selection":"after valid low-level review freeze one best fixed g per representation minimizing equal-weight geometric mean latency across all 24 shapes and all processes/rounds; tie chooses smaller g; commit policy before full-model",
+  "fullmodel_shapes":[[8192,1],[8192,8],[32768,1],[32768,4],[65536,2],[65536,4],[131072,1],[131072,4]],
+  "fullmodel":"only after low-level validity; reuse E09 held-out prose stream, original native GDN/all64layers/onlineappend/LMhead/teacherforcing; no calibration or layer search",
+  "nonclaims":["no exact HBM attribution","no register-spill attribution","no instruction percentage","no total-work-only conclusion from W1 alone: equal W1 also holds B*T constant so KV footprint and work are confounded"]
+}

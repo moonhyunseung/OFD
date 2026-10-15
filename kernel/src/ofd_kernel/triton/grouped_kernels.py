@@ -80,10 +80,13 @@ if triton is not None:
         split = tl.program_id(2)
 
         q_per_kv: tl.constexpr = NUM_Q_HEADS // NUM_KV_HEADS
-        qh = kvh * q_per_kv + tl.arange(0, q_per_kv)
+        block_q: tl.constexpr = triton.next_power_of_2(q_per_kv)
+        qi = tl.arange(0, block_q)
+        qh = kvh * q_per_kv + qi
+        q_mask = qi < q_per_kv
 
         d = tl.arange(0, HEAD_DIM)
-        q = tl.load(q_ptr + b * stride_q_b + qh[:, None] * stride_q_h + d[None, :]).to(tl.float32)
+        q = tl.load(q_ptr + b * stride_q_b + qh[:, None] * stride_q_h + d[None, :], mask=q_mask[:, None], other=0.0).to(tl.float32)
 
         group = d // GROUP_SIZE
         within_group = d % GROUP_SIZE
@@ -95,9 +98,9 @@ if triton is not None:
         split_end = tl.minimum(split_start + SPLIT_SIZE, seq_len)
         split_active = split_start < seq_len
 
-        m_i = tl.full((q_per_kv,), -float("inf"), tl.float32)
-        l_i = tl.zeros((q_per_kv,), tl.float32)
-        acc = tl.zeros((q_per_kv, HEAD_DIM), dtype=tl.float32)
+        m_i = tl.full((block_q,), -float("inf"), tl.float32)
+        l_i = tl.zeros((block_q,), tl.float32)
+        acc = tl.zeros((block_q, HEAD_DIM), dtype=tl.float32)
 
         # Static loop count keeps codegen predictable. Mask handles the tail.
         n_blocks: tl.constexpr = (SPLIT_SIZE + TOKENS_PER_BLOCK - 1) // TOKENS_PER_BLOCK
@@ -210,10 +213,10 @@ if triton is not None:
         acc_store = tl.where(split_active, acc, 0.0)
 
         pm_base = b * stride_pm_b + qh * stride_pm_h + split * stride_pm_s
-        tl.store(partial_m_ptr + pm_base, m_store)
-        tl.store(partial_l_ptr + pm_base, l_store)
+        tl.store(partial_m_ptr + pm_base, m_store, mask=q_mask)
+        tl.store(partial_l_ptr + pm_base, l_store, mask=q_mask)
 
         po_base = b * stride_po_b + qh * stride_po_h + split * stride_po_s
-        tl.store(partial_o_ptr + po_base[:, None] + d[None, :], acc_store)
+        tl.store(partial_o_ptr + po_base[:, None] + d[None, :], acc_store, mask=q_mask[:, None])
 
 
