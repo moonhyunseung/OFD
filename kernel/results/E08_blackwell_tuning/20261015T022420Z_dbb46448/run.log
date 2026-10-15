@@ -1,0 +1,1 @@
+Observed GPU NVIDIA H200, compute capability (9, 0). E08 requires a Blackwell execution target and a profiler-backed tuning run; H200 tuning cannot be labeled Blackwell tuning.
