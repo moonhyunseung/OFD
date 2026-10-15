@@ -1,0 +1,3 @@
+calibration 1024 1 1 baseline_ms 0.16207787195841472 best_speedup 1.7874764471473903
+FROZEN_SELECTION {'selected_config_id': 1, 'selected_config': {'split_size': 512, 'tokens_per_block': 32, 'num_warps': 4, 'num_stages': 1}, 'baseline_config_id': 0, 'calibration_geomean': 1.7874764471473903, 'selection_frozen_before_evaluation': True}
+evaluation 2048 1 4 baseline_ms 0.17877866427103678 best_speedup 2.2354187412546827

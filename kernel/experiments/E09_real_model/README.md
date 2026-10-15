@@ -36,3 +36,7 @@ Every actual run writes to `kernel/results/E09_real_model/<run_id>/` and must co
 ## Change control
 
 Do not edit the hypothesis or pass/fail gate after seeing this experiment's results. If the protocol changes, create a new experiment revision or commit and record it in the manifest.
+
+## H200 dependency revision (2026-10-15)
+
+The user authorized H200 as the remaining execution target. The logical E08 prerequisite is now `E08_h200_tuning`; the archived Blackwell plan is not a prerequisite and remains unmeasured. This revision does not waive real-model serving integration or held-out policy validation. E08 core tuning alone is insufficient to complete E09.

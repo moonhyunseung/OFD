@@ -1,0 +1,24 @@
+{
+  "selected_config_id": 1,
+  "selected_config": {
+    "split_size": 512,
+    "tokens_per_block": 32,
+    "num_warps": 4,
+    "num_stages": 1
+  },
+  "baseline_config_id": 0,
+  "calibration_geomean": 1.7874764471473903,
+  "selection_frozen_before_evaluation": true,
+  "evaluation": [
+    {
+      "context": 2048,
+      "batch": 1,
+      "q_per_kv": 4,
+      "speedup": 2.2354187412546827
+    }
+  ],
+  "evaluation_geomean": 2.2354187412546827,
+  "smoke": true,
+  "scope": "core_only",
+  "profiling_counters_collected": false
+}

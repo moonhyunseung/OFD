@@ -9,7 +9,7 @@ if not env.get('claim_eligible'):raise RuntimeError('Clean source commit require
 cc=torch.cuda.get_device_capability(0);gpu=torch.cuda.get_device_name(0)
 for eid,status,reason in [
  ('E08_blackwell_tuning','READY_UNMEASURED' if cc[0] in (10,12) else 'BLOCKED_ENV',f'Observed GPU {gpu}, compute capability {cc}. E08 requires a Blackwell execution target and a profiler-backed tuning run; H200 tuning cannot be labeled Blackwell tuning.'),
- ('E09_real_model','BLOCKED_PROTOCOL','E08 has no completed Blackwell run. Real-model serving integration, pinned model revision, held-out calibration/evaluation data and policy-validation contract are not yet implemented/frozen.')]:
+ ('E09_real_model','BLOCKED_PROTOCOL','H200 E08 replaces the Blackwell dependency in the revised protocol. Real-model serving integration, pinned model revision, held-out calibration/evaluation data and policy-validation contract are not yet implemented/frozen.')]:
     cfg=json.loads((ROOT/'kernel/experiments'/eid/'config.json').read_text())
     stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'_'+uuid.uuid4().hex[:8]
     out=ROOT/'kernel/results'/eid/stamp;out.mkdir(parents=True)
