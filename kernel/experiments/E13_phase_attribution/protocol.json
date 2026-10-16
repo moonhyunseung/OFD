@@ -1,0 +1,56 @@
+{
+  "experiment": "E13_phase_attribution",
+  "objective": "Localize the representation-dependent grouping response to frozen Stage-1 partial generation versus split merge before any new kernel optimization.",
+  "source_path": "subgrouped",
+  "use_guarded_e12_path": false,
+  "geometry": {
+    "Hq": 24,
+    "Hkv": 4,
+    "Q_per_KV": 6,
+    "head_dim": 256,
+    "page_size": 16,
+    "quant_group_size": 32
+  },
+  "kernel_config": {
+    "split_size": 1024,
+    "tokens_per_block": 16,
+    "num_warps": 4,
+    "num_stages": 2
+  },
+  "conditions": [
+    {"label": "low", "context": 2048, "batch": 1},
+    {"label": "transition", "context": 8192, "batch": 4},
+    {"label": "causal_anchor", "context": 32768, "batch": 4},
+    {"label": "high", "context": 131072, "batch": 4}
+  ],
+  "representations": ["INT4", "FP16"],
+  "group_q": [1, 2, 3, 6],
+  "timing_scopes": ["core", "stage1", "merge"],
+  "processes": 3,
+  "rounds": 3,
+  "warmup": 10,
+  "repeat": 100,
+  "correctness_threshold_relative_l2": 0.002,
+  "requirements": [
+    "Tracked worktree must be clean before claim-eligible execution.",
+    "Use the same cache tensors, page mapping and workspace for core/stage1/merge within a condition.",
+    "Do not edit subgrouped_partials_kernel or merge_splitkv_kernel for E13.",
+    "Do not change packing, quantizer, precision, split, tile, warp, stage, page or group layout.",
+    "Populate valid partials with Stage-1 before timing standalone merge.",
+    "Compare explicit Stage-1+merge output against the frozen core output for every representation/group condition.",
+    "Retain all raw rows; no outlier deletion or posthoc shape selection."
+  ],
+  "primary_outputs": [
+    "L_core_ms",
+    "L_stage1_ms",
+    "L_merge_ms",
+    "composition_residual_ms",
+    "stage1_fraction_of_sum",
+    "merge_fraction_of_sum"
+  ],
+  "followup_rule": {
+    "stage1_dominant": "Profile frozen Stage-1 g1/g2/g6 binaries with matched FP16 controls.",
+    "merge_material": "Isolate merge/workspace geometry before Stage-1 mechanism attribution.",
+    "composition_unstable": "Fix timing/composition methodology before profiler interpretation."
+  }
+}
