@@ -41,12 +41,17 @@ def build(c,seed):
 
 def worker(out,pid,smoke):
     sha=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip();raw=[];checks=[]
-    cs=cases(smoke);random.Random(9137+pid).shuffle(cs)
+    cs=cases(smoke);random.Random(9137+pid).shuffle(cs);bank={}
     env=dict(git_sha=sha,GPU=torch.cuda.get_device_name(),CUDA=torch.version.cuda,PyTorch=torch.__version__,Triton=triton.__version__)
     for c in cs:
         seed=9137+pid*1000 # same generated values within every intervention family
         print('CASE',pid,c,flush=True)
-        q,k,v,kp,ks,vp,vs,bt,lens=build(c,seed);t,b,h,r=c['T'],c['B'],c['Hkv'],c['R'];cap=t*c['cap']
+        t,b,h,r=c['T'],c['B'],c['Hkv'],c['R'];cap=t*c['cap'];key=(t,b,h)
+        if key not in bank:bank[key]=build(dict(c,R=6,alias=1,cap=1),seed)
+        q6,k,v,kp,ks,vp,vs,original_bt,lens=bank[key]
+        q=q6.reshape(b,h,6,256)[:,:,:r].reshape(b,h*r,256).contiguous()
+        n=b*t//16;ids=torch.arange(n,device='cuda')%(n//c['alias'])
+        bt=torch.zeros(b,cap//16,device='cuda',dtype=torch.int32);bt[:,:t//16]=ids.reshape(b,-1).int()
         ws=allocate_workspace(q,lens,CFG,max_seq_len=cap)
         def run(rep,g):return subgrouped_paged_decode_core(q,kp if rep=='INT4' else k,ks if rep=='INT4' else k,vp if rep=='INT4' else v,vs if rep=='INT4' else v,bt,lens,config=CFG,workspace=ws,max_seq_len=cap,representation=rep,group_q=g)
         variants=[(rep,g) for rep in ['INT4','FP16'] for g in [1,2,3,6] if r%g==0]
@@ -73,7 +78,7 @@ def worker(out,pid,smoke):
                 ms=cuda_ms(lambda:run(rep,g),10,50)
                 tensors=[kp,ks,vp,vs] if rep=='INT4' else [k,v]
                 allocated=sum(x.numel()*x.element_size() for x in tensors)
-                raw.append(dict(**c,representation=rep,group_q=g,process_id=pid,round_id=rnd,seed=seed,Hq=h*r,head_dim=256,capacity=cap,num_splits=ns,active_splits=active,W1=b*h*r*ns,stage1_program_count=b*h*(r//g)*ns,active_program_count=b*h*(r//g)*active,kv_allocated_bytes=allocated,kv_unique_address_bytes=allocated//c['alias'],workspace_bytes=sum(x.numel()*x.element_size() for x in [ws.partial_m,ws.partial_l,ws.partial_o,ws.out]),latency_ms=ms,aggregate_tok_s=b*1000/ms,query_heads_per_s=b*h*r*1000/ms,relative_error=errs[rep,g],split_size=1024,tokens_per_block=16,num_warps=4,num_stages=2,warmup=10,repeat=50,**env))
+                raw.append(dict(**c,representation=rep,group_q=g,process_id=pid,round_id=rnd,seed=seed,Hq=h*r,head_dim=256,capacity=cap,num_splits=ns,active_splits=active,W1=b*h*r*ns,stage1_program_count=b*h*(r//g)*ns,active_program_count=b*h*(r//g)*active,kv_allocated_bytes=allocated,kv_unique_address_bytes=allocated//c['alias'],kv_buffer_identity=':'.join(str(x.data_ptr()) for x in tensors),workspace_bytes=sum(x.numel()*x.element_size() for x in [ws.partial_m,ws.partial_l,ws.partial_o,ws.out]),latency_ms=ms,aggregate_tok_s=b*1000/ms,query_heads_per_s=b*h*r*1000/ms,relative_error=errs[rep,g],split_size=1024,tokens_per_block=16,num_warps=4,num_stages=2,warmup=10,repeat=50,**env))
                 write_csv(out/f'raw_p{pid}.csv',raw)
         del q,k,v,kp,ks,vp,vs,bt,lens,ws,ref,y,tensors
         gc.collect();torch.cuda.empty_cache()

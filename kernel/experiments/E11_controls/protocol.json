@@ -68,5 +68,6 @@
     "num_warps": 4,
     "num_stages": 2
   },
-  "run_gate": "smoke finite/oracle pass before full; source committed and clean; no full-model run in E11"
+  "run_gate": "smoke finite/oracle pass before full; source committed and clean; no full-model run in E11",
+  "buffer_control": "Retain KV buffers keyed by T,B,Hkv for entire process; same pointers across capacity/alias/Q-ratio interventions, recorded per row. Repartition changes geometry and therefore allocation."
 }
