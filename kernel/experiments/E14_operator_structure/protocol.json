@@ -1,0 +1,79 @@
+{
+  "experiment": "E14_operator_structure",
+  "status": "DESIGN_FROZEN_NO_RESULTS",
+  "purpose": "Measure whether exact quotient-space and basis/block algebra exposes a persistent computational reduction before starting a new hot-kernel lineage.",
+  "primary_outputs": [
+    "query_rank_and_spectrum",
+    "query_subspace_drift",
+    "32_wide_block_concentration",
+    "operator_visible_K_error",
+    "basis_coherence_and_dynamic_range",
+    "scale_matrix_spectrum",
+    "Q_integer_or_radix_plane_requirement",
+    "V_effective_support",
+    "operator_visible_V_error",
+    "static_circuit_work_ledger"
+  ],
+  "reference_geometry": {
+    "head_dim": 256,
+    "q_per_kv": 6,
+    "quant_group_width": 32,
+    "quant_groups": 8,
+    "page_size": 16
+  },
+  "candidate_bases": [
+    "identity",
+    "current_OFD_basis",
+    "block_H32",
+    "full_H256",
+    "diagnostic_data_derived_orthogonal_alignment"
+  ],
+  "window_sizes": [1, 2, 4, 8, 16, 32, 64],
+  "block_counts": [1, 2, 3, 4, 5, 6, 7, 8],
+  "probability_mass_targets": [0.9, 0.95, 0.99, 0.999],
+  "rank_policy": {
+    "must_record_absolute_tolerance": true,
+    "must_record_relative_tolerance": true,
+    "must_report_singular_values": true,
+    "no_single_threshold_rank_claim": true
+  },
+  "sampling": {
+    "must_span_layers": true,
+    "must_span_kv_heads": true,
+    "must_span_decode_positions": true,
+    "must_span_multiple_sequences": true,
+    "claim_eligible_runs_require_fixed_model_and_deterministic_capture": true
+  },
+  "forbidden_changes": [
+    "E10_E12_hot_kernel_tuning",
+    "split_size_tuning",
+    "warp_or_stage_tuning",
+    "storage_contract_change_inside_E14_measurement",
+    "posthoc_basis_selection_without_recording_search_space",
+    "latency_as_primary_gate"
+  ],
+  "hardware_accounting": {
+    "target_reference": "H200_SM90",
+    "must_count": [
+      "packed_K_bytes",
+      "packed_V_bytes",
+      "scale_bytes",
+      "logical_32_wide_contractions",
+      "candidate_MMA_tiles",
+      "tile_utilization",
+      "conversion_operations_or_lowering",
+      "scale_epilogue_operations",
+      "basis_transform_operations",
+      "RoPE_transform_operations",
+      "intermediate_storage"
+    ],
+    "generated_code_required_before_instruction_claim": true
+  },
+  "claim_boundary": [
+    "instantaneous_nullity_is_not_persistent_compression",
+    "Hadamard_is_not_dimension_reduction",
+    "K32_alignment_is_not_automatic_tensor_core_speedup",
+    "mixed_dtype_library_support_is_not_proof_of_one_native_instruction",
+    "new_kernel_speed_is_not_claimed_by_E14"
+  ]
+}
