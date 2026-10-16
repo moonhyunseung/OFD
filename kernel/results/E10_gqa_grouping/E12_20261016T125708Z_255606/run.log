@@ -1,0 +1,5 @@
+CASE_DONE 0 {'T': 2048, 'B': 4, 'capacity': 8192, 'ragged': True}
+CASE_DONE 0 {'T': 2048, 'B': 1, 'capacity': 8192, 'ragged': False}
+CASE_DONE 0 {'T': 2048, 'B': 1, 'capacity': 2048, 'ragged': False}
+CASE_DONE 0 {'T': 2048, 'B': 4, 'capacity': 2048, 'ragged': True}
+CASE_DONE 0 {'T': 2048, 'B': 1, 'capacity': 2064, 'ragged': False}

@@ -1,0 +1,197 @@
+{
+  "git_sha": "91414cc4ad8eeafe4e4338df25e481649817cd6a",
+  "experiment": "E12_skip_empty",
+  "status": "COMPLETED",
+  "smoke": false,
+  "cases": [
+    {
+      "T": 8192,
+      "B": 1,
+      "capacity": 8192,
+      "ragged": false
+    },
+    {
+      "T": 8192,
+      "B": 1,
+      "capacity": 8208,
+      "ragged": false
+    },
+    {
+      "T": 8192,
+      "B": 1,
+      "capacity": 32768,
+      "ragged": false
+    },
+    {
+      "T": 8192,
+      "B": 4,
+      "capacity": 8192,
+      "ragged": false
+    },
+    {
+      "T": 8192,
+      "B": 4,
+      "capacity": 8208,
+      "ragged": false
+    },
+    {
+      "T": 8192,
+      "B": 4,
+      "capacity": 32768,
+      "ragged": false
+    },
+    {
+      "T": 32768,
+      "B": 1,
+      "capacity": 32768,
+      "ragged": false
+    },
+    {
+      "T": 32768,
+      "B": 1,
+      "capacity": 32784,
+      "ragged": false
+    },
+    {
+      "T": 32768,
+      "B": 1,
+      "capacity": 131072,
+      "ragged": false
+    },
+    {
+      "T": 32768,
+      "B": 4,
+      "capacity": 32768,
+      "ragged": false
+    },
+    {
+      "T": 32768,
+      "B": 4,
+      "capacity": 32784,
+      "ragged": false
+    },
+    {
+      "T": 32768,
+      "B": 4,
+      "capacity": 131072,
+      "ragged": false
+    },
+    {
+      "T": 2048,
+      "B": 4,
+      "capacity": 2048,
+      "ragged": true
+    },
+    {
+      "T": 2048,
+      "B": 4,
+      "capacity": 8192,
+      "ragged": true
+    }
+  ],
+  "processes": 3,
+  "rounds": 3,
+  "protocol": {
+    "base_sha": "8c88d340eec6f67563cffe783d2387acf686bf58",
+    "kernel_base_sha256": "886d826ef4f1023a41f0758c021c5937e49d6819dee5a98b790a09e1cc3a23a3",
+    "intervention": "Skip only complete static tile loop for fully inactive split; still write neutral partials. Existing merge and launch grid unchanged.",
+    "controls": [
+      "original generalized",
+      "copied guard compile-time disabled",
+      "guard enabled"
+    ],
+    "geometry": {
+      "Hq": 24,
+      "Hkv": 4,
+      "head_dim": 256,
+      "page_size": 16,
+      "quant_group_size": 32,
+      "split_size": 1024,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    "groups": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "representations": [
+      "INT4",
+      "FP16"
+    ],
+    "contexts": [
+      8192,
+      32768
+    ],
+    "batches": [
+      1,
+      4
+    ],
+    "capacity_modes": [
+      "exact T",
+      "T+16",
+      "4*T"
+    ],
+    "ragged": {
+      "capacity": [
+        2048,
+        8192
+      ],
+      "lengths": [
+        0,
+        1023,
+        1024,
+        1025
+      ]
+    },
+    "timing": {
+      "warmup": 10,
+      "repeat": 50,
+      "rounds": 3,
+      "independent_processes": 3
+    },
+    "correctness": {
+      "relative_L2_max": 0.002,
+      "finite": true,
+      "reference": "trusted original scalar g1; independent FP32 oracle in smoke including ragged boundary"
+    },
+    "fullmodel": {
+      "gate": "Valid lowlevel counts/correctness and manual disabled-guard parity inspection, then freeze valid gate before model launch",
+      "shapes": [
+        [
+          8192,
+          1
+        ],
+        [
+          32768,
+          4
+        ],
+        [
+          131072,
+          1
+        ],
+        [
+          131072,
+          4
+        ]
+      ],
+      "fixed_groups": {
+        "INT4": 2,
+        "FP16": 1
+      },
+      "labels": [
+        "FP16_legacy",
+        "FP16_skip",
+        "INT4_legacy",
+        "INT4_skip"
+      ],
+      "rounds": 3,
+      "decode": "unchanged E09 all64 layers, online append, LM head, teacher forced; original data/model revisions; no policy search",
+      "capacity": "T+16; one extra split for contexts divisible by1024"
+    },
+    "claims": "Synthetic overcapacity speedup is separate from realistic T+16 and actual full-model effects; do not extrapolate 4T speedup to serving."
+  },
+  "return_code": 0
+}

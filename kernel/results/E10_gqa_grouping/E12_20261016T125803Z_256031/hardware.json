@@ -1,0 +1,16 @@
+{
+  "claim_eligible": true,
+  "cuda_visible_devices": null,
+  "git_available": true,
+  "git_branch": "ofd-v2.3-measurement-safe",
+  "git_commit": "91414cc4ad8eeafe4e4338df25e481649817cd6a",
+  "git_dirty": false,
+  "git_status_porcelain": "",
+  "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+  "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "timestamp_utc": "2026-10-16T13:03:28.662030+00:00",
+  "torch": "2.14.1+cu130",
+  "torch_cuda": "13.0",
+  "triton": "3.8.0"
+}
