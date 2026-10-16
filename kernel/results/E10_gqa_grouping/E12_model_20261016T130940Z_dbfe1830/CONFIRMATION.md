@@ -1,0 +1,32 @@
+## Complete-model direct measurements
+
+Smoke 12/12 rows and 16 online equivalence checks pass (worst relative L2 2.3542e-5). Full 48/48 rows pass, finite logits, three shuffled rounds in one process. No rows dropped. All64 model layers, online append, LM head and teacher-forced decode are retained; prefill/cache construction is untimed. Original model/data revisions and reference PyTorch GDN/conv fallback remain. No native-logits quality reference is measured in this speed-only follow-up.
+
+The capacity is T+16, with Ns=9,33,129 for T=8K,32K,128K. Actual length is T+s+1 after append, so every allocated split is already active at the first step. Consequently this is an active-path overhead control, not a test of removing whole empty splits in serving. Fixed INT4g2/FP16g1 were frozen in E10 and before this run. The legacy model path uses original OnlineKV dispatch (including legacy FP16g1); guard dispatch uses the E12 generalized wrapper. E10 g1 compatibility and E12 online checks apply; the full-model test alone does not isolate wrapper cost.
+
+| T | B | Rep/g | Legacy median ms | Guard median ms | Paired speedup median | Paired range |
+|---|---:|---|---:|---:|---:|---|
+| 8192 | 1 | FP16/g1 | 52.6567 | 52.1144 | 1.016302 | 0.940815–1.019727 |
+| 8192 | 1 | INT4/g2 | 52.8917 | 53.2555 | 0.993715 | 0.989319–0.999701 |
+| 32768 | 4 | FP16/g1 | 51.6811 | 51.9025 | 1.003109 | 0.992818–1.008438 |
+| 32768 | 4 | INT4/g2 | 63.4494 | 62.6734 | 1.012653 | 1.012174–1.012845 |
+| 131072 | 1 | FP16/g1 | 52.7540 | 53.1981 | 0.991653 | 0.975760–1.009139 |
+| 131072 | 1 | INT4/g2 | 60.2569 | 59.1555 | 1.018888 | 1.018619–1.019315 |
+| 131072 | 4 | FP16/g1 | 61.6728 | 61.1666 | 1.008633 | 1.008107–1.010192 |
+| 131072 | 4 | INT4/g2 | 154.6220 | 151.7925 | 1.018691 | 1.017332–1.018715 |
+
+Ratios are paired within round; ratios of marginal medians can differ. The three rounds are not three independent processes. FP16 8K/B1 has a broad .9408–1.0197 range; smoke INT4 retains one .5448 ratio. No outlier exclusion or posthoc threshold. Larger INT4 cases show small observed 1.3–1.9% speedups, not the synthetic 3.6x gain. Since no split is wholly inactive, these effects cannot be attributed to skipped inactive loops; compiler/execution and wrapper effects remain possible. This is not a claim of equivalence, statistical significance, or a production serving speedup. INT4 remains slower than FP16 at every measured complete-model shape.
+
+At128K/B4, guarded INT4 median151.7925ms versus guarded FP16 61.1666ms. KV allocation is 9,664,856,064 versus34,363,932,672 bytes (3.55556x representation compression); per-token starting GPU allocations about64.94 versus89.64GB in round0. These are same-batch comparisons, not a same-memory-budget resident-batch experiment. Model weights/common caches and host templates remain outside the KV compression ratio.
+
+## Warnings and provenance
+
+Full run returns0 with no traceback, but run.log preserves17 CUDA allocator OOM warnings. All occur before the first128K/B4 result row; the log does not mark each warning's exact phase, so do not label this run warning-free or assign every warning to one shape or timed decode. No shape, allocation strategy, precision or protocol was changed to recover a favorable result. Native GDN/conv reference fallback makes absolute timings specific to this harness; optimized serving backends are untested.
+
+A postprocessing command first attempted the absent executable `python`; retry with `sys.executable` succeeded. This did not affect measurement workers. See postprocess_recovery.log.
+
+Low-level raw archive a6ead28a60570ec8e2c4db30165e053026f0feeb; low-level validation and model source af9ee2e1b08b6e35e96ce04fb56bc54e333db059; model raw archive8270c7221a268a1de193dbd341e4c2ae245815b1. Per-run manifests retain exact source/hardware/library/seed/protocol. ARCHIVE_HASHES.json retains original-byte and archived-LF text hashes; text export normalizes CRLF, not numeric content. Existing history/main unchanged.
+
+## Supported next action
+
+Keep guard opt-in. Quantify Stage1 versus merge and profile the frozen active INT4g1 regression and high-workg2 path, with matched FP16 controls. This would attribute mechanisms after causal interventions; do not add nibble, warp, split, precision, rotation or layout tuning to this completed comparison. There is no evidence here to enable the guard globally or advertise a broad serving win.
