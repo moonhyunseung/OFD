@@ -1,0 +1,23 @@
+{
+  "valid": true,
+  "rows": 3024,
+  "expected_rows": 3024,
+  "checks": 1008,
+  "expected_checks": 1008,
+  "worst_relative_error": 2.0857818526565097e-05,
+  "source_sha": "91414cc4ad8eeafe4e4338df25e481649817cd6a",
+  "smoke": false,
+  "exact_KV_buffers": true,
+  "noop_ratios": {
+    "INT4": {
+      "median": 1.0000222344286795,
+      "min": 0.9614488173820892,
+      "max": 1.0288665495686902
+    },
+    "FP16": {
+      "median": 1.0000592041116183,
+      "min": 0.9536031680632888,
+      "max": 1.0456868022306913
+    }
+  }
+}

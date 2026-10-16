@@ -1,0 +1,20 @@
+{
+  "lowlevel_valid": true,
+  "source_sha": "91414cc4ad8eeafe4e4338df25e481649817cd6a",
+  "raw_archive_sha": "a6ead28a60570ec8e2c4db30165e053026f0feeb",
+  "rows": 3024,
+  "checks": 1008,
+  "worst_relative_error": 2.0857818526565097e-05,
+  "exact_KV_buffers": true,
+  "manual_disabled_guard_review": "median INT4 1.000022, FP16 1.000059; individual and process ranges retained; no large repeated drift. Enabled guard regressions are outcomes, not validity failures.",
+  "AST_proof": "Removing only the three loop guards and SKIP_EMPTY argument and restoring function name gives the original E10 kernel AST.",
+  "frozen_model_groups": {
+    "INT4": 2,
+    "FP16": 1
+  },
+  "model_opportunity": "All allocated splits active after first append; regression control only.",
+  "csv_sha256_LF": {
+    "raw.csv": "8335302262d5e57324a371655273ab3c7a6fa1d72f4595c4382f7f11c4019e52",
+    "correctness.csv": "e47d8c5025002310fa1666656852709093540f8bd029dae2b889268edbdb6db5"
+  }
+}
