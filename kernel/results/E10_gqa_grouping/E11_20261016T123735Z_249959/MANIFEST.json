@@ -1,0 +1,488 @@
+{
+  "experiment": "E11_controlled_interventions",
+  "git_sha": "57ac3248c7f04975500b22375a4c2a4fccba3930",
+  "status": "INTERRUPTED",
+  "smoke": false,
+  "cases": [
+    {
+      "family": "inactive_splits",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "inactive_splits",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 2
+    },
+    {
+      "family": "inactive_splits",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 4
+    },
+    {
+      "family": "physical_reuse",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 4,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 16,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 1,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 2,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 3,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "inactive_splits",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "inactive_splits",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 2
+    },
+    {
+      "family": "inactive_splits",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 4
+    },
+    {
+      "family": "physical_reuse",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 4,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 16,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 1,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 2,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 3,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 8192,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "inactive_splits",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "inactive_splits",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 2
+    },
+    {
+      "family": "inactive_splits",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 4
+    },
+    {
+      "family": "physical_reuse",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 4,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 16,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 1,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 2,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 3,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "inactive_splits",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "inactive_splits",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 2
+    },
+    {
+      "family": "inactive_splits",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 4
+    },
+    {
+      "family": "physical_reuse",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 4,
+      "cap": 1
+    },
+    {
+      "family": "physical_reuse",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 16,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 1,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 2,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 3,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "q_repeat",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "batch_head_repartition",
+      "T": 32768,
+      "B": 1,
+      "Hkv": 16,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "batch_head_repartition",
+      "T": 32768,
+      "B": 2,
+      "Hkv": 8,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "batch_head_repartition",
+      "T": 32768,
+      "B": 4,
+      "Hkv": 4,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "batch_head_repartition",
+      "T": 32768,
+      "B": 8,
+      "Hkv": 2,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    },
+    {
+      "family": "batch_head_repartition",
+      "T": 32768,
+      "B": 16,
+      "Hkv": 1,
+      "R": 6,
+      "alias": 1,
+      "cap": 1
+    }
+  ],
+  "independent_processes": 3,
+  "rounds": 3,
+  "protocol": {
+    "base_source_sha": "7db0df4",
+    "purpose": "Separate work, unique KV footprint, batch-axis factorization and q-head repetition using matched INT4/FP16 controls",
+    "families": {
+      "inactive_splits": {
+        "change": "capacity multiplier 1,2,4; exact actual sequence fixed",
+        "fixed": "Q,K,V,active splits,logical tokens,packing; tile/split config",
+        "residual": "extra neutral stage1 programs AND merge workspace; not pure scheduling isolation"
+      },
+      "physical_reuse": {
+        "change": "block-table alias factor 1,4,16",
+        "fixed": "allocated buffers, Q/KV values, logical length, active program count, config",
+        "residual": "distinct referenced addresses/address reuse; no exact HBM traffic claim"
+      },
+      "batch_head_repartition": {
+        "change": "B,Hkv pairs (1,16),(2,8),(4,4),(8,2),(16,1)",
+        "fixed": "B*Hkv=16,Q/KV=6,total Q heads=96,logical KV elements,program count",
+        "residual": "head geometry/strides change together with batch; cannot call pure batch causal effect"
+      },
+      "q_repeat": {
+        "change": "Q/KV=1,2,3,6",
+        "fixed": "KV tensors and bytes,B,T,Hkv; compare g1 across R and same valid g between representations",
+        "residual": "Q work,program count and Q geometry change; compare with other interventions, not standalone instruction attribution"
+      }
+    },
+    "contexts": [
+      8192,
+      32768
+    ],
+    "batches": [
+      1,
+      4
+    ],
+    "representations": [
+      "INT4",
+      "FP16"
+    ],
+    "groups": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "timing": {
+      "warmup": 10,
+      "repeat": 50,
+      "rounds": 3,
+      "processes": 3,
+      "includes": "Stage1+merge",
+      "excludes": "compile,allocation,cache/metadata construction,oracle,sync validation"
+    },
+    "correctness": {
+      "relative_L2_max": 0.002,
+      "finite": true,
+      "oracle": "independent FP32 softmax on repeated identical physical pages"
+    },
+    "data_note": "Synthetic diagnostic pages are deliberately identical across positions/heads. Controls preserve semantic values exactly. Not representative serving throughput. Seed varies by process, shared within matched interventions.",
+    "analysis": {
+      "primary": "paired GI,GF,D in each process/round; intervention contrasts within rep/g; all raw effects and process ranges retained",
+      "rules": "No posthoc threshold or dropping outliers. A nonzero difference refutes exact invariance only at tested settings; small differences do not prove independence. Do not infer hardware bottleneck without profiling."
+    },
+    "frozen": {
+      "head_dim": 256,
+      "page_size": 16,
+      "quant_group_size": 32,
+      "split_size": 1024,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    "run_gate": "smoke finite/oracle pass before full; source committed and clean; no full-model run in E11"
+  },
+  "reason": "Strengthen controls: retain exact KV buffer pointers across interventions before claim run"
+}
