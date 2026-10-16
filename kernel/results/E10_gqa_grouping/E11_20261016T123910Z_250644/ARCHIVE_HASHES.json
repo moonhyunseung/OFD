@@ -1,0 +1,23 @@
+{
+  "note": "Archived UTF-8 LF text SHA256",
+  "files": {
+    "correctness_p0.csv": "a01018e02765f8131b3222007cabb87ec4ba8a4149bcbc69d4a1f9a4009e6a4b",
+    "raw_p2.csv": "bc18c80e0d806f30ff6467149773ec768102537d288f15b671ced0729aff3ba7",
+    "contrasts_raw.csv": "057a872f3b1fae48bcf605fb6e51b3fba9eccad32f1fb5f50608565f575e4638",
+    "secondary_equal_program_footprint_raw.csv": "45480157968f2126574afe4a81e365c1a6f63899fcafa08fa231cdfecedaa6c5",
+    "intervention_interactions_raw.csv": "366fbc77d5eb21fc560c3b73de7707c27bea184d6c1f3637dc8dddefaf99479e",
+    "contrasts_summary.csv": "75e036d8540c8607abbc8fc5357786c05cd91138a78351b69f5ef77ecb0cfa3e",
+    "correctness_p2.csv": "7077e4bc70b7d88f5b20482d8be031b2a50ae0a9d757eb88d8b33d69c32be640",
+    "effects_raw.csv": "de18be7d5ff10e2250799d7e66d614703a2ad3c564d0858521d19449c6066e49",
+    "raw_p1.csv": "01337a2de956694ae6babc117eeb865dbfe5b878eb1eacf3c55954a1bf10e9a3",
+    "run.log": "108ec6c8f05a4004c3e2ee62f3b7c9376d1606f95c03486d7f88af6c3841cee2",
+    "raw.csv": "a4e41ac4cc7c98c1712573e27bf214d6b1322142ff3d9bdaff286de2f59aee84",
+    "MANIFEST.json": "82d566604bc12e7603f3c38025a5f53c46d360d770908f46292756c8ca2063d4",
+    "effects_summary.csv": "6730ebb74ced4133377d401fa74098570e790ef1eda984e597f561931916f5e9",
+    "summary.csv": "79cf3ace31f25d3c21a8f11ce4899530acf5366329d3f35e3f79dd7394e56114",
+    "raw_p0.csv": "fab025983c3544c7f510a9526a1b5784df6d7dd77c70c847a2fc1ec6887b50d1",
+    "hardware.json": "59deb4dd8fa40547a474eb272d16baa8696a4904de900ceb4006debfa3f18773",
+    "correctness.csv": "09eed2ae993c41cb841e88120290d1545ba815317f1a1892e1206e88e85d515c",
+    "correctness_p1.csv": "878b2aab02d298c3ed53fe6a20ad4e930de9e557fe58ed49ad1e5e95ad67c65f"
+  }
+}

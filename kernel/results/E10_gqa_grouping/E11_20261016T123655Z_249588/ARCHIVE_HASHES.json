@@ -1,0 +1,11 @@
+{
+  "note": "Archived UTF-8 LF text SHA256",
+  "files": {
+    "correctness_p0.csv": "e3a76f7efa30562cddd6dfdcb87585e0833243f71ea2c9167f3e36a75b8098ed",
+    "run.log": "7b4f2bc34d8a78d203dc8be269bc2a3d1db6773e31fe08d68b0ccac5720d2407",
+    "raw.csv": "a0b1ef1282d9bc0e37409af6b1d8ec9cf14e0d870f964b7e2bce82dba23d45de",
+    "MANIFEST.json": "8f46ecfd4d8d5f01eca8d6acc225260c92e8e6f81dc44a39eb83b748ad06d320",
+    "raw_p0.csv": "a0b1ef1282d9bc0e37409af6b1d8ec9cf14e0d870f964b7e2bce82dba23d45de",
+    "correctness.csv": "e3a76f7efa30562cddd6dfdcb87585e0833243f71ea2c9167f3e36a75b8098ed"
+  }
+}

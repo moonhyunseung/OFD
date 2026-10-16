@@ -1,0 +1,9 @@
+{
+  "note": "Archived UTF-8 LF text SHA256",
+  "files": {
+    "correctness_p0.csv": "95bc9e805409ae68ab3f849a0f38e97a9a6225553244647cb290b841a9ff9884",
+    "run.log": "26bf2404b7434806955bc25ff0f1b13de4b0698a5d5333d68de33bd0f40b1f1c",
+    "MANIFEST.json": "34da8e21c405e58424789b72bae4b56e27f552b7eb1b5a4ec690d7cc7060d922",
+    "raw_p0.csv": "18e10ce85558bcbd43ab62b38d4bb1f72c581a39fc66be35b53d055f6d1f7718"
+  }
+}

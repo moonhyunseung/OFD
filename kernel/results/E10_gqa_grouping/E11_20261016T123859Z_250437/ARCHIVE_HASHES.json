@@ -1,0 +1,17 @@
+{
+  "note": "Archived UTF-8 LF text SHA256",
+  "files": {
+    "correctness_p0.csv": "81c5c47b487b6705704f4ad1111fbca0406c20ae2042eb27c10110e3e145a08c",
+    "contrasts_raw.csv": "099ca16299ecddd29c0254c8db8d6086e5103429fad3a8b3407905e9d9b0da96",
+    "intervention_interactions_raw.csv": "8610a3bc589e66f77fe878d64d460c3c89759afab4fa5560dbe89386117b67f1",
+    "contrasts_summary.csv": "77cbcfbfed9945de380ca7c59fe42e657efa6df80066ed7a7aeb4b3df9ccf056",
+    "effects_raw.csv": "9eaeb1f7a96e3621b88fae2c61f4f18fcf13bbef2c018f1fcbf794ca8a522922",
+    "run.log": "7b4f2bc34d8a78d203dc8be269bc2a3d1db6773e31fe08d68b0ccac5720d2407",
+    "raw.csv": "f6f2d9d02d6dcd28afb74b4b90dc0c05c24a1b67e660da8495f1b063db9cdf66",
+    "MANIFEST.json": "df6f4385b3fed208a27e6288d10bb2c11e0078c2d4e4b73be44a033fb6336370",
+    "effects_summary.csv": "42ed420d4bcb3c4b5eea15fa28104fca43561f7471c8be879e0ac6945b523622",
+    "summary.csv": "b5220f606a69a0ba7c7c804c33cd119d0ec7a62884c869e29e2f3a3df9f48a2b",
+    "raw_p0.csv": "f6f2d9d02d6dcd28afb74b4b90dc0c05c24a1b67e660da8495f1b063db9cdf66",
+    "correctness.csv": "81c5c47b487b6705704f4ad1111fbca0406c20ae2042eb27c10110e3e145a08c"
+  }
+}

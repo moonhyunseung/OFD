@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "measurement_source_sha": "3ceee31f696694b0e224b8f30085f59162682ec4",
+  "expected_rows": 2736,
+  "observed_rows": 2736,
+  "expected_oracle_checks": 912,
+  "observed_oracle_checks": 912,
+  "worst_relative_L2": 0.00021121464669704437,
+  "threshold": 0.002,
+  "finite": true,
+  "exact_KV_buffer_identity_verified": true,
+  "scope": "synthetic intervention controls only; no serving or microarchitectural attribution claim"
+}

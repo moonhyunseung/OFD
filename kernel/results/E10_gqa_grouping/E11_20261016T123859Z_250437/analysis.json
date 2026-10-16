@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "rows": 270,
+  "expected_rows": 270,
+  "checks": 90,
+  "worst_relative_error": 0.00020429358119145036,
+  "source_sha": "3ceee31f696694b0e224b8f30085f59162682ec4",
+  "smoke": true
+}
