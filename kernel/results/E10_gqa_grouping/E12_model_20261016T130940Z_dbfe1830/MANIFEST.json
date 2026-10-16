@@ -1,0 +1,272 @@
+{
+  "experiment": "E12_complete_model_guard_control",
+  "git_sha": "af9ee2e1b08b6e35e96ce04fb56bc54e333db059",
+  "smoke": false,
+  "status": "COMPLETED",
+  "gate": {
+    "lowlevel_valid": true,
+    "source_sha": "91414cc4ad8eeafe4e4338df25e481649817cd6a",
+    "raw_archive_sha": "a6ead28a60570ec8e2c4db30165e053026f0feeb",
+    "rows": 3024,
+    "checks": 1008,
+    "worst_relative_error": 2.0857818526565097e-05,
+    "exact_KV_buffers": true,
+    "manual_disabled_guard_review": "median INT4 1.000022, FP16 1.000059; individual and process ranges retained; no large repeated drift. Enabled guard regressions are outcomes, not validity failures.",
+    "AST_proof": "Removing only the three loop guards and SKIP_EMPTY argument and restoring function name gives the original E10 kernel AST.",
+    "frozen_model_groups": {
+      "INT4": 2,
+      "FP16": 1
+    },
+    "model_opportunity": "All allocated splits active after first append; regression control only.",
+    "csv_sha256_LF": {
+      "raw.csv": "8335302262d5e57324a371655273ab3c7a6fa1d72f4595c4382f7f11c4019e52",
+      "correctness.csv": "e47d8c5025002310fa1666656852709093540f8bd029dae2b889268edbdb6db5"
+    }
+  },
+  "environment": {
+    "claim_eligible": true,
+    "cuda_visible_devices": null,
+    "git_available": true,
+    "git_branch": "ofd-v2.3-measurement-safe",
+    "git_commit": "af9ee2e1b08b6e35e96ce04fb56bc54e333db059",
+    "git_dirty": false,
+    "git_status_porcelain": "",
+    "nvidia_smi": "NVIDIA H200, 580.126.09, 143771 MiB",
+    "platform": "Linux-6.8.0-85-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "timestamp_utc": "2026-10-16T13:09:40.254527+00:00",
+    "torch": "2.14.1+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.8.0"
+  },
+  "original_e09_protocol": {
+    "revision": "qwen38_online_decode_e2e_v1",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "dtype": "float16",
+    "seed": 1337,
+    "layers": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31,
+      35,
+      39,
+      43,
+      47,
+      51,
+      55,
+      59,
+      63
+    ],
+    "variants": [
+      "P",
+      "K",
+      "V",
+      "KV"
+    ],
+    "calibration": {
+      "context": 8192,
+      "batch": 1,
+      "domains": [
+        "prose",
+        "code"
+      ],
+      "rounds": 3,
+      "policies": "4L=64 one-layer perturbations around all-P; every policy measured using the complete model; P repeated for each layer as controls"
+    },
+    "selection": "For each layer choose minimum geometric mean complete-model wall decode latency across calibration domains/rounds, independently permitting K and V bits at any layer. Freeze the combined policy before held-out evaluation. This is a main-effect selection, not an exhaustive global optimum.",
+    "evaluation": {
+      "contexts": [
+        2048,
+        8192,
+        32768
+      ],
+      "batch": 1,
+      "domains": [
+        "prose",
+        "code",
+        "math",
+        "long_document"
+      ],
+      "rounds": 3,
+      "policies": [
+        "NATIVE",
+        "FP16",
+        "P",
+        "KV",
+        "MIX"
+      ]
+    },
+    "crossover": {
+      "contexts": [
+        2048,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072
+      ],
+      "batches": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "domain": "prose",
+      "partition": "evaluation",
+      "rounds": 3,
+      "policies": [
+        "NATIVE",
+        "FP16",
+        "P",
+        "KV",
+        "MIX"
+      ],
+      "batch_content": "Identical token stream replicated into independently allocated per-request KV; no prefix sharing"
+    },
+    "steps": 16,
+    "warmup_steps": 4,
+    "prefill_chunk": 2048,
+    "prefill": "Untimed native unquantized attention. Chunked with lower-right causal SDPA for bounded activations. CPU template cache cloned independently per policy; no GPU template retained during timing.",
+    "NATIVE": "Original model FP16 SDPA attention and unchanged Gated DeltaNet/MLP/LM head, with preallocated dense KV to exclude reallocations. Native unmodified update is checked in smoke. No naive PyTorch attention performance comparator.",
+    "FP16": "Matched paged FP16 split decode plus online paged append, same page table and execution geometry as INT4",
+    "INT4": "Actual packed per-layer resident KV; prefill converted outside timing, each new decode K/V rotated and quantized online inside timing. No retained full-attention FP16 shadow KV.",
+    "timing": "Primary E2E latency and throughput use synchronized CPU wall over the full decode loop after warmup. CUDA-event intervals around each complete model forward are reported separately. Includes all 64 layers, online KV append, GPU FWHT and LM head. Input token tensors, position IDs, mask map, page tables, lengths, workspaces and initialized event objects are prepared before timing. Logit quality work and CPU transfers occur after synchronization. CPU sampling and request scheduling excluded.",
+    "metrics": [
+      "decode_ms_per_step",
+      "aggregate_tok_s",
+      "wall_ms_per_step",
+      "full_attention_KV_bytes",
+      "actual_gpu_allocated_bytes",
+      "actual_peak_gpu_allocated_bytes",
+      "native_logit_relative_L2",
+      "native_argmax_agreement",
+      "teacher_forced_next_token_NLL",
+      "OOM",
+      "exact_policy",
+      "git_SHA",
+      "environment",
+      "seed",
+      "data_hashes"
+    ],
+    "correctness": "Online append packed codes/scales checked against frozen quantizer; native dense cache replacement versus unmodified native logits and matched paged FP16 versus native logits relative tolerance 0.002 in smoke. INT4 quality observational; no automatic quality-preservation claim.",
+    "failure": "Preserve OOM or failures per case. No protocol adjustment based on performance. Stop full sweep if smoke fails. If prefill OOM at a shape, mark setup OOM for that shape, do not claim INT4 capacity there.",
+    "nonclaims": [
+      "No continuous batching or network/server measurements",
+      "No exhaustive 4^16 optimum",
+      "No untested higher resident-batch capacity",
+      "Teacher-forced decode timing excludes CPU sampling and request scheduling"
+    ],
+    "host_memory_guard": "Before each shape free prior template; estimate 2.25x CPU KV+GDN template bytes against 80% cgroup limit minus anon/kernel. Mark HOST_TEMPLATE_LIMIT separately from GPU OOM; never claim this proves INT4 resident capacity."
+  },
+  "protocol": {
+    "base_sha": "8c88d340eec6f67563cffe783d2387acf686bf58",
+    "kernel_base_sha256": "886d826ef4f1023a41f0758c021c5937e49d6819dee5a98b790a09e1cc3a23a3",
+    "intervention": "Skip only complete static tile loop for fully inactive split; still write neutral partials. Existing merge and launch grid unchanged.",
+    "controls": [
+      "original generalized",
+      "copied guard compile-time disabled",
+      "guard enabled"
+    ],
+    "geometry": {
+      "Hq": 24,
+      "Hkv": 4,
+      "head_dim": 256,
+      "page_size": 16,
+      "quant_group_size": 32,
+      "split_size": 1024,
+      "tokens_per_block": 16,
+      "num_warps": 4,
+      "num_stages": 2
+    },
+    "groups": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "representations": [
+      "INT4",
+      "FP16"
+    ],
+    "contexts": [
+      8192,
+      32768
+    ],
+    "batches": [
+      1,
+      4
+    ],
+    "capacity_modes": [
+      "exact T",
+      "T+16",
+      "4*T"
+    ],
+    "ragged": {
+      "capacity": [
+        2048,
+        8192
+      ],
+      "lengths": [
+        0,
+        1023,
+        1024,
+        1025
+      ]
+    },
+    "timing": {
+      "warmup": 10,
+      "repeat": 50,
+      "rounds": 3,
+      "independent_processes": 3
+    },
+    "correctness": {
+      "relative_L2_max": 0.002,
+      "finite": true,
+      "reference": "trusted original scalar g1; independent FP32 oracle in smoke including ragged boundary"
+    },
+    "fullmodel": {
+      "gate": "Valid lowlevel counts/correctness and manual disabled-guard parity inspection, then freeze valid gate before model launch",
+      "shapes": [
+        [
+          8192,
+          1
+        ],
+        [
+          32768,
+          4
+        ],
+        [
+          131072,
+          1
+        ],
+        [
+          131072,
+          4
+        ]
+      ],
+      "fixed_groups": {
+        "INT4": 2,
+        "FP16": 1
+      },
+      "labels": [
+        "FP16_legacy",
+        "FP16_skip",
+        "INT4_legacy",
+        "INT4_skip"
+      ],
+      "rounds": 3,
+      "decode": "unchanged E09 all64 layers, online append, LM head, teacher forced; original data/model revisions; no policy search",
+      "capacity": "T+16; one extra split for contexts divisible by1024"
+    },
+    "claims": "Synthetic overcapacity speedup is separate from realistic T+16 and actual full-model effects; do not extrapolate 4T speedup to serving."
+  },
+  "opportunity": "Uniform online append makes all allocated splits active for these T divisible by1024; guard is a no-op overhead control, not a padded serving speedup test",
+  "reference": "Speed-only; finite logits and separate online equivalence; no native logits reference",
+  "return_code": 0
+}

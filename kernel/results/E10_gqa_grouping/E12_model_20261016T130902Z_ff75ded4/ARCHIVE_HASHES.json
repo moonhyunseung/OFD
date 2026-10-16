@@ -1,0 +1,33 @@
+{
+  "normalization": "UTF-8 export normalizes CRLF to LF; numeric contents retained",
+  "files": {
+    "MANIFEST.json": {
+      "original_bytes_sha256": "3b24bc75e1081f775050969f5a1af6fa0c6507677185fc094460149a0f4ff3d2",
+      "archived_LF_text_sha256": "3b24bc75e1081f775050969f5a1af6fa0c6507677185fc094460149a0f4ff3d2"
+    },
+    "correctness_online.csv": {
+      "original_bytes_sha256": "c2dc0c3778a05ad32a34b9386feeed8bfcf99e7d6da6308067775658e03123c7",
+      "archived_LF_text_sha256": "8ddb13ea62534da4bc7aae60c14d60df652a7b3ac888d29681c7223cef8c5180"
+    },
+    "data_manifest.json": {
+      "original_bytes_sha256": "3d8bae3d9543d4b541e0d1f0764ab0c9b6c08229ddfa10333009a2fec11b5adb",
+      "archived_LF_text_sha256": "3d8bae3d9543d4b541e0d1f0764ab0c9b6c08229ddfa10333009a2fec11b5adb"
+    },
+    "e2e.csv": {
+      "original_bytes_sha256": "04a8a32e31f984ac257fbeb1f6efc8266c841fde501bdee80c0954a4be709a13",
+      "archived_LF_text_sha256": "45f05925a3f45490200888e61299dabd04fdb13ed87312dcd1fe640ce9879af8"
+    },
+    "model_analysis.json": {
+      "original_bytes_sha256": "2f036f035e631690aef5e24bceb8eaa73730892363aa85ffb5e787ac76bf2cb7",
+      "archived_LF_text_sha256": "2f036f035e631690aef5e24bceb8eaa73730892363aa85ffb5e787ac76bf2cb7"
+    },
+    "model_summary.csv": {
+      "original_bytes_sha256": "7c1926e127f04428d85bdab51228e6013399e27e503b1921a5a4fc2caaec16ec",
+      "archived_LF_text_sha256": "9c77268a451b8393022a930c179d0125a811e46cc0784887cbd9617dcf9b457e"
+    },
+    "run.log": {
+      "original_bytes_sha256": "0f6b9f153fc93c1db1b8f6a9fd9aecd8dcc66d0ee5bd7176a037bb66e1be0d29",
+      "archived_LF_text_sha256": "652860c9cf343f4240e9afaf303981c913e99c0a7de196fdcbb23c1cfcd13a40"
+    }
+  }
+}

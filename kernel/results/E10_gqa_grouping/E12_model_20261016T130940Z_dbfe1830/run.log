@@ -1,0 +1,153 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/851 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/851 [00:00<07:53,  1.79it/s]
+Loading weights:   0%|          | 2/851 [00:00<05:43,  2.47it/s]
+Loading weights:   2%|▏         | 15/851 [00:00<00:34, 24.23it/s]
+Loading weights:   3%|▎         | 27/851 [00:01<00:20, 41.15it/s]
+Loading weights:   4%|▍         | 37/851 [00:01<00:15, 51.53it/s]
+Loading weights:   5%|▌         | 46/851 [00:01<00:14, 54.37it/s]
+Loading weights:   6%|▋         | 55/851 [00:01<00:12, 62.31it/s]
+Loading weights:   8%|▊         | 66/851 [00:01<00:11, 66.93it/s]
+Loading weights:   9%|▉         | 76/851 [00:01<00:11, 67.08it/s]
+Loading weights:  11%|█         | 90/851 [00:01<00:09, 77.57it/s]
+Loading weights:  12%|█▏        | 99/851 [00:02<00:10, 74.69it/s]
+Loading weights:  13%|█▎        | 108/851 [00:02<00:09, 77.95it/s]
+Loading weights:  14%|█▍        | 119/851 [00:02<00:08, 83.72it/s]
+Loading weights:  15%|█▌        | 129/851 [00:02<00:08, 84.52it/s]
+Loading weights:  17%|█▋        | 143/851 [00:02<00:08, 83.11it/s]
+Loading weights:  18%|█▊        | 152/851 [00:02<00:08, 77.73it/s]
+Loading weights:  19%|█▉        | 160/851 [00:02<00:09, 69.73it/s]
+Loading weights:  20%|██        | 174/851 [00:02<00:07, 85.34it/s]
+Loading weights:  22%|██▏       | 186/851 [00:03<00:07, 87.96it/s]
+Loading weights:  23%|██▎       | 196/851 [00:03<00:07, 83.22it/s]
+Loading weights:  24%|██▍       | 205/851 [00:03<00:08, 79.33it/s]
+Loading weights:  25%|██▌       | 214/851 [00:03<00:07, 80.06it/s]
+Loading weights:  26%|██▋       | 225/851 [00:03<00:07, 82.99it/s]
+Loading weights:  28%|██▊       | 235/851 [00:03<00:07, 83.77it/s]
+Loading weights:  29%|██▉       | 249/851 [00:03<00:07, 80.64it/s]
+Loading weights:  30%|███       | 258/851 [00:03<00:08, 73.73it/s]
+Loading weights:  31%|███▏      | 266/851 [00:04<00:07, 73.13it/s]
+Loading weights:  33%|███▎      | 279/851 [00:04<00:06, 82.12it/s]
+Loading weights:  34%|███▍      | 288/851 [00:04<00:07, 79.27it/s]
+Loading weights:  35%|███▌      | 302/851 [00:04<00:06, 80.54it/s]
+Loading weights:  37%|███▋      | 311/851 [00:04<00:07, 75.13it/s]
+Loading weights:  37%|███▋      | 319/851 [00:04<00:07, 73.07it/s]
+Loading weights:  39%|███▉      | 331/851 [00:04<00:06, 79.91it/s]
+Loading weights:  40%|████      | 342/851 [00:05<00:06, 82.15it/s]
+Loading weights:  42%|████▏     | 355/851 [00:05<00:06, 80.09it/s]
+Loading weights:  43%|████▎     | 364/851 [00:05<00:06, 76.82it/s]
+Loading weights:  44%|████▎     | 372/851 [00:05<00:06, 76.21it/s]
+Loading weights:  45%|████▌     | 385/851 [00:05<00:05, 87.43it/s]
+Loading weights:  46%|████▋     | 394/851 [00:05<00:05, 86.17it/s]
+Loading weights:  48%|████▊     | 408/851 [00:05<00:05, 83.69it/s]
+Loading weights:  49%|████▉     | 417/851 [00:05<00:05, 76.75it/s]
+Loading weights:  50%|████▉     | 425/851 [00:06<00:05, 76.89it/s]
+Loading weights:  51%|█████▏    | 438/851 [00:06<00:04, 84.86it/s]
+Loading weights:  53%|█████▎    | 451/851 [00:06<00:04, 89.20it/s]
+Loading weights:  54%|█████▍    | 461/851 [00:06<00:04, 82.81it/s]
+Loading weights:  55%|█████▌    | 470/851 [00:06<00:04, 77.33it/s]
+Loading weights:  56%|█████▌    | 478/851 [00:06<00:04, 75.90it/s]
+Loading weights:  58%|█████▊    | 491/851 [00:06<00:04, 86.41it/s]
+Loading weights:  59%|█████▉    | 501/851 [00:06<00:03, 89.40it/s]
+Loading weights:  60%|██████    | 511/851 [00:07<00:03, 91.82it/s]
+Loading weights:  61%|██████    | 521/851 [00:07<00:04, 72.84it/s]
+Loading weights:  62%|██████▏   | 529/851 [00:07<00:04, 67.48it/s]
+Loading weights:  64%|██████▎   | 542/851 [00:07<00:03, 81.78it/s]
+Loading weights:  65%|██████▍   | 551/851 [00:07<00:03, 81.18it/s]
+Loading weights:  66%|██████▌   | 560/851 [00:07<00:04, 71.74it/s]
+Loading weights:  67%|██████▋   | 571/851 [00:07<00:03, 79.29it/s]
+Loading weights:  68%|██████▊   | 580/851 [00:08<00:03, 68.50it/s]
+Loading weights:  70%|███████   | 596/851 [00:08<00:03, 83.16it/s]
+Loading weights:  71%|███████   | 606/851 [00:08<00:02, 83.28it/s]
+Loading weights:  72%|███████▏  | 615/851 [00:08<00:02, 84.78it/s]
+Loading weights:  73%|███████▎  | 624/851 [00:08<00:02, 81.44it/s]
+Loading weights:  74%|███████▍  | 633/851 [00:08<00:03, 71.43it/s]
+Loading weights:  76%|███████▋  | 649/851 [00:08<00:02, 88.70it/s]
+Loading weights:  77%|███████▋  | 659/851 [00:08<00:02, 85.42it/s]
+Loading weights:  79%|███████▉  | 673/851 [00:09<00:02, 84.39it/s]
+Loading weights:  80%|████████  | 682/851 [00:09<00:02, 77.33it/s]
+Loading weights:  82%|████████▏ | 698/851 [00:09<00:01, 92.55it/s]
+Loading weights:  83%|████████▎ | 708/851 [00:09<00:01, 87.72it/s]
+Loading weights:  84%|████████▍ | 718/851 [00:09<00:01, 75.79it/s]
+Loading weights:  85%|████████▌ | 726/851 [00:09<00:01, 72.68it/s]
+Loading weights:  86%|████████▋ | 735/851 [00:09<00:01, 71.21it/s]
+Loading weights:  88%|████████▊ | 751/851 [00:10<00:01, 76.66it/s]
+Loading weights:  90%|████████▉ | 765/851 [00:10<00:01, 78.67it/s]
+Loading weights:  92%|█████████▏| 779/851 [00:10<00:00, 78.95it/s]
+Loading weights:  93%|█████████▎| 788/851 [00:10<00:00, 74.92it/s]
+Loading weights:  94%|█████████▎| 796/851 [00:10<00:00, 72.51it/s]
+Loading weights:  94%|█████████▍| 804/851 [00:10<00:00, 73.61it/s]
+Loading weights:  96%|█████████▌| 818/851 [00:10<00:00, 82.01it/s]
+Loading weights:  98%|█████████▊| 831/851 [00:11<00:00, 91.97it/s]
+Loading weights:  99%|█████████▉| 841/851 [00:11<00:00, 72.36it/s]
+Loading weights: 100%|██████████| 851/851 [00:11<00:00, 74.62it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.14242374151945, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.22621654098233, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.11435188539326, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.89168648111323, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.307994113614164, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.09435452707112, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.32396148393551, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 55.37148929821948, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.686702304830156, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.81206328173479, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.25551835509638, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 8192, 'batch': 1, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.65668383799493, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.52972616876165, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.90248414874077, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 62.6744267065078, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 63.479484524577856, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 63.436383459096156, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 62.67339154146612, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.68106950198611, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.52088520117104, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.04546800814569, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.484604297205806, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 62.65663782445093, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 32768, 'batch': 4, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 63.44942352734506, 'status': 'OK'}
+[W1016 13:11:54.438012712 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 171966464 bytes (free: 13762560, total: 150109880320).
+[W1016 13:12:02.373253105 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 230686720 bytes (free: 5373952, total: 150109880320).
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 60.334001357356705, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 51.51885809997717, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 59.19071923320492, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.79868165962398, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.19806607440114, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 59.11808949895203, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 52.75403017488619, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 60.23471748145918, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.28839955230554, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 60.25691004469991, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 53.77538866984347, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 1, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 59.15546999312937, 'status': 'OK'}
+[W1016 13:13:29.712613519 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 402653184 bytes (free: 70385664, total: 150109880320).
+[W1016 13:13:39.040622482 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 503316480 bytes (free: 340918272, total: 150109880320).
+[W1016 13:13:48.046143073 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 570425344 bytes (free: 106037248, total: 150109880320).
+[W1016 13:13:56.167586362 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 637534208 bytes (free: 5373952, total: 150109880320).
+[W1016 13:14:04.647975623 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 687865856 bytes (free: 357695488, total: 150109880320).
+[W1016 13:14:11.475476582 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 738197504 bytes (free: 626130944, total: 150109880320).
+[W1016 13:14:17.940178763 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 788529152 bytes (free: 475136000, total: 150109880320).
+[W1016 13:14:23.226762121 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 838860800 bytes (free: 5373952, total: 150109880320).
+[W1016 13:14:29.109804059 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 872415232 bytes (free: 424804352, total: 150109880320).
+[W1016 13:14:35.805549569 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 905969664 bytes (free: 810680320, total: 150109880320).
+[W1016 13:14:40.273770879 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 939524096 bytes (free: 626130944, total: 150109880320).
+[W1016 13:14:46.519064813 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 973078528 bytes (free: 189923328, total: 150109880320).
+[W1016 13:14:51.546645583 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1006632960 bytes (free: 911343616, total: 150109880320).
+[W1016 13:14:56.469934417 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1040187392 bytes (free: 106037248, total: 150109880320).
+[W1016 13:15:00.294943634 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1073741824 bytes (free: 810680320, total: 150109880320).
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.14496927087506, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 154.62957019917667, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 151.79245445566872, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.6728391032666, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.80149937669436, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.17794344512125, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 151.76622522994876, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 154.60649388842285, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 154.6219861290107, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'INT4_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 151.98769071139395, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_skip', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.166624150549374, 'status': 'OK'}
+E2E {'phase': 'E12_confirmation', 'domain': 'prose', 'context': 131072, 'batch': 4, 'policy_label': 'FP16_legacy', 'changed_layer': -1, 'variant': '-', 'decode_ms': 61.66247340540091, 'status': 'OK'}
