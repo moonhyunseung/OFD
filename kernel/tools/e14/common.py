@@ -16,7 +16,7 @@ def hadamard(d,device):
  return h/math.sqrt(d)
 def spectrum(x):
  s=torch.linalg.svdvals(x.double());p=s.square()/s.square().sum().clamp_min(1e-300)
- return dict(singular_values=s.tolist(),stable_rank=float(s.square().sum()/s[0].square().clamp_min(1e-300)),entropy_effective_rank=float(torch.exp(-(p*p.clamp_min(1e-300).log()).sum())),ranks=[dict(atol=a,rtol=r,rank=int((s>max(a,r*float(s[0]))).sum())) for a in CFG['rank_atol'] for r in CFG['rank_rtol']])
+ return dict(singular_values=s.tolist(),stable_rank=float(s.square().sum()/s[0].square().clamp_min(1e-300)),entropy_effective_rank=0.0 if float(s.square().sum())==0 else float(torch.exp(-(p*p.clamp_min(1e-300).log()).sum())),ranks=[dict(atol=a,rtol=r,rank=int((s>max(a,r*float(s[0]))).sum())) for a in CFG['rank_atol'] for r in CFG['rank_rtol']])
 def norm(x):return float(torch.linalg.vector_norm(x))
 def err(x,ref):return dict(abs_error=norm(x-ref),reference_norm=norm(ref),relative_error=norm(x-ref)/max(norm(ref),1e-30))
 def center(z):return z-z.mean(-1,keepdim=True)

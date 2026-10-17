@@ -2,13 +2,14 @@
 import argparse,json,subprocess
 from pathlib import Path
 import torch
-from e14.common import ROOT,hadamard,qdq,norm,center
+from e14.common import ROOT,hadamard,qdq,norm,center,spectrum
 from analyze_e14 import planes,truncated_planes,analyze_group
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--device',default='cpu');a=p.parse_args();torch.manual_seed(1337);torch.set_num_threads(4);dev=a.device;checks=[]
  def check(name,x,limit):
   val=float(x);checks.append(dict(check=name,value=val,limit=limit,passed=val<=limit));assert val<=limit,(name,val)
+ check('zero_spectrum_effective_rank',spectrum(torch.zeros(6,256,device=dev))['entropy_effective_rank'],0)
  q=torch.randn(6,256,device=dev,dtype=torch.float64);k=torch.randn(17,256,device=dev,dtype=torch.float64);v=torch.randn_like(k);h=hadamard(256,dev)
  check('orthogonal_score_symmetry',(q@k.T-(q@h)@(k@h).T).abs().max(),1e-10)
  b=torch.kron(torch.eye(8,device=dev,dtype=torch.float64),hadamard(32,dev))

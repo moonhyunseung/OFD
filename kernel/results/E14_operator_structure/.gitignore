@@ -1,0 +1,4 @@
+# Generated captures contain model-derived tensors and projection weights.
+# Archive reviewed text metrics/manifests explicitly; never auto-add raw weights.
+*
+!.gitignore
