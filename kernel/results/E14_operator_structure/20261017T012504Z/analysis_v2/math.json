@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "git_sha": "cc2c9d12034963fb2a52b660a136c8901e7e7943",
+  "checks": [
+    {
+      "check": "zero_spectrum_effective_rank",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "check": "orthogonal_score_symmetry",
+      "value": 4.973799150320701e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "H32_each_block_energy_invariant",
+      "value": 1.4210854715202004e-14,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "softmax_constant_quotient",
+      "value": 5.551115123125783e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "unsigned_K_rank1_scale_identity",
+      "value": 3.907985046680551e-14,
+      "limit": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "unsigned_V_rank1_scale_identity",
+      "value": 1.2212453270876722e-15,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "FP16_extreme_exact_planes",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "check": "unrenormalized_V_support_bound_0",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "unrenormalized_V_support_bound_1",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "unrenormalized_V_support_bound_3",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "unrenormalized_V_support_bound_17",
+      "value": 0.0,
+      "limit": 1e-10,
+      "passed": true
+    },
+    {
+      "check": "fixture_block_rows",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    },
+    {
+      "check": "fixture_quantization_rows",
+      "value": 0.0,
+      "limit": 0,
+      "passed": true
+    }
+  ],
+  "fixture_counts": {
+    "rank": 15,
+    "drift": 51,
+    "blocks": 640,
+    "quantization": 40,
+    "geometry": 120,
+    "planes": 823,
+    "plane_frontier": 40,
+    "support": 240,
+    "circuit": 8
+  }
+}

@@ -1,0 +1,10 @@
+MATH_RC 0
+Traceback (most recent call last):
+  File "/home/inugpu/workspace/ofd_e10_grouping/kernel/tools/bench_e14_capture.py", line 96, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/inugpu/workspace/ofd_e10_grouping/kernel/tools/bench_e14_capture.py", line 82, in main
+    if subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True).strip():raise RuntimeError('Clean source required')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Clean source required
+SUITE_DONE 1

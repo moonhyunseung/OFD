@@ -1,0 +1,1 @@
+Text export first used Path.relative_to with a relative file and absolute root, causing ValueError. Re-export used already repository-relative paths. Numerical validation and model capture were unchanged.

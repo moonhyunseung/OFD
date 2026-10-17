@@ -1,0 +1,1 @@
+Raw capture tensors and projection weights are retained on H200 at /home/inugpu/workspace/ofd_e10_grouping/kernel/results/E14_operator_structure/20261017T012504Z. Recreate from the pinned model/data revisions using the committed capture tool. Binary weights are not redistributed in git.

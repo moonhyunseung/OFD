@@ -1,0 +1,139 @@
+{
+  "aliases": {
+    "current_OFD_basis": "mathematical alias of full_H256: unrandomized normalized Sylvester; no claim of bitwise equality of all FP32 FWHT rounding schedules"
+  },
+  "records": [
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "identity",
+      "definition": "identity",
+      "sha256": "549f63ce11d6d34c5910e93d6350a2a3d7079105ff76ba516dbdf84169b31c73",
+      "orthogonality_max_abs": 0.0
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "block_H32",
+      "definition": "normalized Sylvester",
+      "sha256": "a22c34b2f552a11dcd3864d060f09173351851be4f329b721db56d4127c22a5a",
+      "orthogonality_max_abs": 1.1102230246251565e-16
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "full_H256",
+      "definition": "normalized Sylvester",
+      "sha256": "ecaaef7533171c0572bcc7fbbfb0a76506bde8b2cfeeb82c21f74a1e1adde6ce",
+      "orthogonality_max_abs": 0.0
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "past_window_svd",
+      "definition": "right singular vectors of first four query steps, frozen; future only deployment diagnostic",
+      "sha256": "03b705c09a74951d1d0bf0053f9443be2bf70f95d9590b5596443850c0ed43fc",
+      "orthogonality_max_abs": 1.176836406102666e-14
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 0,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "e9b4c6de434e581d091cce5fec7b31cbbcb4d215adbb05f8f2a7f3d96c7e4cee"
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 1,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "c6dc67b06692f23cce3a2ecdcd3515d9f2a98d512c3c2b3d8dea6275ab69e138"
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 2,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "2de5d72d90bc63aeab936548bc389d71dbad7121d4f4def7c5e8349967845c0a"
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 3,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "2adf343d0e229f3f88217f8786872a1f4caeb250db773ade22e565d15d7a071b"
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 4,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "2895d03f5be9c0f3ed5fd6f78826c458cb75017be3cd9909e83091aa158ac17f"
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 5,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "130dfb8b123f07305d48d1663d680c1585841a64fe27fb4d1715463c6d6f0024"
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 6,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "d424f92fa766042226ba29d89e79eb55843184d463925dde1d00898cab65d170"
+    },
+    {
+      "domain": "prose",
+      "partition": "evaluation",
+      "context": 128,
+      "layer": 3,
+      "kv_head": 0,
+      "basis": "current_svd_oracle",
+      "step": 7,
+      "definition": "same-step SVD oracle; not deployable persistent compression",
+      "sha256": "f4eb1c24076636e309963d0e7ba0773e5350238870393504249888ae963a2b59"
+    }
+  ]
+}

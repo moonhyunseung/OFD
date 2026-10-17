@@ -1,0 +1,1 @@
+{"source_sha": "ac06eb60a03c2fb7bfd74d19b2a0b7fcb15b712b", "smoke": true, "native_gate_topology": "Qwen3_5Attention: attention -> sigmoid(gate) product -> o_proj"}

@@ -1,0 +1,142 @@
+{
+  "execution_status": "ANALYSIS_COMPLETE",
+  "scientific_gate": "SMOKE_ONLY",
+  "source_sha": "ac06eb60a03c2fb7bfd74d19b2a0b7fcb15b712b",
+  "analysis_git_sha": "cc2c9d12034963fb2a52b660a136c8901e7e7943",
+  "analysis_script_sha256": "04f5c5524d19083170812739ba4d2df2fe4ea6e5d6245a193741e4a318f8a061",
+  "counts": {
+    "rank": 15,
+    "drift": 51,
+    "blocks": 640,
+    "quantization": 40,
+    "geometry": 120,
+    "planes": 824,
+    "plane_frontier": 40,
+    "support": 240,
+    "circuit": 8
+  },
+  "analysis_protocol": {
+    "revision": "E14_observational_capture_v1",
+    "parent_plan_sha": "e3e7685f2b95bc11426b947948df43cdaec1ee82",
+    "seed": 1337,
+    "model_id": "Qwen/Qwen3.8-27B",
+    "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "layers": [
+      3,
+      19,
+      43,
+      63
+    ],
+    "kv_heads": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "contexts": [
+      2048,
+      8192,
+      32768
+    ],
+    "domains": [
+      "prose",
+      "code",
+      "math",
+      "long_document"
+    ],
+    "partition": "evaluation",
+    "decode_steps": 64,
+    "smoke": {
+      "layers": [
+        3
+      ],
+      "kv_heads": [
+        0
+      ],
+      "contexts": [
+        128
+      ],
+      "domains": [
+        "prose"
+      ],
+      "decode_steps": 8
+    },
+    "basis_train_steps": 4,
+    "basis_policy": "past_window_svd fitted on first 4 Q steps only, frozen for all subsequent steps; current_svd is oracle-only",
+    "bases": [
+      "identity",
+      "block_H32",
+      "full_H256",
+      "past_window_svd",
+      "current_svd_oracle"
+    ],
+    "basis_aliases": {
+      "current_OFD_basis": "mathematical alias of full_H256: unrandomized normalized Sylvester; no claim of bitwise equality of all FP32 FWHT rounding schedules"
+    },
+    "window_sizes": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "drift_lags": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "rank_atol": [
+      1e-10,
+      1e-07
+    ],
+    "rank_rtol": [
+      1e-08,
+      1e-05,
+      0.001
+    ],
+    "drift_subspace_dimensions": [
+      1,
+      3,
+      6
+    ],
+    "block_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "probability_mass_targets": [
+      0.9,
+      0.95,
+      0.99,
+      0.999
+    ],
+    "plane_operator_relative_budgets": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "plane_definition": "signed binary magnitude planes, shared per 32-wide Q block; observed nonempty planes and contiguous span reported separately; transformed Q explicitly rounded to FP16 before plane accounting",
+    "truncation": "drop probability mass without renormalizing; delta*max_token_norm bound; never substitute renormalized softmax",
+    "analysis_dtype": "float64",
+    "quantizer": "existing absmax/7 q+8 low-nibble-first with FP16 scales, group32; transformed K/V explicitly rounded to FP16 before frozen encoder; record transform-round and quantizer-only errors separately",
+    "capture": "native full-model teacher-forced decode; post-RoPE/post-normalization Q,K at AttentionInterface, all-token K/V with append preserved; no timing claim; no model weight edits",
+    "WO_scope": "captured baseline sigmoid gate held fixed, followed by original output-projection slices, summed over six Q heads in one KV group; not propagated complete-model error",
+    "circuit": "static candidate work only, no emitted-instruction or latency claim; K s4 tile m8n8k32 candidate requires Q plane representation; V reduction is over tokens with token-varying scales",
+    "scientific_gate": "OBSERVATIONAL: export frontiers, no automatic E15 acceptance. Application-level error budgets and legal runtime basis/transform costs must be frozen separately before selecting a design.",
+    "analysis_revision": "E14_FP16_basis_round_and_unsigned_planes_v2"
+  },
+  "basis_count": 12,
+  "all_token_probabilities": true,
+  "WO_scope": "captured baseline sigmoid gate held fixed, followed by original output-projection slices, summed over six Q heads in one KV group; not propagated complete-model error; captured native output gate held fixed",
+  "latency_claim": false
+}

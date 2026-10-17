@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "prose_T128_L3.pt",
+      "shape_valid": true,
+      "finite": true,
+      "gate_min": 0.0002694129943847656,
+      "gate_max": 0.437255859375
+    }
+  ],
+  "csv_counts": {
+    "circuit.csv": 8,
+    "blocks.csv": 640,
+    "plane_frontier.csv": 40,
+    "quantization.csv": 40,
+    "support.csv": 240,
+    "geometry.csv": 120,
+    "planes.csv": 824,
+    "drift.csv": 51,
+    "rank.csv": 15
+  },
+  "raw_binary_archival": "Q/K/V/gate tensors and original model projection weights remain in this H200 run directory; git archive contains numerical metrics and hashes, not model weights",
+  "source_capture_sha": "ac06eb60a03c2fb7bfd74d19b2a0b7fcb15b712b",
+  "analysis_sha": "cc2c9d12034963fb2a52b660a136c8901e7e7943"
+}
