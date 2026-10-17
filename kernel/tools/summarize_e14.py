@@ -23,6 +23,10 @@ def main():
    for metric in metrics:
     vals=[float(x[metric]) for x in rs if x.get(metric) not in [None,'']]
     if vals:v[metric+'_median']=statistics.median(vals);v[metric+'_max']=max(vals)
+   if table=='plane_frontier':
+    maps=[json.loads(x['budgets_to_min_planes']) for x in rs]
+    for budget in maps[0]:
+     vals=[x[budget] for x in maps if x[budget] is not None];v['budget_'+budget]={'n':len(vals),'missing':len(maps)-len(vals),'median_planes':statistics.median(vals) if vals else None,'max_planes':max(vals) if vals else None}
    result[out].append(v)
  for x in rows(root,'rank'):
   result['rank_windows'].append({k:x[k] for k in ['domain','context','layer','kv_head','window','start','stable_rank','entropy_effective_rank','ranks']})

@@ -66,8 +66,8 @@ def analyze_group(qs,k0,v0,nk,nv,wo,scale,meta,tables,basis_records,gates=None):
    # H32 must preserve each existing block's query energy.
    if name=='block_H32':
     e0=q.reshape(r,8,32).square().sum((0,2));assert torch.allclose(energy,e0,rtol=1e-10,atol=1e-10)
-   kh,ko=qdq(ka);vh,vo=qdq(va);zk=qa@kh.T*scale;pk=zk.softmax(-1)
-   emit('quantization',step=step,basis=name,K_reconstruction=err(kh,ka),V_reconstruction=err(vh,va),K_centered_scaled_logits=err(center(zk),center(z)),K_probability_TV_max=float(((pk-p).abs().sum(-1)*.5).max()),K_only_output=output_stats(pk@v),V_only_output=output_stats((p@vh)@a.T),joint_output=output_stats((pk@vh)@a.T),K_scale_spectrum=spectrum(ko.scale.double()),V_scale_spectrum=spectrum(vo.scale.double()))
+   kh,ko=qdq(ka.half());vh,vo=qdq(va.half());zk=qa@kh.T*scale;pk=zk.softmax(-1)
+   emit('quantization',step=step,basis=name,K_reconstruction=err(kh,ka),V_reconstruction=err(vh,va),K_transform_FP16_rounding=err(ka.half().double(),ka),V_transform_FP16_rounding=err(va.half().double(),va),K_quantizer_only=err(kh,ka.half().double()),V_quantizer_only=err(vh,va.half().double()),K_centered_scaled_logits=err(center(zk),center(z)),K_probability_TV_max=float(((pk-p).abs().sum(-1)*.5).max()),K_only_output=output_stats(pk@v),V_only_output=output_stats((p@vh)@a.T),joint_output=output_stats((pk@vh)@a.T),K_scale_spectrum=spectrum(ko.scale.double()),V_scale_spectrum=spectrum(vo.scale.double()))
    for kind,x in [('Q',qa),('K',ka),('V',va)]:
     b=x.reshape(-1,8,32);ab=b.abs();nz=torch.where(ab>0,ab,float('inf')).amin(-1);maxv=ab.amax(-1);ratio=maxv/nz
     emit('geometry',step=step,basis=name,operand=kind,coherence_mean=float((x.abs().amax(-1)/x.norm(dim=-1).clamp_min(1e-300)).mean()),block_max_mean=float(maxv.mean()),block_range_mean=float((b.amax(-1)-b.amin(-1)).mean()),block_log2_dynamic_range_mean=float(torch.where(torch.isfinite(ratio)&(ratio>0),ratio.clamp_min(1).log2(),0).mean()))
@@ -95,10 +95,10 @@ def analyze_group(qs,k0,v0,nk,nv,wo,scale,meta,tables,basis_records,gates=None):
     emit('support',**row)
   # All counts theoretical, per KV group and step, independent of basis oracle selection.
   L=len(k);tiles_k=8*math.ceil(r/8)*math.ceil(L/8);tiles_v=8*math.ceil(r/8)*math.ceil(32/8)*math.ceil(L/32)
-  emit('circuit',step=step,tokens=L,packed_K_bytes=L*d//2,packed_V_bytes=L*d//2,K_scale_bytes=L*8*2,V_scale_bytes=L*8*2,K_logical_width32_dot_products=r*L*8,K_candidate_m8n8k32_tiles_per_Q_plane=tiles_k,K_M_utilization=r/8,K_N_utilization=L/(8*math.ceil(L/8)),V_candidate_m8n8k32_tiles_per_coefficient_plane=tiles_v,V_reduction_dimension='tokens; scales vary with token',K_scale_epilogue_multiplications=r*L*8,K_unsigned_rank1_correction_multiplies=r*L*8,V_prescale_multiplications=r*L*8,V_unsigned_correction_multiplies=r*L*8,FP64_diagnostic_logits_bytes=r*L*8,full_H256_Q_add_sub_estimate=r*d*8,full_H256_K_insert_add_sub_estimate=d*8,block_H32_Q_add_sub_estimate=r*d*5,block_H32_K_insert_add_sub_estimate=d*5,RoPE_placement='all transforms applied post-RoPE; no commutation cost claimed',runtime_SVD_and_K_reprojection='not priced; disqualifies oracle bases as deployed savings',native_instruction_verified=False)
+  emit('circuit',step=step,tokens=L,packed_K_bytes=L*d//2,payload_scope="unique active logical bytes per pass, not measured HBM traffic; reuse across planes unpriced",paged_allocated_K_bytes=math.ceil(L/16)*16*d//2,packed_V_bytes=L*d//2,K_scale_bytes=L*8*2,V_scale_bytes=L*8*2,K_logical_width32_dot_products=r*L*8,K_candidate_m8n8k32_tiles_per_Q_plane=2*tiles_k,K_sign_handling="two unsigned positive/negative bit-plane contractions; no mixed-sign primitive assumed",K_M_utilization=r/8,K_N_utilization=L/(8*math.ceil(L/8)),V_candidate_m8n8k32_tiles_per_coefficient_plane=2*tiles_v,V_sign_handling="two unsigned passes if coefficient planes signed; actual coefficient encoding and lowering unresolved",V_reduction_dimension='tokens; scales vary with token',K_scale_epilogue_multiplications=r*L*8,K_unsigned_rank1_correction_multiplies=r*L*8,V_prescale_multiplications=r*L*8,V_unsigned_correction_multiplies=r*L*8,FP64_diagnostic_logits_bytes=r*L*8,full_H256_Q_add_sub_estimate=r*d*8,full_H256_K_insert_add_sub_estimate=d*8,block_H32_Q_add_sub_estimate=r*d*5,block_H32_K_insert_add_sub_estimate=d*5,RoPE_placement='all transforms applied post-RoPE; no commutation cost claimed',runtime_SVD_and_K_reprojection='not priced; disqualifies oracle bases as deployed savings',native_instruction_verified=False)
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--device',default='cpu');a=p.parse_args();torch.set_num_threads(4)
+ p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--device',default='cpu');p.add_argument('--out',type=Path);a=p.parse_args();torch.set_num_threads(4);dest=a.out or a.run;dest.mkdir(parents=True,exist_ok=True)
  index=json.loads((a.run/'capture_index.json').read_text());manifest=json.loads((a.run/'MANIFEST.json').read_text());tables={};records=[]
  for rec in index['states']:
   assert sha(a.run/rec['file'])==rec['sha256'];s=torch.load(a.run/rec['file'],map_location='cpu',weights_only=True);wmeta=index['weights'][str(rec['layer'])];assert sha(a.run/wmeta['file'])==wmeta['sha256'];w=torch.load(a.run/wmeta['file'],map_location='cpu',weights_only=True)
@@ -108,8 +108,10 @@ def main():
    wo=w[:,h*6*256:(h+1)*6*256].T.reshape(6,256,-1).to(a.device,dtype=torch.float64)
    analyze_group(s['q'][:,j].to(a.device,dtype=torch.float64),s['base_k'][j].to(a.device,dtype=torch.float64),s['base_v'][j].to(a.device,dtype=torch.float64),s['new_k'][:,j].to(a.device,dtype=torch.float64),s['new_v'][:,j].to(a.device,dtype=torch.float64),wo,s['scaling'],meta,tables,records,gates=s['gate'][:,j].to(a.device,dtype=torch.float64))
    print('ANALYZED',meta,flush=True)
- for name,rows in tables.items():csv_write(a.run/(name+'.csv'),rows)
- (a.run/'basis_definitions.json').write_text(json.dumps({'aliases':CFG['basis_aliases'],'records':records},indent=2))
- result={'execution_status':'ANALYSIS_COMPLETE','scientific_gate':'SMOKE_ONLY' if manifest['smoke'] else 'OBSERVATIONAL_NO_E15_ACCEPTANCE','source_sha':manifest['git_sha'],'analysis_git_sha':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'analysis_script_sha256':sha(__file__),'counts':{k:len(v) for k,v in tables.items()},'basis_count':len(records),'all_token_probabilities':True,'WO_scope':CFG['WO_scope']+'; captured native output gate held fixed','latency_claim':False}
- (a.run/'analysis.json').write_text(json.dumps(result,indent=2));print(json.dumps(result),flush=True)
+ for name,rows in tables.items():csv_write(dest/(name+'.csv'),rows)
+ (dest/'basis_definitions.json').write_text(json.dumps({'aliases':CFG['basis_aliases'],'records':records},indent=2))
+ result={'execution_status':'ANALYSIS_COMPLETE','scientific_gate':'SMOKE_ONLY' if manifest['smoke'] else 'OBSERVATIONAL_NO_E15_ACCEPTANCE','source_sha':manifest['git_sha'],'analysis_git_sha':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'analysis_script_sha256':sha(__file__),'counts':{k:len(v) for k,v in tables.items()},'analysis_protocol':CFG,'basis_count':len(records),'all_token_probabilities':True,'WO_scope':CFG['WO_scope']+'; captured native output gate held fixed','latency_claim':False}
+ 
+ if dest!=a.run:(dest/'MANIFEST.json').write_text(json.dumps({**manifest,'original_capture_directory':str(a.run),'analysis_only':True},indent=2))
+ (dest/'analysis.json').write_text(json.dumps(result,indent=2));print(json.dumps(result),flush=True)
 if __name__=='__main__':main()

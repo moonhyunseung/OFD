@@ -54,7 +54,7 @@
     "current_svd_oracle"
   ],
   "basis_aliases": {
-    "current_OFD_basis": "full_H256; unrandomized normalized Sylvester H256 used by current source"
+    "current_OFD_basis": "mathematical alias of full_H256: unrandomized normalized Sylvester; no claim of bitwise equality of all FP32 FWHT rounding schedules"
   },
   "window_sizes": [
     1,
@@ -111,9 +111,10 @@
   "plane_definition": "signed binary magnitude planes, shared per 32-wide Q block; observed nonempty planes and contiguous span reported separately; transformed Q explicitly rounded to FP16 before plane accounting",
   "truncation": "drop probability mass without renormalizing; delta*max_token_norm bound; never substitute renormalized softmax",
   "analysis_dtype": "float64",
-  "quantizer": "existing absmax/7 q+8 low-nibble-first with FP16 scales, group32; use frozen reference encoder/decoder",
+  "quantizer": "existing absmax/7 q+8 low-nibble-first with FP16 scales, group32; transformed K/V explicitly rounded to FP16 before frozen encoder; record transform-round and quantizer-only errors separately",
   "capture": "native full-model teacher-forced decode; post-RoPE/post-normalization Q,K at AttentionInterface, all-token K/V with append preserved; no timing claim; no model weight edits",
   "WO_scope": "captured baseline sigmoid gate held fixed, followed by original output-projection slices, summed over six Q heads in one KV group; not propagated complete-model error",
   "circuit": "static candidate work only, no emitted-instruction or latency claim; K s4 tile m8n8k32 candidate requires Q plane representation; V reduction is over tokens with token-varying scales",
-  "scientific_gate": "OBSERVATIONAL: export frontiers, no automatic E15 acceptance. Application-level error budgets and legal runtime basis/transform costs must be frozen separately before selecting a design."
+  "scientific_gate": "OBSERVATIONAL: export frontiers, no automatic E15 acceptance. Application-level error budgets and legal runtime basis/transform costs must be frozen separately before selecting a design.",
+  "analysis_revision": "E14_FP16_basis_round_and_unsigned_planes_v2"
 }
